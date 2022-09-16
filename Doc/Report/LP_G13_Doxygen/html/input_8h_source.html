@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LP_G13_Projeto: Código-Fonte de input.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LP_G13_Projeto
+   &#160;<span id="projectnumber">Versão 1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('input_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">input.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="input_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef INPUT_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define INPUT_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="funcionario_8h.html">funcionario.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="irs_8h.html">irs.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="input_8h.html#a7dac90953bf2709d6153d7503fe3c77e">    7</a></span>&#160;<span class="preprocessor">#define VALOR_INVALIDO                &quot;O valor inserido é inválido.&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="input_8h.html#a92476f428e3224cb12a5784839bb0f3d">    8</a></span>&#160;<span class="preprocessor">#define SALARIO_EXISTENTE             &quot;O salário inserido já existe.&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">int</span> <a class="code" href="input_8h.html#aa8f067a5ff0a81c9af0f5fd554750960">obterInteiro</a>(<span class="keywordtype">int</span> minValor, <span class="keywordtype">int</span> maxValor, <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">float</span> <a class="code" href="input_8h.html#acf0457ff431a6ac3c752715e778b566e">obterFloat</a>(<span class="keywordtype">float</span> minValor, <span class="keywordtype">float</span> maxValor, <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">double</span> <a class="code" href="input_8h.html#a21f2b70641e75f55e2bd11550fedd899">obterDouble</a>(<span class="keywordtype">double</span> minValor, <span class="keywordtype">double</span> maxValor, <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">char</span> <a class="code" href="input_8h.html#ae15b6840f5e86d21d0d01c31b5d25cc0">obterChar</a>(<span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="input_8h.html#a8deaff72b3466f323d5ffe40426e1ea1">lerString</a>(<span class="keywordtype">char</span> *<span class="keywordtype">string</span>, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> tamanho, <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">int</span> <a class="code" href="input_8h.html#ab3a5d2363e8c971759ed3811c443ea50">obterTelefone</a>(<span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">int</span> <a class="code" href="input_8h.html#aecc16017a8a86c7511b2d3d53d89fdd8">obterTelemovel</a>(<span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="input_8h.html#a66f28cd8d5fe8c40ffd0e7fca8b748a5">obterDataNacimento</a>(<a class="code" href="struct_data.html">Data</a> *data, <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keywordtype">void</span> <a class="code" href="input_8h.html#aa7d5418e82982664dd1862077f304f0f">obterDataNacimento_Alterar</a>(<a class="code" href="struct_data.html">Data</a> *data, <a class="code" href="struct_data.html">Data</a> *dataEntrada, <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keywordtype">void</span> <a class="code" href="input_8h.html#a3fa5737cd1ddb22024f6541733d5a1d1">obterDataEntrada</a>(<a class="code" href="struct_data.html">Data</a> *dataEntrada, <a class="code" href="struct_data.html">Data</a> *dataNasc, <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="input_8h.html#ae60c947b12296a55faeb377f88b1b4c9">obterDataSaida</a>(<a class="code" href="struct_data.html">Data</a> *dataSaida, <span class="keywordtype">int</span> ano, <span class="keywordtype">int</span> mes, <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keywordtype">void</span> <a class="code" href="input_8h.html#ad4831e802b5c013e9563d9c584c88be6">obterSalario</a>(<a class="code" href="struct_i_r_s.html">IRS</a> *irs, <span class="keywordtype">int</span> contador, <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keywordtype">float</span> <a class="code" href="input_8h.html#acb2f7923e89b8568ef861b155ff06405">obterSalarioAlterar</a>(<span class="keywordtype">float</span> minValor, <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">float</span> <a class="code" href="input_8h.html#a0ac0ec7217e9f505f282659c7e149b67">obterIRS_Percentagem</a>(<span class="keywordtype">float</span> minValor, <span class="keywordtype">float</span> maxValor, <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">int</span> <a class="code" href="input_8h.html#a886212c0113dc1ace57c470fb1b9cf5e">obterAnoFaltas</a>(<a class="code" href="struct_funcionario.html">Funcionario</a> *funcionario, <span class="keywordtype">char</span> *msg);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* INPUT_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="ainput_8h_html_a0ac0ec7217e9f505f282659c7e149b67"><div class="ttname"><a href="input_8h.html#a0ac0ec7217e9f505f282659c7e149b67">obterIRS_Percentagem</a></div><div class="ttdeci">float obterIRS_Percentagem(float minValor, float maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:260</div></div>
+<div class="ttc" id="ainput_8h_html_ab3a5d2363e8c971759ed3811c443ea50"><div class="ttname"><a href="input_8h.html#ab3a5d2363e8c971759ed3811c443ea50">obterTelefone</a></div><div class="ttdeci">int obterTelefone(char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:131</div></div>
+<div class="ttc" id="afuncoes_8h_html"><div class="ttname"><a href="funcoes_8h.html">funcoes.h</a></div></div>
+<div class="ttc" id="astruct_data_html_a9fc86758220eae0e735655f81fd9d9bc"><div class="ttname"><a href="struct_data.html#a9fc86758220eae0e735655f81fd9d9bc">Data::mes</a></div><div class="ttdeci">int mes</div><div class="ttdef"><b>Definition:</b> funcionario.h:112</div></div>
+<div class="ttc" id="afuncionario_8h_html"><div class="ttname"><a href="funcionario_8h.html">funcionario.h</a></div></div>
+<div class="ttc" id="astruct_data_html_a3d1171ac670a8e8a672c481f22d1fa9f"><div class="ttname"><a href="struct_data.html#a3d1171ac670a8e8a672c481f22d1fa9f">Data::dia</a></div><div class="ttdeci">int dia</div><div class="ttdef"><b>Definition:</b> funcionario.h:112</div></div>
+<div class="ttc" id="afuncoes_8c_html_a4f0443a8256a2b8272544304ec7795c2"><div class="ttname"><a href="funcoes_8c.html#a4f0443a8256a2b8272544304ec7795c2">verificaDataNascimento</a></div><div class="ttdeci">int verificaDataNascimento(int dia, int mes, int ano)</div><div class="ttdef"><b>Definition:</b> funcoes.c:132</div></div>
+<div class="ttc" id="ainput_8h_html_aa7d5418e82982664dd1862077f304f0f"><div class="ttname"><a href="input_8h.html#aa7d5418e82982664dd1862077f304f0f">obterDataNacimento_Alterar</a></div><div class="ttdeci">void obterDataNacimento_Alterar(Data *data, Data *dataEntrada, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:164</div></div>
+<div class="ttc" id="astruct_funcionario_html_ab6bf4cb01a3be7589a2224e9bf24652c"><div class="ttname"><a href="struct_funcionario.html#ab6bf4cb01a3be7589a2224e9bf24652c">Funcionario::trabalho</a></div><div class="ttdeci">Trabalho trabalho</div><div class="ttdef"><b>Definition:</b> funcionario.h:124</div></div>
+<div class="ttc" id="ainput_8c_html_aecc16017a8a86c7511b2d3d53d89fdd8"><div class="ttname"><a href="input_8c.html#aecc16017a8a86c7511b2d3d53d89fdd8">obterTelemovel</a></div><div class="ttdeci">int obterTelemovel(char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:114</div></div>
+<div class="ttc" id="ainput_8c_html_a11ac4d3ec555747d95fee8ae7aa18b5d"><div class="ttname"><a href="input_8c.html#a11ac4d3ec555747d95fee8ae7aa18b5d">cleanInputBuffer</a></div><div class="ttdeci">void cleanInputBuffer()</div><div class="ttdef"><b>Definition:</b> input.c:16</div></div>
+<div class="ttc" id="afuncoes_8c_html_aac0a5840b5a421f4f30a0a3015485380"><div class="ttname"><a href="funcoes_8c.html#aac0a5840b5a421f4f30a0a3015485380">numero_digitos</a></div><div class="ttdeci">int numero_digitos(int n)</div><div class="ttdef"><b>Definition:</b> funcoes.c:14</div></div>
+<div class="ttc" id="ainput_8h_html_aecc16017a8a86c7511b2d3d53d89fdd8"><div class="ttname"><a href="input_8h.html#aecc16017a8a86c7511b2d3d53d89fdd8">obterTelemovel</a></div><div class="ttdeci">int obterTelemovel(char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:114</div></div>
+<div class="ttc" id="afuncoes_8c_html_a3076524f5392bf8c8782c34e7192d78b"><div class="ttname"><a href="funcoes_8c.html#a3076524f5392bf8c8782c34e7192d78b">primeirosDigitos</a></div><div class="ttdeci">int primeirosDigitos(int n, int nd)</div><div class="ttdef"><b>Definition:</b> funcoes.c:29</div></div>
+<div class="ttc" id="ainput_8c_html_ab3a5d2363e8c971759ed3811c443ea50"><div class="ttname"><a href="input_8c.html#ab3a5d2363e8c971759ed3811c443ea50">obterTelefone</a></div><div class="ttdeci">int obterTelefone(char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:131</div></div>
+<div class="ttc" id="afuncoes_8c_html_a2a96be80c91241d8f59638f82ef17e45"><div class="ttname"><a href="funcoes_8c.html#a2a96be80c91241d8f59638f82ef17e45">verifica_Telemovel</a></div><div class="ttdeci">int verifica_Telemovel(int numero)</div><div class="ttdef"><b>Definition:</b> funcoes.c:42</div></div>
+<div class="ttc" id="astruct_data_html"><div class="ttname"><a href="struct_data.html">Data</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:111</div></div>
+<div class="ttc" id="ainput_8h_html_ad4831e802b5c013e9563d9c584c88be6"><div class="ttname"><a href="input_8h.html#ad4831e802b5c013e9563d9c584c88be6">obterSalario</a></div><div class="ttdeci">void obterSalario(IRS *irs, int contador, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:212</div></div>
+<div class="ttc" id="ainput_8c_html_aa8f067a5ff0a81c9af0f5fd554750960"><div class="ttname"><a href="input_8c.html#aa8f067a5ff0a81c9af0f5fd554750960">obterInteiro</a></div><div class="ttdeci">int obterInteiro(int minValor, int maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:28</div></div>
+<div class="ttc" id="ainput_8c_html_acf0457ff431a6ac3c752715e778b566e"><div class="ttname"><a href="input_8c.html#acf0457ff431a6ac3c752715e778b566e">obterFloat</a></div><div class="ttdeci">float obterFloat(float minValor, float maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:47</div></div>
+<div class="ttc" id="ainput_8h_html_ae60c947b12296a55faeb377f88b1b4c9"><div class="ttname"><a href="input_8h.html#ae60c947b12296a55faeb377f88b1b4c9">obterDataSaida</a></div><div class="ttdeci">void obterDataSaida(Data *dataSaida, int ano, int mes, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:196</div></div>
+<div class="ttc" id="ainput_8h_html_ae15b6840f5e86d21d0d01c31b5d25cc0"><div class="ttname"><a href="input_8h.html#ae15b6840f5e86d21d0d01c31b5d25cc0">obterChar</a></div><div class="ttdeci">char obterChar(char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:83</div></div>
+<div class="ttc" id="airs_8h_html"><div class="ttname"><a href="irs_8h.html">irs.h</a></div></div>
+<div class="ttc" id="ainput_8c_html_a8deaff72b3466f323d5ffe40426e1ea1"><div class="ttname"><a href="input_8c.html#a8deaff72b3466f323d5ffe40426e1ea1">lerString</a></div><div class="ttdeci">void lerString(char *string, unsigned int tamanho, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:97</div></div>
+<div class="ttc" id="ainput_8h_html_acf0457ff431a6ac3c752715e778b566e"><div class="ttname"><a href="input_8h.html#acf0457ff431a6ac3c752715e778b566e">obterFloat</a></div><div class="ttdeci">float obterFloat(float minValor, float maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:47</div></div>
+<div class="ttc" id="ainput_8c_html_ae60c947b12296a55faeb377f88b1b4c9"><div class="ttname"><a href="input_8c.html#ae60c947b12296a55faeb377f88b1b4c9">obterDataSaida</a></div><div class="ttdeci">void obterDataSaida(Data *dataSaida, int ano, int mes, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:196</div></div>
+<div class="ttc" id="ainput_8h_html_a8deaff72b3466f323d5ffe40426e1ea1"><div class="ttname"><a href="input_8h.html#a8deaff72b3466f323d5ffe40426e1ea1">lerString</a></div><div class="ttdeci">void lerString(char *string, unsigned int tamanho, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:97</div></div>
+<div class="ttc" id="astruct_i_r_s_html"><div class="ttname"><a href="struct_i_r_s.html">IRS</a></div><div class="ttdef"><b>Definition:</b> irs.h:16</div></div>
+<div class="ttc" id="ainput_8h_html_aa8f067a5ff0a81c9af0f5fd554750960"><div class="ttname"><a href="input_8h.html#aa8f067a5ff0a81c9af0f5fd554750960">obterInteiro</a></div><div class="ttdeci">int obterInteiro(int minValor, int maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:28</div></div>
+<div class="ttc" id="ainput_8c_html_ae15b6840f5e86d21d0d01c31b5d25cc0"><div class="ttname"><a href="input_8c.html#ae15b6840f5e86d21d0d01c31b5d25cc0">obterChar</a></div><div class="ttdeci">char obterChar(char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:83</div></div>
+<div class="ttc" id="astruct_data_html_ac404d93cbf0169fd9e89edc17d0c5572"><div class="ttname"><a href="struct_data.html#ac404d93cbf0169fd9e89edc17d0c5572">Data::ano</a></div><div class="ttdeci">int ano</div><div class="ttdef"><b>Definition:</b> funcionario.h:112</div></div>
+<div class="ttc" id="astruct_trabalho_html_a01f4542f957f48ddb9c96b1705c1b6df"><div class="ttname"><a href="struct_trabalho.html#a01f4542f957f48ddb9c96b1705c1b6df">Trabalho::numeroAnos</a></div><div class="ttdeci">int numeroAnos</div><div class="ttdef"><b>Definition:</b> funcionario.h:99</div></div>
+<div class="ttc" id="afuncionario_8h_html_ae04bbc3c97d0b6d22196d29856ac170b"><div class="ttname"><a href="funcionario_8h.html#ae04bbc3c97d0b6d22196d29856ac170b">procurarAnoTrabalho</a></div><div class="ttdeci">int procurarAnoTrabalho(Funcionario *funcionario, int ano, int inicio, int fim)</div><div class="ttdef"><b>Definition:</b> salario.c:94</div></div>
+<div class="ttc" id="ainput_8h_html_a3fa5737cd1ddb22024f6541733d5a1d1"><div class="ttname"><a href="input_8h.html#a3fa5737cd1ddb22024f6541733d5a1d1">obterDataEntrada</a></div><div class="ttdeci">void obterDataEntrada(Data *dataEntrada, Data *dataNasc, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:180</div></div>
+<div class="ttc" id="ainput_8c_html_a21f2b70641e75f55e2bd11550fedd899"><div class="ttname"><a href="input_8c.html#a21f2b70641e75f55e2bd11550fedd899">obterDouble</a></div><div class="ttdeci">double obterDouble(double minValor, double maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:66</div></div>
+<div class="ttc" id="ainput_8c_html_a3fa5737cd1ddb22024f6541733d5a1d1"><div class="ttname"><a href="input_8c.html#a3fa5737cd1ddb22024f6541733d5a1d1">obterDataEntrada</a></div><div class="ttdeci">void obterDataEntrada(Data *dataEntrada, Data *dataNasc, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:180</div></div>
+<div class="ttc" id="ainput_8h_html_a7dac90953bf2709d6153d7503fe3c77e"><div class="ttname"><a href="input_8h.html#a7dac90953bf2709d6153d7503fe3c77e">VALOR_INVALIDO</a></div><div class="ttdeci">#define VALOR_INVALIDO</div><div class="ttdef"><b>Definition:</b> input.h:7</div></div>
+<div class="ttc" id="ainput_8h_html_a21f2b70641e75f55e2bd11550fedd899"><div class="ttname"><a href="input_8h.html#a21f2b70641e75f55e2bd11550fedd899">obterDouble</a></div><div class="ttdeci">double obterDouble(double minValor, double maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:66</div></div>
+<div class="ttc" id="ainput_8c_html_a994fd1c0e4201c7db9cedbd43d2ece7c"><div class="ttname"><a href="input_8c.html#a994fd1c0e4201c7db9cedbd43d2ece7c">obterDataNacimento</a></div><div class="ttdeci">void obterDataNacimento(Data *dataNasc, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:148</div></div>
+<div class="ttc" id="astruct_funcionario_html"><div class="ttname"><a href="struct_funcionario.html">Funcionario</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:115</div></div>
+<div class="ttc" id="ainput_8h_html_acb2f7923e89b8568ef861b155ff06405"><div class="ttname"><a href="input_8h.html#acb2f7923e89b8568ef861b155ff06405">obterSalarioAlterar</a></div><div class="ttdeci">float obterSalarioAlterar(float minValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:241</div></div>
+<div class="ttc" id="ainput_8h_html_a66f28cd8d5fe8c40ffd0e7fca8b748a5"><div class="ttname"><a href="input_8h.html#a66f28cd8d5fe8c40ffd0e7fca8b748a5">obterDataNacimento</a></div><div class="ttdeci">void obterDataNacimento(Data *data, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:148</div></div>
+<div class="ttc" id="ainput_8c_html_a886212c0113dc1ace57c470fb1b9cf5e"><div class="ttname"><a href="input_8c.html#a886212c0113dc1ace57c470fb1b9cf5e">obterAnoFaltas</a></div><div class="ttdeci">int obterAnoFaltas(Funcionario *funcionario, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:278</div></div>
+<div class="ttc" id="ainput_8c_html_acb2f7923e89b8568ef861b155ff06405"><div class="ttname"><a href="input_8c.html#acb2f7923e89b8568ef861b155ff06405">obterSalarioAlterar</a></div><div class="ttdeci">float obterSalarioAlterar(float minValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:241</div></div>
+<div class="ttc" id="ainput_8h_html_a886212c0113dc1ace57c470fb1b9cf5e"><div class="ttname"><a href="input_8h.html#a886212c0113dc1ace57c470fb1b9cf5e">obterAnoFaltas</a></div><div class="ttdeci">int obterAnoFaltas(Funcionario *funcionario, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:278</div></div>
+<div class="ttc" id="ainput_8c_html_ad4831e802b5c013e9563d9c584c88be6"><div class="ttname"><a href="input_8c.html#ad4831e802b5c013e9563d9c584c88be6">obterSalario</a></div><div class="ttdeci">void obterSalario(IRS *irs, int contador, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:212</div></div>
+<div class="ttc" id="ainput_8h_html"><div class="ttname"><a href="input_8h.html">input.h</a></div></div>
+<div class="ttc" id="ainput_8c_html_a90fa44a5b8ae6160a4664638c2baf9c5"><div class="ttname"><a href="input_8c.html#a90fa44a5b8ae6160a4664638c2baf9c5">obterDataNacimento_Alterar</a></div><div class="ttdeci">void obterDataNacimento_Alterar(Data *dataNasc, Data *dataEntrada, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:164</div></div>
+<div class="ttc" id="ainput_8c_html_a0ac0ec7217e9f505f282659c7e149b67"><div class="ttname"><a href="input_8c.html#a0ac0ec7217e9f505f282659c7e149b67">obterIRS_Percentagem</a></div><div class="ttdeci">float obterIRS_Percentagem(float minValor, float maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:260</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="input_8h.html">input.h</a></li>
+    <li class="footer">Gerado por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,280 @@
+\hypertarget{dados_8c}{}\doxysection{Referência ao ficheiro dados.\+c}
+\label{dados_8c}\index{dados.c@{dados.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}dados.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}funcionario.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}funcoes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}irs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}seguranca\+Social.\+h\char`\"{}}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{dados_8c_aaea24a0f92619679ff4dac67f8e66e45}{importar\+Nomes\+Empresas}} (\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, char $\ast$ficheiro)
+\item 
+void \mbox{\hyperlink{dados_8c_a1ce12469c93d539dc596c8d6fa6854ea}{atualizar\+Contador\+Nomes\+Empresas}} (int contador, char $\ast$ficheiro)
+\item 
+void \mbox{\hyperlink{dados_8c_a1daa4e59a92d3762287a7f31120d0ff6}{inserir\+Nome\+Empresa\+FX}} (\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, char $\ast$ficheiro)
+\item 
+void \mbox{\hyperlink{dados_8c_a5f3078dcf3281ccff1ada5ce6a40c070}{adiconar\+Nome\+Empresa}} (\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, char $\ast$nome)
+\item 
+void \mbox{\hyperlink{dados_8c_a931fb81974224710ef6db350c54572bc}{inserir\+Nome\+Empresa}} (\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, char $\ast$nome)
+\item 
+int \mbox{\hyperlink{dados_8c_acbc487e7056014b9da47b3eefef8d513}{pesquisa\+Nome\+Empresa}} (\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, char $\ast$nome)
+\item 
+int \mbox{\hyperlink{dados_8c_a4599813d42c79a5e6315df596df10c5f}{guardar}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+void \mbox{\hyperlink{dados_8c_a6d954d658be28127f89770b7058fb52d}{limpar\+Dados}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas, int limpar\+Nomes\+Empresas)
+\item 
+void \mbox{\hyperlink{dados_8c_a5dcd42e555de1708bc92bb9ab6890659}{importar}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+void \mbox{\hyperlink{dados_8c_a62ab48e95f56e7828d64aed268e6703b}{adicionar\+Salario\+Relatorio\+Final}} (\mbox{\hyperlink{struct_mes}{Mes}} $\ast$mes, \mbox{\hyperlink{struct_mes}{Mes}} dados)
+\item 
+void \mbox{\hyperlink{dados_8c_a8a6a3f4df09ae5dbbe5f0a79cf08fa2b}{adicionar\+Salario\+Relatorio\+Mes}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario, int id\+Ano, \mbox{\hyperlink{struct_mes}{Mes}} dados)
+\item 
+void \mbox{\hyperlink{dados_8c_a42c9d4acb9ad16c8032d5c8adacee2fe}{adicionar\+Salario\+Relatorio}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, int codigo\+Funcionario, int ano, \mbox{\hyperlink{struct_mes}{Mes}} dados)
+\item 
+void \mbox{\hyperlink{dados_8c_a9fedb041e4fcfa8404f0ed609ba4816a}{importar\+Relatorio\+Final}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas)
+\item 
+void \mbox{\hyperlink{dados_8c_a997d32e1a256c1920e49a857ba419adb}{importar\+Relatorio}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas)
+\item 
+void \mbox{\hyperlink{dados_8c_ade2502ff810e9171941b6b143e9d35c9}{exportar\+Relatorio\+Final}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas)
+\item 
+void \mbox{\hyperlink{dados_8c_a1e41189e2b30954508c4f32d6c1ae093}{exportar\+Relatorio}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{dados_8c_a42c9d4acb9ad16c8032d5c8adacee2fe}\label{dados_8c_a42c9d4acb9ad16c8032d5c8adacee2fe}} 
+\index{dados.c@{dados.c}!adicionarSalarioRelatorio@{adicionarSalarioRelatorio}}
+\index{adicionarSalarioRelatorio@{adicionarSalarioRelatorio}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{adicionarSalarioRelatorio()}{adicionarSalarioRelatorio()}}
+{\footnotesize\ttfamily void adicionar\+Salario\+Relatorio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{int}]{codigo\+Funcionario,  }\item[{int}]{ano,  }\item[{\mbox{\hyperlink{struct_mes}{Mes}}}]{dados }\end{DoxyParamCaption})}
+
+Esta função se necessário aloca espaços no apontador mês e no ano, e se tiver espaço chama a função \char`\"{}adicionar\+Salario\+Relatorio\+Final\char`\"{} 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador com os dados de todos os funcionarios \\
+\hline
+{\em codigo\+Funcionario} & -\/ Inteiro com o código do funcionario \\
+\hline
+{\em ano} & -\/ Inteiro com o ano \\
+\hline
+{\em dados} & -\/ dados do salário \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_a62ab48e95f56e7828d64aed268e6703b}\label{dados_8c_a62ab48e95f56e7828d64aed268e6703b}} 
+\index{dados.c@{dados.c}!adicionarSalarioRelatorioFinal@{adicionarSalarioRelatorioFinal}}
+\index{adicionarSalarioRelatorioFinal@{adicionarSalarioRelatorioFinal}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{adicionarSalarioRelatorioFinal()}{adicionarSalarioRelatorioFinal()}}
+{\footnotesize\ttfamily void adicionar\+Salario\+Relatorio\+Final (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mes}{Mes}} $\ast$}]{mes,  }\item[{\mbox{\hyperlink{struct_mes}{Mes}}}]{dados }\end{DoxyParamCaption})}
+
+Esta função passa os dados de uma variável com os dados de um mês de salário para a memória dinâmica com todos os salários. 
+\begin{DoxyParams}{Parâmetros}
+{\em mes} & -\/ apontador com os dados de um salário da memória dinâmica \\
+\hline
+{\em dados} & -\/ variavel com os dados de um salário \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_a8a6a3f4df09ae5dbbe5f0a79cf08fa2b}\label{dados_8c_a8a6a3f4df09ae5dbbe5f0a79cf08fa2b}} 
+\index{dados.c@{dados.c}!adicionarSalarioRelatorioMes@{adicionarSalarioRelatorioMes}}
+\index{adicionarSalarioRelatorioMes@{adicionarSalarioRelatorioMes}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{adicionarSalarioRelatorioMes()}{adicionarSalarioRelatorioMes()}}
+{\footnotesize\ttfamily void adicionar\+Salario\+Relatorio\+Mes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario,  }\item[{int}]{id\+Ano,  }\item[{\mbox{\hyperlink{struct_mes}{Mes}}}]{dados }\end{DoxyParamCaption})}
+
+Esta função se necessário aloca mais memória ao apontador para poder adicionar mais salários, de seguida chama a função \char`\"{}adicionar\+Salario\+Relatorio\+Final\char`\"{} 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador com o funcionário que vai adicionar mais um sálario \\
+\hline
+{\em id\+Ano} & -\/ id do ano que vai adicionar esse salário \\
+\hline
+{\em dados} & -\/ dados do salário \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_a5f3078dcf3281ccff1ada5ce6a40c070}\label{dados_8c_a5f3078dcf3281ccff1ada5ce6a40c070}} 
+\index{dados.c@{dados.c}!adiconarNomeEmpresa@{adiconarNomeEmpresa}}
+\index{adiconarNomeEmpresa@{adiconarNomeEmpresa}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{adiconarNomeEmpresa()}{adiconarNomeEmpresa()}}
+{\footnotesize\ttfamily void adiconar\+Nome\+Empresa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{char $\ast$}]{nome }\end{DoxyParamCaption})}
+
+Função utilizada para adicionar ao apontador o nome de uma empresa. 
+\begin{DoxyParams}{Parâmetros}
+{\em nomes\+Empresas} & -\/ apontador onde será armazenado o nome da empresa. \\
+\hline
+{\em nome} & -\/ nome da empresa a ser adicionada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_a1ce12469c93d539dc596c8d6fa6854ea}\label{dados_8c_a1ce12469c93d539dc596c8d6fa6854ea}} 
+\index{dados.c@{dados.c}!atualizarContadorNomesEmpresas@{atualizarContadorNomesEmpresas}}
+\index{atualizarContadorNomesEmpresas@{atualizarContadorNomesEmpresas}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{atualizarContadorNomesEmpresas()}{atualizarContadorNomesEmpresas()}}
+{\footnotesize\ttfamily void atualizar\+Contador\+Nomes\+Empresas (\begin{DoxyParamCaption}\item[{int}]{contador,  }\item[{char $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+Função utilizada para atualizar o contador do ficheiro que contém os nomes de todas as empresas. 
+\begin{DoxyParams}{Parâmetros}
+{\em contador} & -\/ valor correspondente ao contador que vai ser atualizado no ficheiro. \\
+\hline
+{\em ficheiro} & -\/ nome do ficheiro que contém os nomes de todas as empresas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_a1e41189e2b30954508c4f32d6c1ae093}\label{dados_8c_a1e41189e2b30954508c4f32d6c1ae093}} 
+\index{dados.c@{dados.c}!exportarRelatorio@{exportarRelatorio}}
+\index{exportarRelatorio@{exportarRelatorio}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{exportarRelatorio()}{exportarRelatorio()}}
+{\footnotesize\ttfamily void exportar\+Relatorio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Está função verifica se o utilizador ja tem alguma empresa atribuida e senão pede para a criar, de seguida chama a função \char`\"{}exportar\+Relatorio\+Final\char`\"{} 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador com todos os funcionarios \\
+\hline
+{\em irsdados} & -\/ apontador com todos os dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}} \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador com os nomes das empresas(nome das pasta) \\
+\hline
+{\em taxas\+Contributivas} & -\/ apontador com as Taxas de Contribuinte \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_ade2502ff810e9171941b6b143e9d35c9}\label{dados_8c_ade2502ff810e9171941b6b143e9d35c9}} 
+\index{dados.c@{dados.c}!exportarRelatorioFinal@{exportarRelatorioFinal}}
+\index{exportarRelatorioFinal@{exportarRelatorioFinal}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{exportarRelatorioFinal()}{exportarRelatorioFinal()}}
+{\footnotesize\ttfamily void exportar\+Relatorio\+Final (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas }\end{DoxyParamCaption})}
+
+Está função exporta os salarios de um mês especifico para um ficheiro txt em formato de relatorio 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador com todos o funcionarios \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador com os nomes das empresas(nomes das pasta) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_a4599813d42c79a5e6315df596df10c5f}\label{dados_8c_a4599813d42c79a5e6315df596df10c5f}} 
+\index{dados.c@{dados.c}!guardar@{guardar}}
+\index{guardar@{guardar}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{guardar()}{guardar()}}
+{\footnotesize\ttfamily int guardar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Função utilizada para guardar todos os dados de uma empresa em ficheiros (dados dos funcionarios, \mbox{\hyperlink{struct_i_r_s}{I\+RS}}, segurança social). 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram armazenados os dados de todos os funcionários. \\
+\hline
+{\em irsdados} & -\/ apontador onde se encontram armazenados os dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador onde se encontram armazenados os nomes das empresas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_a5dcd42e555de1708bc92bb9ab6890659}\label{dados_8c_a5dcd42e555de1708bc92bb9ab6890659}} 
+\index{dados.c@{dados.c}!importar@{importar}}
+\index{importar@{importar}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{importar()}{importar()}}
+{\footnotesize\ttfamily void importar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Função utilizada para importar todos os dados de uma determinada empresa (dados dos funcionarios, \mbox{\hyperlink{struct_i_r_s}{I\+RS}}, segurança social). 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde serão armazenados os dados dos funcionários. \\
+\hline
+{\em irsdados} & -\/ apontador onde serão armazenados os dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador onde se encontram os nomes das empresas, utilizado para selecionar uma empresa já armazenada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_aaea24a0f92619679ff4dac67f8e66e45}\label{dados_8c_aaea24a0f92619679ff4dac67f8e66e45}} 
+\index{dados.c@{dados.c}!importarNomesEmpresas@{importarNomesEmpresas}}
+\index{importarNomesEmpresas@{importarNomesEmpresas}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{importarNomesEmpresas()}{importarNomesEmpresas()}}
+{\footnotesize\ttfamily void importar\+Nomes\+Empresas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{char $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+Função utilizada para importar os nomes das empresas de um ficheiro. 
+\begin{DoxyParams}{Parâmetros}
+{\em nomes\+Empresas} & -\/ apontador onde serão armazenados os nomes das empresas. \\
+\hline
+{\em ficheiro} & -\/ nome do ficheiro que contém os nomes de todas as empresas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_a997d32e1a256c1920e49a857ba419adb}\label{dados_8c_a997d32e1a256c1920e49a857ba419adb}} 
+\index{dados.c@{dados.c}!importarRelatorio@{importarRelatorio}}
+\index{importarRelatorio@{importarRelatorio}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{importarRelatorio()}{importarRelatorio()}}
+{\footnotesize\ttfamily void importar\+Relatorio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas }\end{DoxyParamCaption})}
+
+Esta função verifica se a empresa já foi guardada e se sim chama a função \char`\"{}importar\+Relatorio\+Final\char`\"{} 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador com todos os funcionarios \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador com os nomes das empresas(nome das pasta) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_a9fedb041e4fcfa8404f0ed609ba4816a}\label{dados_8c_a9fedb041e4fcfa8404f0ed609ba4816a}} 
+\index{dados.c@{dados.c}!importarRelatorioFinal@{importarRelatorioFinal}}
+\index{importarRelatorioFinal@{importarRelatorioFinal}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{importarRelatorioFinal()}{importarRelatorioFinal()}}
+{\footnotesize\ttfamily void importar\+Relatorio\+Final (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas }\end{DoxyParamCaption})}
+
+Esta função pergunta ao utilizador qual o mês que pretende importar, ~\newline
+ se existir importa esses dados do ficheiro e de seguida chama a função \char`\"{}adicionar\+Salario\+Relatorio\char`\"{} 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & \\
+\hline
+{\em nomes\+Empresas} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_a931fb81974224710ef6db350c54572bc}\label{dados_8c_a931fb81974224710ef6db350c54572bc}} 
+\index{dados.c@{dados.c}!inserirNomeEmpresa@{inserirNomeEmpresa}}
+\index{inserirNomeEmpresa@{inserirNomeEmpresa}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{inserirNomeEmpresa()}{inserirNomeEmpresa()}}
+{\footnotesize\ttfamily void inserir\+Nome\+Empresa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{char $\ast$}]{nome }\end{DoxyParamCaption})}
+
+Função utilizada para, caso necessário, alocar espaço para os nomes das empresas e chamar a função \char`\"{}adicionar\+Nome\+Empresa\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em nomes\+Empresas} & -\/ apontador onde será armazenado o nome da empresa. \\
+\hline
+{\em nome} & -\/ nome da empresa a ser adicionada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_a1daa4e59a92d3762287a7f31120d0ff6}\label{dados_8c_a1daa4e59a92d3762287a7f31120d0ff6}} 
+\index{dados.c@{dados.c}!inserirNomeEmpresaFX@{inserirNomeEmpresaFX}}
+\index{inserirNomeEmpresaFX@{inserirNomeEmpresaFX}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{inserirNomeEmpresaFX()}{inserirNomeEmpresaFX()}}
+{\footnotesize\ttfamily void inserir\+Nome\+Empresa\+FX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{char $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+Função utilizada para exportar o nome de todas as empresas para o ficheiro indicado. 
+\begin{DoxyParams}{Parâmetros}
+{\em nomes\+Empresas} & -\/ apontador onde se encontram armazenados os nomes das empresas. \\
+\hline
+{\em ficheiro} & -\/ nome do ficheiro onde serão exportados os nomes de todas as empresas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_a6d954d658be28127f89770b7058fb52d}\label{dados_8c_a6d954d658be28127f89770b7058fb52d}} 
+\index{dados.c@{dados.c}!limparDados@{limparDados}}
+\index{limparDados@{limparDados}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{limparDados()}{limparDados()}}
+{\footnotesize\ttfamily void limpar\+Dados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas,  }\item[{int}]{limpar\+Nomes\+Empresas }\end{DoxyParamCaption})}
+
+Função utilizada para libertar a memória de todo o programa. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram armazenados os dados de todos os funcionários. \\
+\hline
+{\em irsdados} & -\/ apontador onde se encontram armazenados os dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador onde se encontram armazenados os nomes das empresas. \\
+\hline
+{\em taxas\+Contributivas} & \\
+\hline
+{\em limpar\+Nomes\+Empresas} & -\/ 1 (caso seja para limpar a memória do apontador \char`\"{}nomes\+Empresas\char`\"{}) ou 0 (caso não seja para limpar a memória do apontador \char`\"{}nomes\+Empresas\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8c_acbc487e7056014b9da47b3eefef8d513}\label{dados_8c_acbc487e7056014b9da47b3eefef8d513}} 
+\index{dados.c@{dados.c}!pesquisaNomeEmpresa@{pesquisaNomeEmpresa}}
+\index{pesquisaNomeEmpresa@{pesquisaNomeEmpresa}!dados.c@{dados.c}}
+\doxysubsubsection{\texorpdfstring{pesquisaNomeEmpresa()}{pesquisaNomeEmpresa()}}
+{\footnotesize\ttfamily int pesquisa\+Nome\+Empresa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{char $\ast$}]{nome }\end{DoxyParamCaption})}
+
+Função utilizada para pesquisar o nome de uma empresa. 
+\begin{DoxyParams}{Parâmetros}
+{\em nomes\+Empresas} & -\/ apontador onde se encontram armazenados os nomes das empresas. \\
+\hline
+{\em nome} & -\/ nome da empresa a ser pesquisado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+indice do nome da empresa (caso seja encontrado) ou -\/1 (caso não seja encontrado). 
+\end{DoxyReturn}

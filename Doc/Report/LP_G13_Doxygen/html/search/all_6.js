@@ -1,0 +1,16 @@
+var searchData=
+[
+  ['getanoatual_81',['getAnoAtual',['../funcoes_8c.html#a3fdcca4005a91688d1c43b900a342900',1,'getAnoAtual():&#160;funcoes.c'],['../funcoes_8h.html#a3fdcca4005a91688d1c43b900a342900',1,'getAnoAtual():&#160;funcoes.c']]],
+  ['getdiasemana_82',['getDiaSemana',['../funcoes_8c.html#a3458fdc2d3b6cae2d90c7558bb673c4f',1,'funcoes.c']]],
+  ['getdiasfinssemana_83',['getDiasFinsSemana',['../funcoes_8c.html#af5921164738a2a3bfe3bb3c60d36fedb',1,'getDiasFinsSemana(int mes, int ano):&#160;funcoes.c'],['../funcoes_8h.html#af5921164738a2a3bfe3bb3c60d36fedb',1,'getDiasFinsSemana(int mes, int ano):&#160;funcoes.c']]],
+  ['getirs_84',['getIrs',['../irs_8c.html#a0cf57e332eba99ce7af95208d88ee0ea',1,'getIrs(IRSDados *irsdados, float salario, int nFilhos, int estadoCivil):&#160;irs.c'],['../irs_8h.html#a0cf57e332eba99ce7af95208d88ee0ea',1,'getIrs(IRSDados *irsdados, float salario, int nFilhos, int estadoCivil):&#160;irs.c']]],
+  ['getirsfinal_85',['getIrsFinal',['../irs_8c.html#ab38ae9fa522c15f3ccc6cc655e826054',1,'irs.c']]],
+  ['getmesatualatualizar_86',['getMesAtualAtualizar',['../salario_8c.html#adf497e79fdc5ea79f49036da508f8d87',1,'salario.c']]],
+  ['getnumerodiasmes_87',['getNumeroDiasMes',['../funcoes_8c.html#a24a3a9e51fbbf4091829c84fe54af3d3',1,'getNumeroDiasMes(int mes, int ano):&#160;funcoes.c'],['../funcoes_8h.html#a24a3a9e51fbbf4091829c84fe54af3d3',1,'getNumeroDiasMes(int mes, int ano):&#160;funcoes.c']]],
+  ['getpalavra_88',['getPalavra',['../funcoes_8c.html#a1bd1bd302627216ca9c09539dfb97c61',1,'funcoes.c']]],
+  ['gettaxacontributiva_89',['getTaxaContributiva',['../funcionario_8h.html#a57087df0e59334dad2fbe88d702444ee',1,'getTaxaContributiva(TaxasContributivas *taxasContributivas, Funcionario *funcionario, int idade, int anosTrabalho):&#160;funcoes.c'],['../funcoes_8c.html#a57087df0e59334dad2fbe88d702444ee',1,'getTaxaContributiva(TaxasContributivas *taxasContributivas, Funcionario *funcionario, int idade, int anosTrabalho):&#160;funcoes.c'],['../funcoes_8h.html#a57087df0e59334dad2fbe88d702444ee',1,'getTaxaContributiva(TaxasContributivas *taxasContributivas, Funcionario *funcionario, int idade, int anosTrabalho):&#160;funcoes.c']]],
+  ['global_90',['Global',['../struct_taxa_contributiva.html#ad2c3f15f3c8255876fe585794157f79a',1,'TaxaContributiva']]],
+  ['guardados_5fsucesso_91',['GUARDADOS_SUCESSO',['../dados_8h.html#ad22cb034b4e391078799966926beb6c0',1,'dados.h']]],
+  ['guardar_92',['guardar',['../dados_8c.html#a4599813d42c79a5e6315df596df10c5f',1,'guardar(Empresa *empresa, IRSDados *irsdados, NomesEmpresas *nomesEmpresas, TaxasContributivas *taxasContributivas):&#160;dados.c'],['../dados_8h.html#a4599813d42c79a5e6315df596df10c5f',1,'guardar(Empresa *empresa, IRSDados *irsdados, NomesEmpresas *nomesEmpresas, TaxasContributivas *taxasContributivas):&#160;dados.c']]],
+  ['guardardadosficheirotaxascontributivas_93',['guardarDadosFicheiroTaxasContributivas',['../seguranca_social_8c.html#af166ae1919dda9883691768c46ef082a',1,'guardarDadosFicheiroTaxasContributivas(TaxasContributivas *taxasContributivas, char *nomeFicheiro):&#160;segurancaSocial.c'],['../seguranca_social_8h.html#af166ae1919dda9883691768c46ef082a',1,'guardarDadosFicheiroTaxasContributivas(TaxasContributivas *taxasContributivas, char *nomeFicheiro):&#160;segurancaSocial.c']]]
+];

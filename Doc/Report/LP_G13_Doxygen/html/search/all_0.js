@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['addidfuncionario_0',['addIdFuncionario',['../funcionario_8c.html#a70a9d51dabcc65fb533cc61dd207dfd2',1,'funcionario.c']]],
+  ['adicionarano_1',['adicionarAno',['../funcionario_8h.html#ab035ced65eafc9cfc3749f4dbca95a50',1,'adicionarAno(Funcionario *funcionario, int *idAno, int ano):&#160;salario.c'],['../salario_8c.html#ab035ced65eafc9cfc3749f4dbca95a50',1,'adicionarAno(Funcionario *funcionario, int *idAno, int ano):&#160;salario.c']]],
+  ['adicionarnovataxacontributiva_2',['adicionarNovaTaxaContributiva',['../seguranca_social_8c.html#a3f3e39a78a57a1267b13c46b36e66dfb',1,'segurancaSocial.c']]],
+  ['adicionarsalariorelatorio_3',['adicionarSalarioRelatorio',['../dados_8c.html#a42c9d4acb9ad16c8032d5c8adacee2fe',1,'dados.c']]],
+  ['adicionarsalariorelatoriofinal_4',['adicionarSalarioRelatorioFinal',['../dados_8c.html#a62ab48e95f56e7828d64aed268e6703b',1,'dados.c']]],
+  ['adicionarsalariorelatoriomes_5',['adicionarSalarioRelatorioMes',['../dados_8c.html#a8a6a3f4df09ae5dbbe5f0a79cf08fa2b',1,'dados.c']]],
+  ['adicionartabelairs_6',['adicionarTabelaIRS',['../irs_8c.html#ab2fafe7dd02622bbd557d0ab308b4b2a',1,'adicionarTabelaIRS(IRS **irs, int *contador, int *tam):&#160;irs.c'],['../irs_8h.html#ab2fafe7dd02622bbd557d0ab308b4b2a',1,'adicionarTabelaIRS(IRS **irs, int *contador, int *tam):&#160;irs.c']]],
+  ['adicionartaxacontributiva_7',['adicionarTaxaContributiva',['../seguranca_social_8c.html#a8e2bf700f0e9e7eafbfac3e9a5d93611',1,'adicionarTaxaContributiva(TaxasContributivas *taxasContributivas):&#160;segurancaSocial.c'],['../seguranca_social_8h.html#a8e2bf700f0e9e7eafbfac3e9a5d93611',1,'adicionarTaxaContributiva(TaxasContributivas *taxasContributivas):&#160;segurancaSocial.c']]],
+  ['adiconarnomeempresa_8',['adiconarNomeEmpresa',['../dados_8c.html#a5f3078dcf3281ccff1ada5ce6a40c070',1,'dados.c']]],
+  ['administrador_9',['Administrador',['../funcionario_8h.html#ad202395025143887571b4a5f857b1ac1a45b323a155f54a459e70b06c40c9b1b9',1,'funcionario.h']]],
+  ['almoco_10',['almoco',['../struct_mes.html#af8cecbf9ce858f54e97e0b4ac38897af',1,'Mes']]],
+  ['alterarirspercentagens_11',['alterarIRSPercentagens',['../irs_8c.html#aa3d7e7560dc00eab8f00165ca94d8a36',1,'irs.c']]],
+  ['alterarirssalario_12',['alterarIRSSalario',['../irs_8c.html#a14949b60a3d21b123b782269eeb86cd3',1,'irs.c']]],
+  ['alterartabelairs_13',['alterarTabelaIRS',['../irs_8c.html#aefb925e2ffcb9f5af6def6115dc514a6',1,'alterarTabelaIRS(IRS **irs, int *contador):&#160;irs.c'],['../irs_8h.html#aefb925e2ffcb9f5af6def6115dc514a6',1,'alterarTabelaIRS(IRS **irs, int *contador):&#160;irs.c']]],
+  ['ano_14',['Ano',['../struct_ano.html',1,'Ano'],['../struct_ano.html#ac404d93cbf0169fd9e89edc17d0c5572',1,'Ano::ano()'],['../struct_data.html#ac404d93cbf0169fd9e89edc17d0c5572',1,'Data::ano()']]],
+  ['anos_15',['anos',['../struct_trabalho.html#ade8b1b3b7e7ac58a9082e8020972f636',1,'Trabalho']]],
+  ['anosempresa_16',['anosEmpresa',['../struct_taxa_contributiva.html#a0269e490cc0f674eb34864b01f7decec',1,'TaxaContributiva']]],
+  ['apagardadosirs_17',['apagarDadosIRS',['../irs_8c.html#ab8400c9a091be9ee5fc83095f63bef7f',1,'irs.c']]],
+  ['armazenadados_18',['armazenaDados',['../funcionario_8c.html#a9d3b73d4bdecaa1652b9071fc5633edf',1,'armazenaDados(Empresa *empresa, char *ficheiro):&#160;funcionario.c'],['../funcionario_8h.html#a9d3b73d4bdecaa1652b9071fc5633edf',1,'armazenaDados(Empresa *empresa, char *ficheiro):&#160;funcionario.c']]],
+  ['atualizacontador_19',['atualizacontador',['../funcionario_8c.html#a526444a203d8eb3813ec3347d996590b',1,'funcionario.c']]],
+  ['atualizarcontadornomesempresas_20',['atualizarContadorNomesEmpresas',['../dados_8c.html#a1ce12469c93d539dc596c8d6fa6854ea',1,'dados.c']]],
+  ['atualizarficheiroirs_21',['atualizarFicheiroIRS',['../irs_8c.html#a7307041024bd9df6acc3e94613550235',1,'atualizarFicheiroIRS(IRS *irs, int contador, char *nomeFicheiro):&#160;irs.c'],['../irs_8h.html#a7307041024bd9df6acc3e94613550235',1,'atualizarFicheiroIRS(IRS *irs, int contador, char *nomeFicheiro):&#160;irs.c']]],
+  ['atualizarfuncionario_22',['atualizarFuncionario',['../funcionario_8c.html#af132ff999dfb4743d061f80bb984c2ce',1,'funcionario.c']]],
+  ['atualizarfuncionarios_23',['atualizarFuncionarios',['../funcionario_8c.html#a3e81c1d0b09c4bb0fe0f76cec5269b59',1,'atualizarFuncionarios(Empresa *empresa):&#160;funcionario.c'],['../funcionario_8h.html#a3e81c1d0b09c4bb0fe0f76cec5269b59',1,'atualizarFuncionarios(Empresa *empresa):&#160;funcionario.c']]],
+  ['atualizartaxacontributiva_24',['atualizarTaxaContributiva',['../seguranca_social_8c.html#a63660fc38a332c98244bf52a1af52673',1,'atualizarTaxaContributiva(TaxasContributivas *taxasContributivas):&#160;segurancaSocial.c'],['../seguranca_social_8h.html#a63660fc38a332c98244bf52a1af52673',1,'atualizarTaxaContributiva(TaxasContributivas *taxasContributivas):&#160;segurancaSocial.c']]]
+];

@@ -1,0 +1,370 @@
+\hypertarget{funcoes_8c}{}\doxysection{Referência ao ficheiro funcoes.\+c}
+\label{funcoes_8c}\index{funcoes.c@{funcoes.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+{\ttfamily \#include $<$ctype.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}funcoes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}irs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}seguranca\+Social.\+h\char`\"{}}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{funcoes_8c_aac0a5840b5a421f4f30a0a3015485380}{numero\+\_\+digitos}} (int n)
+\item 
+int \mbox{\hyperlink{funcoes_8c_a3076524f5392bf8c8782c34e7192d78b}{primeiros\+Digitos}} (int n, int nd)
+\item 
+int \mbox{\hyperlink{funcoes_8c_a2a96be80c91241d8f59638f82ef17e45}{verifica\+\_\+\+Telemovel}} (int numero)
+\item 
+void \mbox{\hyperlink{funcoes_8c_a6d48c6ef129e0dd4260cfd45e5b0ee99}{limpar}} ()
+\item 
+int \mbox{\hyperlink{funcoes_8c_ada8473a21b2f5de79ee5365dc16d172b}{verifica\+Ano\+Bissexto}} (int ano)
+\item 
+int \mbox{\hyperlink{funcoes_8c_a24a3a9e51fbbf4091829c84fe54af3d3}{get\+Numero\+Dias\+Mes}} (int mes, int ano)
+\item 
+int \mbox{\hyperlink{funcoes_8c_a3458fdc2d3b6cae2d90c7558bb673c4f}{get\+Dia\+Semana}} (int dia, int mes, int ano)
+\item 
+int \mbox{\hyperlink{funcoes_8c_af5921164738a2a3bfe3bb3c60d36fedb}{get\+Dias\+Fins\+Semana}} (int mes, int ano)
+\item 
+int \mbox{\hyperlink{funcoes_8c_a4f0443a8256a2b8272544304ec7795c2}{verifica\+Data\+Nascimento}} (int dia, int mes, int ano)
+\item 
+int \mbox{\hyperlink{funcoes_8c_a3fdcca4005a91688d1c43b900a342900}{get\+Ano\+Atual}} ()
+\item 
+int \mbox{\hyperlink{funcoes_8c_af360cb0f8ee6384016daa42f83177a5e}{verifica\+Data\+Saida}} (\mbox{\hyperlink{struct_data}{Data}} $\ast$data\+Saida, \mbox{\hyperlink{struct_data}{Data}} $\ast$data\+Entrada)
+\item 
+void \mbox{\hyperlink{funcoes_8c_ade6182e633a4d83d978fa876eac8969b}{minuscula}} (char $\ast$s)
+\item 
+int \mbox{\hyperlink{funcoes_8c_a2b1a7498b436cc545afb7e950aa99fae}{tamanho\+String}} (char $\ast$s)
+\item 
+int \mbox{\hyperlink{funcoes_8c_a448f090df1c73924116ba869c04e4307}{verifica\+String}} (char $\ast$s1, char $\ast$s2)
+\item 
+void \mbox{\hyperlink{funcoes_8c_a1bd1bd302627216ca9c09539dfb97c61}{get\+Palavra}} (char $\ast$s1, char $\ast$s2, int posicao\+Palavra)
+\item 
+int \mbox{\hyperlink{funcoes_8c_ac07713fe73c72054f31722dad245d90d}{contar\+Palavras}} (char $\ast$string)
+\item 
+int \mbox{\hyperlink{funcoes_8c_a3a0f12435f7b31196770f7fd55618959}{verificar\+Palavras}} (char $\ast$frase, char $\ast$verifica)
+\item 
+void \mbox{\hyperlink{funcoes_8c_a556e09ade87e7e0bc600868a7810b60d}{juntar2\+Strings}} (char $\ast$s1, char $\ast$s2)
+\item 
+void \mbox{\hyperlink{funcoes_8c_a5d99b14c6c7670ffec4e2fe2dd7aeb7b}{juntar4\+Strings}} (char $\ast$s1, char $\ast$s2, char $\ast$s3, char $\ast$s4)
+\item 
+int \mbox{\hyperlink{funcoes_8c_a9d56b19a8efb07ad22b5172e1ee81e08}{idade\+Fim\+Mes}} (int mes, int ano, int mes\+Atual, int ano\+Atual)
+\item 
+int \mbox{\hyperlink{funcoes_8c_a57087df0e59334dad2fbe88d702444ee}{get\+Taxa\+Contributiva}} (\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas, \mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario, int idade, int anos\+Trabalho)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{funcoes_8c_ac07713fe73c72054f31722dad245d90d}\label{funcoes_8c_ac07713fe73c72054f31722dad245d90d}} 
+\index{funcoes.c@{funcoes.c}!contarPalavras@{contarPalavras}}
+\index{contarPalavras@{contarPalavras}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{contarPalavras()}{contarPalavras()}}
+{\footnotesize\ttfamily int contar\+Palavras (\begin{DoxyParamCaption}\item[{char $\ast$}]{string }\end{DoxyParamCaption})}
+
+Função utilizada para contar as palavras de uma string. 
+\begin{DoxyParams}{Parâmetros}
+{\em string} & -\/ apontador onde se encontra a string a ser verificada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor correspondente ao número de palavras. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_a3fdcca4005a91688d1c43b900a342900}\label{funcoes_8c_a3fdcca4005a91688d1c43b900a342900}} 
+\index{funcoes.c@{funcoes.c}!getAnoAtual@{getAnoAtual}}
+\index{getAnoAtual@{getAnoAtual}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{getAnoAtual()}{getAnoAtual()}}
+{\footnotesize\ttfamily int get\+Ano\+Atual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Função utilizada para obter o ano atual, através da utilização da libraria \char`\"{}time.\+h\char`\"{}. \begin{DoxyReturn}{Retorna}
+valor correspondente ao ano atual. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_a3458fdc2d3b6cae2d90c7558bb673c4f}\label{funcoes_8c_a3458fdc2d3b6cae2d90c7558bb673c4f}} 
+\index{funcoes.c@{funcoes.c}!getDiaSemana@{getDiaSemana}}
+\index{getDiaSemana@{getDiaSemana}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{getDiaSemana()}{getDiaSemana()}}
+{\footnotesize\ttfamily int get\+Dia\+Semana (\begin{DoxyParamCaption}\item[{int}]{dia,  }\item[{int}]{mes,  }\item[{int}]{ano }\end{DoxyParamCaption})}
+
+Função baseada na resposta do user3386109 neste site \href{https://stackoverflow.com/questions/28520421/c-comma-in-ternary-statement}{\texttt{ https\+://stackoverflow.\+com/questions/28520421/c-\/comma-\/in-\/ternary-\/statement}} Função utilizada para obter o dia da semana. 
+\begin{DoxyParams}{Parâmetros}
+{\em dia} & -\/ valor correspondente ao dia do qual se pretende obter o dia da semana. \\
+\hline
+{\em mes} & -\/ valor correspondente ao mes do qual se pretende obter o dia da semana. \\
+\hline
+{\em ano} & -\/ valor correspondente ao ano do qual se pretende obter o dia da semana. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor entre 0 e 6\+: 0 (Domingo), 6 (Sexta). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_af5921164738a2a3bfe3bb3c60d36fedb}\label{funcoes_8c_af5921164738a2a3bfe3bb3c60d36fedb}} 
+\index{funcoes.c@{funcoes.c}!getDiasFinsSemana@{getDiasFinsSemana}}
+\index{getDiasFinsSemana@{getDiasFinsSemana}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{getDiasFinsSemana()}{getDiasFinsSemana()}}
+{\footnotesize\ttfamily int get\+Dias\+Fins\+Semana (\begin{DoxyParamCaption}\item[{int}]{mes,  }\item[{int}]{ano }\end{DoxyParamCaption})}
+
+Função utilizada para obter o número de dias de fim de semana de um mês. 
+\begin{DoxyParams}{Parâmetros}
+{\em mes} & -\/ valor correspondente ao mês do qual se pretende obter o numero de dias de fim de semana. \\
+\hline
+{\em ano} & -\/ valor correspondente ao ano do qual se pretende obter o numero de dias de fim de semana. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor correspondente ao número de dias de fim de semana de um mês. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_a24a3a9e51fbbf4091829c84fe54af3d3}\label{funcoes_8c_a24a3a9e51fbbf4091829c84fe54af3d3}} 
+\index{funcoes.c@{funcoes.c}!getNumeroDiasMes@{getNumeroDiasMes}}
+\index{getNumeroDiasMes@{getNumeroDiasMes}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{getNumeroDiasMes()}{getNumeroDiasMes()}}
+{\footnotesize\ttfamily int get\+Numero\+Dias\+Mes (\begin{DoxyParamCaption}\item[{int}]{mes,  }\item[{int}]{ano }\end{DoxyParamCaption})}
+
+Função utilizada para obter o número de dias de um mês. 
+\begin{DoxyParams}{Parâmetros}
+{\em mes} & -\/ valor correspondente ao mês do qual se pretende obter o numero de dias. \\
+\hline
+{\em ano} & -\/ valor correspondente ao ano do qual se pretende obter o número de dias de um mês. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor correspondente ao número de dias do mês pretendido. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_a1bd1bd302627216ca9c09539dfb97c61}\label{funcoes_8c_a1bd1bd302627216ca9c09539dfb97c61}} 
+\index{funcoes.c@{funcoes.c}!getPalavra@{getPalavra}}
+\index{getPalavra@{getPalavra}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{getPalavra()}{getPalavra()}}
+{\footnotesize\ttfamily void get\+Palavra (\begin{DoxyParamCaption}\item[{char $\ast$}]{s1,  }\item[{char $\ast$}]{s2,  }\item[{int}]{posicao\+Palavra }\end{DoxyParamCaption})}
+
+Função utilizada para obter uma palavra de uma string. 
+\begin{DoxyParams}{Parâmetros}
+{\em s1} & -\/ apontador onde se encontra a palavra a ser retirada \\
+\hline
+{\em s2} & -\/ apontador onde vai ser guardada a palavra \\
+\hline
+{\em posicao\+Palavra} & -\/ valor correspondente à posição da palavra. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcoes_8c_a57087df0e59334dad2fbe88d702444ee}\label{funcoes_8c_a57087df0e59334dad2fbe88d702444ee}} 
+\index{funcoes.c@{funcoes.c}!getTaxaContributiva@{getTaxaContributiva}}
+\index{getTaxaContributiva@{getTaxaContributiva}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{getTaxaContributiva()}{getTaxaContributiva()}}
+{\footnotesize\ttfamily int get\+Taxa\+Contributiva (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas,  }\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario,  }\item[{int}]{idade,  }\item[{int}]{anos\+Trabalho }\end{DoxyParamCaption})}
+
+Função utilizada para obter a taxa contributiva a ser utilizada por um funcionário. 
+\begin{DoxyParams}{Parâmetros}
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram os dados das taxas contributivas. \\
+\hline
+{\em funcionario} & -\/ apontador onde se encontra guardado o funcionário. \\
+\hline
+{\em idade} & -\/ valor correspondente à idade do funcionário. \\
+\hline
+{\em anos\+Trabalho} & -\/ valor correspondente aos anos de trabalho do funcionário na empresa. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor correspondente ao índice da taxa a ser utilizada. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_a9d56b19a8efb07ad22b5172e1ee81e08}\label{funcoes_8c_a9d56b19a8efb07ad22b5172e1ee81e08}} 
+\index{funcoes.c@{funcoes.c}!idadeFimMes@{idadeFimMes}}
+\index{idadeFimMes@{idadeFimMes}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{idadeFimMes()}{idadeFimMes()}}
+{\footnotesize\ttfamily int idade\+Fim\+Mes (\begin{DoxyParamCaption}\item[{int}]{mes,  }\item[{int}]{ano,  }\item[{int}]{mes\+Atual,  }\item[{int}]{ano\+Atual }\end{DoxyParamCaption})}
+
+Função utilizada para calcular a idade de um funcionário. 
+\begin{DoxyParams}{Parâmetros}
+{\em mes} & -\/ valor correspondente ao mês de nascimento. \\
+\hline
+{\em ano} & -\/ valor correspondente ao ano de nascimento. \\
+\hline
+{\em mes\+Atual} & -\/ valor correspondente ao mês do processamento do salário. \\
+\hline
+{\em ano\+Atual} & -\/ valor correspondente ao ano do processamento do salário. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor correspondente à idade do funcionário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_a556e09ade87e7e0bc600868a7810b60d}\label{funcoes_8c_a556e09ade87e7e0bc600868a7810b60d}} 
+\index{funcoes.c@{funcoes.c}!juntar2Strings@{juntar2Strings}}
+\index{juntar2Strings@{juntar2Strings}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{juntar2Strings()}{juntar2Strings()}}
+{\footnotesize\ttfamily void juntar2\+Strings (\begin{DoxyParamCaption}\item[{char $\ast$}]{s1,  }\item[{char $\ast$}]{s2 }\end{DoxyParamCaption})}
+
+Função baseada na deste site \href{http://devfuria.com.br/logica-de-programacao/strings-concatenar/}{\texttt{ http\+://devfuria.\+com.\+br/logica-\/de-\/programacao/strings-\/concatenar/}} Função utilizada para juntar duas strings. 
+\begin{DoxyParams}{Parâmetros}
+{\em s1} & -\/ apontador onde se encontra a primeira string e onde será guardada a junção das duas strings. \\
+\hline
+{\em s2} & -\/ apontador onde se encontra a segunda string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcoes_8c_a5d99b14c6c7670ffec4e2fe2dd7aeb7b}\label{funcoes_8c_a5d99b14c6c7670ffec4e2fe2dd7aeb7b}} 
+\index{funcoes.c@{funcoes.c}!juntar4Strings@{juntar4Strings}}
+\index{juntar4Strings@{juntar4Strings}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{juntar4Strings()}{juntar4Strings()}}
+{\footnotesize\ttfamily void juntar4\+Strings (\begin{DoxyParamCaption}\item[{char $\ast$}]{s1,  }\item[{char $\ast$}]{s2,  }\item[{char $\ast$}]{s3,  }\item[{char $\ast$}]{s4 }\end{DoxyParamCaption})}
+
+Função baseada na deste site \href{http://devfuria.com.br/logica-de-programacao/strings-concatenar/}{\texttt{ http\+://devfuria.\+com.\+br/logica-\/de-\/programacao/strings-\/concatenar/}} Função utilizada para juntar quatro strings. 
+\begin{DoxyParams}{Parâmetros}
+{\em s1} & -\/ apontador onde se encontra a primeira string e onde será guardada a junção das quatro strings. \\
+\hline
+{\em s2} & -\/ apontador onde se encontra a segunda string. \\
+\hline
+{\em s3} & -\/ apontador onde se encontra a terceira string. \\
+\hline
+{\em s4} & -\/ apontador onde se encontra a quarta string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcoes_8c_a6d48c6ef129e0dd4260cfd45e5b0ee99}\label{funcoes_8c_a6d48c6ef129e0dd4260cfd45e5b0ee99}} 
+\index{funcoes.c@{funcoes.c}!limpar@{limpar}}
+\index{limpar@{limpar}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{limpar()}{limpar()}}
+{\footnotesize\ttfamily void limpar (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Função utilizada para parar o programa até que o utilizador pressione uma tecla que irá limpar o ecrã e fazer o programa continuar. \mbox{\Hypertarget{funcoes_8c_ade6182e633a4d83d978fa876eac8969b}\label{funcoes_8c_ade6182e633a4d83d978fa876eac8969b}} 
+\index{funcoes.c@{funcoes.c}!minuscula@{minuscula}}
+\index{minuscula@{minuscula}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{minuscula()}{minuscula()}}
+{\footnotesize\ttfamily void minuscula (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+
+Função utilizada para transformar todos os carateres de uma string em letras minúsculas. 
+\begin{DoxyParams}{Parâmetros}
+{\em s} & -\/ valor correspondente à string a ser transformada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcoes_8c_aac0a5840b5a421f4f30a0a3015485380}\label{funcoes_8c_aac0a5840b5a421f4f30a0a3015485380}} 
+\index{funcoes.c@{funcoes.c}!numero\_digitos@{numero\_digitos}}
+\index{numero\_digitos@{numero\_digitos}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{numero\_digitos()}{numero\_digitos()}}
+{\footnotesize\ttfamily int numero\+\_\+digitos (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+Função utilizada para contar o número de digitos de um número. 
+\begin{DoxyParams}{Parâmetros}
+{\em n} & -\/ valor correspondente ao número a ser verificado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+número de digitos que o número recebido possui. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_a3076524f5392bf8c8782c34e7192d78b}\label{funcoes_8c_a3076524f5392bf8c8782c34e7192d78b}} 
+\index{funcoes.c@{funcoes.c}!primeirosDigitos@{primeirosDigitos}}
+\index{primeirosDigitos@{primeirosDigitos}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{primeirosDigitos()}{primeirosDigitos()}}
+{\footnotesize\ttfamily int primeiros\+Digitos (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{nd }\end{DoxyParamCaption})}
+
+Função utilizada para retornar os primeiros n digitos de um número. 
+\begin{DoxyParams}{Parâmetros}
+{\em n} & -\/ valor correspondente ao número a ser verificado. \\
+\hline
+{\em nd} & -\/ valor correspondente à quantidade de digitos a verificar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor correspondente aos primeiros digitos de um número. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_a2b1a7498b436cc545afb7e950aa99fae}\label{funcoes_8c_a2b1a7498b436cc545afb7e950aa99fae}} 
+\index{funcoes.c@{funcoes.c}!tamanhoString@{tamanhoString}}
+\index{tamanhoString@{tamanhoString}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{tamanhoString()}{tamanhoString()}}
+{\footnotesize\ttfamily int tamanho\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{s }\end{DoxyParamCaption})}
+
+Função utilizada para obter o tamanho de uma string. 
+\begin{DoxyParams}{Parâmetros}
+{\em s} & -\/ valor correspondente à string a verificada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor correspondente ao tamanho da string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_a2a96be80c91241d8f59638f82ef17e45}\label{funcoes_8c_a2a96be80c91241d8f59638f82ef17e45}} 
+\index{funcoes.c@{funcoes.c}!verifica\_Telemovel@{verifica\_Telemovel}}
+\index{verifica\_Telemovel@{verifica\_Telemovel}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{verifica\_Telemovel()}{verifica\_Telemovel()}}
+{\footnotesize\ttfamily int verifica\+\_\+\+Telemovel (\begin{DoxyParamCaption}\item[{int}]{numero }\end{DoxyParamCaption})}
+
+Função utilizada para verificar se os 2 primeitos digitos são de um número de telemóvel nacional. 
+\begin{DoxyParams}{Parâmetros}
+{\em numero} & -\/ valor correspondente ao número de telemóvel a ser verificado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 (caso seja válido) ou 0 (caso não seja válido). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_ada8473a21b2f5de79ee5365dc16d172b}\label{funcoes_8c_ada8473a21b2f5de79ee5365dc16d172b}} 
+\index{funcoes.c@{funcoes.c}!verificaAnoBissexto@{verificaAnoBissexto}}
+\index{verificaAnoBissexto@{verificaAnoBissexto}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{verificaAnoBissexto()}{verificaAnoBissexto()}}
+{\footnotesize\ttfamily int verifica\+Ano\+Bissexto (\begin{DoxyParamCaption}\item[{int}]{ano }\end{DoxyParamCaption})}
+
+Função baseada na deste site \href{https://www.marceloweb.info/verificar-se-o-ano-e-bissexto-em-c/}{\texttt{ https\+://www.\+marceloweb.\+info/verificar-\/se-\/o-\/ano-\/e-\/bissexto-\/em-\/c/}} Função utilizada para verificar se um determinado ano é bissexto. 
+\begin{DoxyParams}{Parâmetros}
+{\em ano} & -\/ valor correspondente ao ano a ser verificado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 (caso seja bissexto) ou 0 (caso não seja bissexto). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_a4f0443a8256a2b8272544304ec7795c2}\label{funcoes_8c_a4f0443a8256a2b8272544304ec7795c2}} 
+\index{funcoes.c@{funcoes.c}!verificaDataNascimento@{verificaDataNascimento}}
+\index{verificaDataNascimento@{verificaDataNascimento}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{verificaDataNascimento()}{verificaDataNascimento()}}
+{\footnotesize\ttfamily int verifica\+Data\+Nascimento (\begin{DoxyParamCaption}\item[{int}]{dia,  }\item[{int}]{mes,  }\item[{int}]{ano }\end{DoxyParamCaption})}
+
+Função utilizada para verificar se uma data de nascimento é válida. 
+\begin{DoxyParams}{Parâmetros}
+{\em dia} & -\/ valor correspondente ao dia de nascimento. \\
+\hline
+{\em mes} & -\/ valor correspondente ao mês de nascimento. \\
+\hline
+{\em ano} & -\/ valor correspondente ao ano de nascimento. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 (caso seja válida) ou 0 (caso não seja válida). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_af360cb0f8ee6384016daa42f83177a5e}\label{funcoes_8c_af360cb0f8ee6384016daa42f83177a5e}} 
+\index{funcoes.c@{funcoes.c}!verificaDataSaida@{verificaDataSaida}}
+\index{verificaDataSaida@{verificaDataSaida}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{verificaDataSaida()}{verificaDataSaida()}}
+{\footnotesize\ttfamily int verifica\+Data\+Saida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} $\ast$}]{data\+Saida,  }\item[{\mbox{\hyperlink{struct_data}{Data}} $\ast$}]{data\+Entrada }\end{DoxyParamCaption})}
+
+Função utilizada para verificar se uma data de saida da empresa é válida. 
+\begin{DoxyParams}{Parâmetros}
+{\em data\+Saida} & -\/ valor correspondente à data de saida da empresa. \\
+\hline
+{\em data\+Entrada} & -\/ valor correspondente à data de entrada na empresa, utilizado para fazer verificações. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 (caso seja válida) ou 0 (caso não seja válida). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_a3a0f12435f7b31196770f7fd55618959}\label{funcoes_8c_a3a0f12435f7b31196770f7fd55618959}} 
+\index{funcoes.c@{funcoes.c}!verificarPalavras@{verificarPalavras}}
+\index{verificarPalavras@{verificarPalavras}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{verificarPalavras()}{verificarPalavras()}}
+{\footnotesize\ttfamily int verificar\+Palavras (\begin{DoxyParamCaption}\item[{char $\ast$}]{frase,  }\item[{char $\ast$}]{verifica }\end{DoxyParamCaption})}
+
+Função utilizada para procurar um conjunto de palavras dentro de outra string. 
+\begin{DoxyParams}{Parâmetros}
+{\em frase} & -\/ apontador onde se encontra a string onde é pesquisada o conjunto de palavras. \\
+\hline
+{\em verifica} & -\/ apontador onde se encontra a string com o conjunto de palavras. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 (caso a string verifica exista na string frase) ou 0 (caso a string verifica não exista na string frase). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcoes_8c_a448f090df1c73924116ba869c04e4307}\label{funcoes_8c_a448f090df1c73924116ba869c04e4307}} 
+\index{funcoes.c@{funcoes.c}!verificaString@{verificaString}}
+\index{verificaString@{verificaString}!funcoes.c@{funcoes.c}}
+\doxysubsubsection{\texorpdfstring{verificaString()}{verificaString()}}
+{\footnotesize\ttfamily int verifica\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{s1,  }\item[{char $\ast$}]{s2 }\end{DoxyParamCaption})}
+
+Função utilizada para comparar duas strings. 
+\begin{DoxyParams}{Parâmetros}
+{\em s1} & -\/ valor correspondente à primeira string. \\
+\hline
+{\em s2} & -\/ valor correspondente à segunda string. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 (caso as strings sejam iguais) ou -\/1 (caso as strings sejam diferentes). 
+\end{DoxyReturn}

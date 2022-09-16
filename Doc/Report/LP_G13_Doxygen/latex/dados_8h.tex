@@ -1,0 +1,270 @@
+\hypertarget{dados_8h}{}\doxysection{Referência ao ficheiro dados.\+h}
+\label{dados_8h}\index{dados.h@{dados.h}}
+{\ttfamily \#include \char`\"{}funcionario.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}irs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}seguranca\+Social.\+h\char`\"{}}\newline
+\doxysubsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_nome_empresa}{Nome\+Empresa}}
+\item 
+struct \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{dados_8h_af735670d9b1cd3dfa2d927db387f7123}{I\+NC}}~5
+\item 
+\#define \mbox{\hyperlink{dados_8h_a36fac549c1e13d7a2d666c5fce147800}{ficheiro\+Nome\+Empresas}}~\char`\"{}./src/nome\+Empresas.\+bin\char`\"{}
+\item 
+\#define \mbox{\hyperlink{dados_8h_afb460bebed4b711f210829cc921c504a}{B\+A\+S\+E\+P\+A\+S\+T\+A\+N\+A\+ME}}~\char`\"{}./src/\char`\"{}
+\item 
+\#define \mbox{\hyperlink{dados_8h_abbed7ac0be5b98c2a1828b5d7b8b64d2}{B\+A\+S\+E\+Ficheiro\+Casado\+Unico}}~\char`\"{}/Casados\+Dois.\+txt\char`\"{}
+\item 
+\#define \mbox{\hyperlink{dados_8h_a3522e3072c482eed65bdcbb9b39abc60}{B\+A\+S\+E\+Ficheiro\+Casado\+Dois}}~\char`\"{}/Casado\+Unico.\+txt\char`\"{}
+\item 
+\#define \mbox{\hyperlink{dados_8h_ab08916c04afa089e7dc93479bda95ceb}{B\+A\+S\+E\+Ficheiro\+Nao\+Casado}}~\char`\"{}/Nao\+Casado.\+txt\char`\"{}
+\item 
+\#define \mbox{\hyperlink{dados_8h_aff6ca7c38423e7f213c7bc484d9d9380}{B\+A\+S\+E\+Ficheiro\+Taxas\+Contributivas}}~\char`\"{}/Taxas\+Contributivas.\+txt\char`\"{}
+\item 
+\#define \mbox{\hyperlink{dados_8h_a6307d2dd4a1ef9125ab0d9c00506a114}{B\+A\+S\+E\+D\+A\+D\+O\+S\+N\+A\+ME}}~\char`\"{}/dados.\+bin\char`\"{}
+\item 
+\#define \mbox{\hyperlink{dados_8h_a3c510cea9021d31cd8179f94e2fa930c}{S\+E\+M\+D\+A\+D\+O\+G\+U\+AR}}~\char`\"{}Sem dados para importar.\char`\"{}
+\item 
+\#define \mbox{\hyperlink{dados_8h_ad22cb034b4e391078799966926beb6c0}{G\+U\+A\+R\+D\+A\+D\+O\+S\+\_\+\+S\+U\+C\+E\+S\+SO}}~\char`\"{}Dados guardados com sucesso\char`\"{}
+\item 
+\#define \mbox{\hyperlink{dados_8h_ad3573ef516857a26d812b788a801bb2e}{I\+M\+P\+O\+R\+T\+A\+D\+O\+S\+\_\+\+S\+U\+C\+E\+S\+SO}}~\char`\"{}Dados importados com sucesso.\char`\"{}
+\item 
+\#define \mbox{\hyperlink{dados_8h_a87faffe615a3010cd8c979396a7971a7}{max\+Pasta}}~20
+\item 
+\#define \mbox{\hyperlink{dados_8h_a2ba2d95736a28ef4f31fa568d374b0ad}{max\+F\+I\+L\+E\+N\+A\+ME}}~37
+\item 
+\#define \mbox{\hyperlink{dados_8h_ab0c500c060b26c444b9dc9da0f3f384a}{max\+Comando}}~39
+\end{DoxyCompactItemize}
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{dados_8h_aaea24a0f92619679ff4dac67f8e66e45}{importar\+Nomes\+Empresas}} (\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, char $\ast$ficheiro)
+\item 
+void \mbox{\hyperlink{dados_8h_a1daa4e59a92d3762287a7f31120d0ff6}{inserir\+Nome\+Empresa\+FX}} (\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, char $\ast$ficheiro)
+\item 
+void \mbox{\hyperlink{dados_8h_a931fb81974224710ef6db350c54572bc}{inserir\+Nome\+Empresa}} (\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, char $\ast$nome)
+\item 
+int \mbox{\hyperlink{dados_8h_a4599813d42c79a5e6315df596df10c5f}{guardar}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+void \mbox{\hyperlink{dados_8h_a5dcd42e555de1708bc92bb9ab6890659}{importar}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+void \mbox{\hyperlink{dados_8h_a6d954d658be28127f89770b7058fb52d}{limpar\+Dados}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas, int limpar\+Nomes\+Empresas)
+\item 
+void \mbox{\hyperlink{dados_8h_a1e41189e2b30954508c4f32d6c1ae093}{exportar\+Relatorio}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+void \mbox{\hyperlink{dados_8h_a997d32e1a256c1920e49a857ba419adb}{importar\+Relatorio}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das macros}
+\mbox{\Hypertarget{dados_8h_a6307d2dd4a1ef9125ab0d9c00506a114}\label{dados_8h_a6307d2dd4a1ef9125ab0d9c00506a114}} 
+\index{dados.h@{dados.h}!BASEDADOSNAME@{BASEDADOSNAME}}
+\index{BASEDADOSNAME@{BASEDADOSNAME}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{BASEDADOSNAME}{BASEDADOSNAME}}
+{\footnotesize\ttfamily \#define B\+A\+S\+E\+D\+A\+D\+O\+S\+N\+A\+ME~\char`\"{}/dados.\+bin\char`\"{}}
+
+\mbox{\Hypertarget{dados_8h_a3522e3072c482eed65bdcbb9b39abc60}\label{dados_8h_a3522e3072c482eed65bdcbb9b39abc60}} 
+\index{dados.h@{dados.h}!BASEFicheiroCasadoDois@{BASEFicheiroCasadoDois}}
+\index{BASEFicheiroCasadoDois@{BASEFicheiroCasadoDois}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{BASEFicheiroCasadoDois}{BASEFicheiroCasadoDois}}
+{\footnotesize\ttfamily \#define B\+A\+S\+E\+Ficheiro\+Casado\+Dois~\char`\"{}/Casado\+Unico.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{dados_8h_abbed7ac0be5b98c2a1828b5d7b8b64d2}\label{dados_8h_abbed7ac0be5b98c2a1828b5d7b8b64d2}} 
+\index{dados.h@{dados.h}!BASEFicheiroCasadoUnico@{BASEFicheiroCasadoUnico}}
+\index{BASEFicheiroCasadoUnico@{BASEFicheiroCasadoUnico}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{BASEFicheiroCasadoUnico}{BASEFicheiroCasadoUnico}}
+{\footnotesize\ttfamily \#define B\+A\+S\+E\+Ficheiro\+Casado\+Unico~\char`\"{}/Casados\+Dois.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{dados_8h_ab08916c04afa089e7dc93479bda95ceb}\label{dados_8h_ab08916c04afa089e7dc93479bda95ceb}} 
+\index{dados.h@{dados.h}!BASEFicheiroNaoCasado@{BASEFicheiroNaoCasado}}
+\index{BASEFicheiroNaoCasado@{BASEFicheiroNaoCasado}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{BASEFicheiroNaoCasado}{BASEFicheiroNaoCasado}}
+{\footnotesize\ttfamily \#define B\+A\+S\+E\+Ficheiro\+Nao\+Casado~\char`\"{}/Nao\+Casado.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{dados_8h_aff6ca7c38423e7f213c7bc484d9d9380}\label{dados_8h_aff6ca7c38423e7f213c7bc484d9d9380}} 
+\index{dados.h@{dados.h}!BASEFicheiroTaxasContributivas@{BASEFicheiroTaxasContributivas}}
+\index{BASEFicheiroTaxasContributivas@{BASEFicheiroTaxasContributivas}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{BASEFicheiroTaxasContributivas}{BASEFicheiroTaxasContributivas}}
+{\footnotesize\ttfamily \#define B\+A\+S\+E\+Ficheiro\+Taxas\+Contributivas~\char`\"{}/Taxas\+Contributivas.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{dados_8h_afb460bebed4b711f210829cc921c504a}\label{dados_8h_afb460bebed4b711f210829cc921c504a}} 
+\index{dados.h@{dados.h}!BASEPASTANAME@{BASEPASTANAME}}
+\index{BASEPASTANAME@{BASEPASTANAME}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{BASEPASTANAME}{BASEPASTANAME}}
+{\footnotesize\ttfamily \#define B\+A\+S\+E\+P\+A\+S\+T\+A\+N\+A\+ME~\char`\"{}./src/\char`\"{}}
+
+\mbox{\Hypertarget{dados_8h_a36fac549c1e13d7a2d666c5fce147800}\label{dados_8h_a36fac549c1e13d7a2d666c5fce147800}} 
+\index{dados.h@{dados.h}!ficheiroNomeEmpresas@{ficheiroNomeEmpresas}}
+\index{ficheiroNomeEmpresas@{ficheiroNomeEmpresas}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{ficheiroNomeEmpresas}{ficheiroNomeEmpresas}}
+{\footnotesize\ttfamily \#define ficheiro\+Nome\+Empresas~\char`\"{}./src/nome\+Empresas.\+bin\char`\"{}}
+
+\mbox{\Hypertarget{dados_8h_ad22cb034b4e391078799966926beb6c0}\label{dados_8h_ad22cb034b4e391078799966926beb6c0}} 
+\index{dados.h@{dados.h}!GUARDADOS\_SUCESSO@{GUARDADOS\_SUCESSO}}
+\index{GUARDADOS\_SUCESSO@{GUARDADOS\_SUCESSO}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{GUARDADOS\_SUCESSO}{GUARDADOS\_SUCESSO}}
+{\footnotesize\ttfamily \#define G\+U\+A\+R\+D\+A\+D\+O\+S\+\_\+\+S\+U\+C\+E\+S\+SO~\char`\"{}Dados guardados com sucesso\char`\"{}}
+
+\mbox{\Hypertarget{dados_8h_ad3573ef516857a26d812b788a801bb2e}\label{dados_8h_ad3573ef516857a26d812b788a801bb2e}} 
+\index{dados.h@{dados.h}!IMPORTADOS\_SUCESSO@{IMPORTADOS\_SUCESSO}}
+\index{IMPORTADOS\_SUCESSO@{IMPORTADOS\_SUCESSO}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{IMPORTADOS\_SUCESSO}{IMPORTADOS\_SUCESSO}}
+{\footnotesize\ttfamily \#define I\+M\+P\+O\+R\+T\+A\+D\+O\+S\+\_\+\+S\+U\+C\+E\+S\+SO~\char`\"{}Dados importados com sucesso.\char`\"{}}
+
+\mbox{\Hypertarget{dados_8h_af735670d9b1cd3dfa2d927db387f7123}\label{dados_8h_af735670d9b1cd3dfa2d927db387f7123}} 
+\index{dados.h@{dados.h}!INC@{INC}}
+\index{INC@{INC}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{INC}{INC}}
+{\footnotesize\ttfamily \#define I\+NC~5}
+
+\mbox{\Hypertarget{dados_8h_ab0c500c060b26c444b9dc9da0f3f384a}\label{dados_8h_ab0c500c060b26c444b9dc9da0f3f384a}} 
+\index{dados.h@{dados.h}!maxComando@{maxComando}}
+\index{maxComando@{maxComando}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{maxComando}{maxComando}}
+{\footnotesize\ttfamily \#define max\+Comando~39}
+
+\mbox{\Hypertarget{dados_8h_a2ba2d95736a28ef4f31fa568d374b0ad}\label{dados_8h_a2ba2d95736a28ef4f31fa568d374b0ad}} 
+\index{dados.h@{dados.h}!maxFILENAME@{maxFILENAME}}
+\index{maxFILENAME@{maxFILENAME}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{maxFILENAME}{maxFILENAME}}
+{\footnotesize\ttfamily \#define max\+F\+I\+L\+E\+N\+A\+ME~37}
+
+\mbox{\Hypertarget{dados_8h_a87faffe615a3010cd8c979396a7971a7}\label{dados_8h_a87faffe615a3010cd8c979396a7971a7}} 
+\index{dados.h@{dados.h}!maxPasta@{maxPasta}}
+\index{maxPasta@{maxPasta}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{maxPasta}{maxPasta}}
+{\footnotesize\ttfamily \#define max\+Pasta~20}
+
+\mbox{\Hypertarget{dados_8h_a3c510cea9021d31cd8179f94e2fa930c}\label{dados_8h_a3c510cea9021d31cd8179f94e2fa930c}} 
+\index{dados.h@{dados.h}!SEMDADOGUAR@{SEMDADOGUAR}}
+\index{SEMDADOGUAR@{SEMDADOGUAR}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{SEMDADOGUAR}{SEMDADOGUAR}}
+{\footnotesize\ttfamily \#define S\+E\+M\+D\+A\+D\+O\+G\+U\+AR~\char`\"{}Sem dados para importar.\char`\"{}}
+
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{dados_8h_a1e41189e2b30954508c4f32d6c1ae093}\label{dados_8h_a1e41189e2b30954508c4f32d6c1ae093}} 
+\index{dados.h@{dados.h}!exportarRelatorio@{exportarRelatorio}}
+\index{exportarRelatorio@{exportarRelatorio}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{exportarRelatorio()}{exportarRelatorio()}}
+{\footnotesize\ttfamily void exportar\+Relatorio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Está função verifica se o utilizador ja tem alguma empresa atribuida e senão pede para a criar, de seguida chama a função \char`\"{}exportar\+Relatorio\+Final\char`\"{} 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador com todos os funcionarios \\
+\hline
+{\em irsdados} & -\/ apontador com todos os dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}} \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador com os nomes das empresas(nome das pasta) \\
+\hline
+{\em taxas\+Contributivas} & -\/ apontador com as Taxas de Contribuinte \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8h_a4599813d42c79a5e6315df596df10c5f}\label{dados_8h_a4599813d42c79a5e6315df596df10c5f}} 
+\index{dados.h@{dados.h}!guardar@{guardar}}
+\index{guardar@{guardar}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{guardar()}{guardar()}}
+{\footnotesize\ttfamily int guardar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Função utilizada para guardar todos os dados de uma empresa em ficheiros (dados dos funcionarios, \mbox{\hyperlink{struct_i_r_s}{I\+RS}}, segurança social). 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram armazenados os dados de todos os funcionários. \\
+\hline
+{\em irsdados} & -\/ apontador onde se encontram armazenados os dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador onde se encontram armazenados os nomes das empresas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8h_a5dcd42e555de1708bc92bb9ab6890659}\label{dados_8h_a5dcd42e555de1708bc92bb9ab6890659}} 
+\index{dados.h@{dados.h}!importar@{importar}}
+\index{importar@{importar}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{importar()}{importar()}}
+{\footnotesize\ttfamily void importar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Função utilizada para importar todos os dados de uma determinada empresa (dados dos funcionarios, \mbox{\hyperlink{struct_i_r_s}{I\+RS}}, segurança social). 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde serão armazenados os dados dos funcionários. \\
+\hline
+{\em irsdados} & -\/ apontador onde serão armazenados os dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador onde se encontram os nomes das empresas, utilizado para selecionar uma empresa já armazenada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8h_aaea24a0f92619679ff4dac67f8e66e45}\label{dados_8h_aaea24a0f92619679ff4dac67f8e66e45}} 
+\index{dados.h@{dados.h}!importarNomesEmpresas@{importarNomesEmpresas}}
+\index{importarNomesEmpresas@{importarNomesEmpresas}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{importarNomesEmpresas()}{importarNomesEmpresas()}}
+{\footnotesize\ttfamily void importar\+Nomes\+Empresas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{char $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+Função utilizada para importar os nomes das empresas de um ficheiro. 
+\begin{DoxyParams}{Parâmetros}
+{\em nomes\+Empresas} & -\/ apontador onde serão armazenados os nomes das empresas. \\
+\hline
+{\em ficheiro} & -\/ nome do ficheiro que contém os nomes de todas as empresas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8h_a997d32e1a256c1920e49a857ba419adb}\label{dados_8h_a997d32e1a256c1920e49a857ba419adb}} 
+\index{dados.h@{dados.h}!importarRelatorio@{importarRelatorio}}
+\index{importarRelatorio@{importarRelatorio}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{importarRelatorio()}{importarRelatorio()}}
+{\footnotesize\ttfamily void importar\+Relatorio (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas }\end{DoxyParamCaption})}
+
+Esta função verifica se a empresa já foi guardada e se sim chama a função \char`\"{}importar\+Relatorio\+Final\char`\"{} 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador com todos os funcionarios \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador com os nomes das empresas(nome das pasta) \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8h_a931fb81974224710ef6db350c54572bc}\label{dados_8h_a931fb81974224710ef6db350c54572bc}} 
+\index{dados.h@{dados.h}!inserirNomeEmpresa@{inserirNomeEmpresa}}
+\index{inserirNomeEmpresa@{inserirNomeEmpresa}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{inserirNomeEmpresa()}{inserirNomeEmpresa()}}
+{\footnotesize\ttfamily void inserir\+Nome\+Empresa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{char $\ast$}]{nome }\end{DoxyParamCaption})}
+
+Função utilizada para, caso necessário, alocar espaço para os nomes das empresas e chamar a função \char`\"{}adicionar\+Nome\+Empresa\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em nomes\+Empresas} & -\/ apontador onde será armazenado o nome da empresa. \\
+\hline
+{\em nome} & -\/ nome da empresa a ser adicionada. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8h_a1daa4e59a92d3762287a7f31120d0ff6}\label{dados_8h_a1daa4e59a92d3762287a7f31120d0ff6}} 
+\index{dados.h@{dados.h}!inserirNomeEmpresaFX@{inserirNomeEmpresaFX}}
+\index{inserirNomeEmpresaFX@{inserirNomeEmpresaFX}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{inserirNomeEmpresaFX()}{inserirNomeEmpresaFX()}}
+{\footnotesize\ttfamily void inserir\+Nome\+Empresa\+FX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{char $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+Função utilizada para exportar o nome de todas as empresas para o ficheiro indicado. 
+\begin{DoxyParams}{Parâmetros}
+{\em nomes\+Empresas} & -\/ apontador onde se encontram armazenados os nomes das empresas. \\
+\hline
+{\em ficheiro} & -\/ nome do ficheiro onde serão exportados os nomes de todas as empresas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{dados_8h_a6d954d658be28127f89770b7058fb52d}\label{dados_8h_a6d954d658be28127f89770b7058fb52d}} 
+\index{dados.h@{dados.h}!limparDados@{limparDados}}
+\index{limparDados@{limparDados}!dados.h@{dados.h}}
+\doxysubsubsection{\texorpdfstring{limparDados()}{limparDados()}}
+{\footnotesize\ttfamily void limpar\+Dados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas,  }\item[{int}]{limpar\+Nomes\+Empresas }\end{DoxyParamCaption})}
+
+Função utilizada para libertar a memória de todo o programa. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram armazenados os dados de todos os funcionários. \\
+\hline
+{\em irsdados} & -\/ apontador onde se encontram armazenados os dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador onde se encontram armazenados os nomes das empresas. \\
+\hline
+{\em taxas\+Contributivas} & \\
+\hline
+{\em limpar\+Nomes\+Empresas} & -\/ 1 (caso seja para limpar a memória do apontador \char`\"{}nomes\+Empresas\char`\"{}) ou 0 (caso não seja para limpar a memória do apontador \char`\"{}nomes\+Empresas\char`\"{}). \\
+\hline
+\end{DoxyParams}

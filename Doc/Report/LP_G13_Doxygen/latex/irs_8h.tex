@@ -1,0 +1,215 @@
+\hypertarget{irs_8h}{}\doxysection{Referência ao ficheiro irs.\+h}
+\label{irs_8h}\index{irs.h@{irs.h}}
+\doxysubsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_i_r_s}{I\+RS}}
+\item 
+struct \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{irs_8h_af735670d9b1cd3dfa2d927db387f7123}{I\+NC}}~5
+\item 
+\#define \mbox{\hyperlink{irs_8h_a041859a7225c6871fecf3cc7a93266bf}{Ficheiro\+Casado\+Unico}}~\char`\"{}./src/Casados\+Dois.\+txt\char`\"{}
+\item 
+\#define \mbox{\hyperlink{irs_8h_aa09eb5d6b0aff8eae18cbd96b6142654}{Ficheiro\+Casado\+Dois}}~\char`\"{}./src/Casado\+Unico.\+txt\char`\"{}
+\item 
+\#define \mbox{\hyperlink{irs_8h_a4cca17251f8a41c5748de91a359d4e5f}{Ficheiro\+Nao\+Casado}}~\char`\"{}./src/Nao\+Casado.\+txt\char`\"{}
+\item 
+\#define \mbox{\hyperlink{irs_8h_ac33a4ae787d01fe6150e3dd68e39a5c0}{E\+R\+R\+O\+\_\+\+P\+E\+S\+Q\+U\+I\+S\+A\+\_\+\+S\+A\+L\+A\+R\+IO}}~\char`\"{}Salário não encontrado.\char`\"{}
+\item 
+\#define \mbox{\hyperlink{irs_8h_addf468d6b7ac2f8adfcead4293348062}{M\+S\+G\+\_\+\+O\+B\+T\+E\+R\+\_\+\+R\+E\+M\+U\+N\+E\+R\+A\+C\+AO}}~\char`\"{}Insira o valor da renumeração mensal\+: \char`\"{}
+\item 
+\#define \mbox{\hyperlink{irs_8h_a98421bdc73548c88f13092582b08cc9c}{M\+S\+G\+\_\+\+O\+B\+T\+E\+R\+\_\+\+R\+E\+M\+U\+N\+E\+R\+A\+C\+A\+O\+\_\+\+A\+LT}}~\char`\"{}Insira o valor limite da renumeração mensal que quer alterar\+: \char`\"{}
+\item 
+\#define \mbox{\hyperlink{irs_8h_a616373a90bb57c6b320e065f6c285a2e}{M\+I\+N\+\_\+\+R\+E\+M\+U\+N\+E\+R\+A\+C\+AO}}~0
+\item 
+\#define \mbox{\hyperlink{irs_8h_a38441b72cca44c71ec7a3d175c2db617}{M\+S\+G\+\_\+\+O\+B\+T\+E\+R\+\_\+\+P\+E\+R\+C\+E\+N\+T\+A\+G\+EM}}~\char`\"{}Insira o valor percentual do \mbox{\hyperlink{struct_i_r_s}{I\+RS}} correspondente ao número de filhos \mbox{[}\%.\+2f -\/ \%.\+2f\mbox{]}\+: \char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{irs_8h_a7307041024bd9df6acc3e94613550235}{atualizar\+Ficheiro\+I\+RS}} (\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$irs, int contador, char $\ast$nome\+Ficheiro)
+\item 
+void \mbox{\hyperlink{irs_8h_a2797575bc9a26cf856589bee7483cc5d}{carregar\+Dados\+Ficheiro\+I\+RS}} (\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$$\ast$irs, int $\ast$contador, int $\ast$tam, char $\ast$nome\+Ficheiro)
+\item 
+void \mbox{\hyperlink{irs_8h_a587ffa6fa7574e772232e11dd9634aab}{listar\+I\+RS}} (\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$irs, int contador, char $\ast$mensagem)
+\item 
+void \mbox{\hyperlink{irs_8h_ab2fafe7dd02622bbd557d0ab308b4b2a}{adicionar\+Tabela\+I\+RS}} (\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$$\ast$irs, int $\ast$contador, int $\ast$tam)
+\item 
+void \mbox{\hyperlink{irs_8h_aefb925e2ffcb9f5af6def6115dc514a6}{alterar\+Tabela\+I\+RS}} (\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$$\ast$irs, int $\ast$contador)
+\item 
+void \mbox{\hyperlink{irs_8h_a7094661077d34b62d77bc7b75e4deeef}{eliminar\+Tabela\+I\+RS}} (\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$$\ast$irs, int $\ast$contador)
+\item 
+float \mbox{\hyperlink{irs_8h_a0cf57e332eba99ce7af95208d88ee0ea}{get\+Irs}} (\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, float salario, int n\+Filhos, int estado\+Civil)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das macros}
+\mbox{\Hypertarget{irs_8h_ac33a4ae787d01fe6150e3dd68e39a5c0}\label{irs_8h_ac33a4ae787d01fe6150e3dd68e39a5c0}} 
+\index{irs.h@{irs.h}!ERRO\_PESQUISA\_SALARIO@{ERRO\_PESQUISA\_SALARIO}}
+\index{ERRO\_PESQUISA\_SALARIO@{ERRO\_PESQUISA\_SALARIO}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{ERRO\_PESQUISA\_SALARIO}{ERRO\_PESQUISA\_SALARIO}}
+{\footnotesize\ttfamily \#define E\+R\+R\+O\+\_\+\+P\+E\+S\+Q\+U\+I\+S\+A\+\_\+\+S\+A\+L\+A\+R\+IO~\char`\"{}Salário não encontrado.\char`\"{}}
+
+\mbox{\Hypertarget{irs_8h_aa09eb5d6b0aff8eae18cbd96b6142654}\label{irs_8h_aa09eb5d6b0aff8eae18cbd96b6142654}} 
+\index{irs.h@{irs.h}!FicheiroCasadoDois@{FicheiroCasadoDois}}
+\index{FicheiroCasadoDois@{FicheiroCasadoDois}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{FicheiroCasadoDois}{FicheiroCasadoDois}}
+{\footnotesize\ttfamily \#define Ficheiro\+Casado\+Dois~\char`\"{}./src/Casado\+Unico.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{irs_8h_a041859a7225c6871fecf3cc7a93266bf}\label{irs_8h_a041859a7225c6871fecf3cc7a93266bf}} 
+\index{irs.h@{irs.h}!FicheiroCasadoUnico@{FicheiroCasadoUnico}}
+\index{FicheiroCasadoUnico@{FicheiroCasadoUnico}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{FicheiroCasadoUnico}{FicheiroCasadoUnico}}
+{\footnotesize\ttfamily \#define Ficheiro\+Casado\+Unico~\char`\"{}./src/Casados\+Dois.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{irs_8h_a4cca17251f8a41c5748de91a359d4e5f}\label{irs_8h_a4cca17251f8a41c5748de91a359d4e5f}} 
+\index{irs.h@{irs.h}!FicheiroNaoCasado@{FicheiroNaoCasado}}
+\index{FicheiroNaoCasado@{FicheiroNaoCasado}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{FicheiroNaoCasado}{FicheiroNaoCasado}}
+{\footnotesize\ttfamily \#define Ficheiro\+Nao\+Casado~\char`\"{}./src/Nao\+Casado.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{irs_8h_af735670d9b1cd3dfa2d927db387f7123}\label{irs_8h_af735670d9b1cd3dfa2d927db387f7123}} 
+\index{irs.h@{irs.h}!INC@{INC}}
+\index{INC@{INC}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{INC}{INC}}
+{\footnotesize\ttfamily \#define I\+NC~5}
+
+\mbox{\Hypertarget{irs_8h_a616373a90bb57c6b320e065f6c285a2e}\label{irs_8h_a616373a90bb57c6b320e065f6c285a2e}} 
+\index{irs.h@{irs.h}!MIN\_REMUNERACAO@{MIN\_REMUNERACAO}}
+\index{MIN\_REMUNERACAO@{MIN\_REMUNERACAO}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{MIN\_REMUNERACAO}{MIN\_REMUNERACAO}}
+{\footnotesize\ttfamily \#define M\+I\+N\+\_\+\+R\+E\+M\+U\+N\+E\+R\+A\+C\+AO~0}
+
+\mbox{\Hypertarget{irs_8h_a38441b72cca44c71ec7a3d175c2db617}\label{irs_8h_a38441b72cca44c71ec7a3d175c2db617}} 
+\index{irs.h@{irs.h}!MSG\_OBTER\_PERCENTAGEM@{MSG\_OBTER\_PERCENTAGEM}}
+\index{MSG\_OBTER\_PERCENTAGEM@{MSG\_OBTER\_PERCENTAGEM}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{MSG\_OBTER\_PERCENTAGEM}{MSG\_OBTER\_PERCENTAGEM}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+O\+B\+T\+E\+R\+\_\+\+P\+E\+R\+C\+E\+N\+T\+A\+G\+EM~\char`\"{}Insira o valor percentual do \mbox{\hyperlink{struct_i_r_s}{I\+RS}} correspondente ao número de filhos \mbox{[}\%.\+2f -\/ \%.\+2f\mbox{]}\+: \char`\"{}}
+
+\mbox{\Hypertarget{irs_8h_addf468d6b7ac2f8adfcead4293348062}\label{irs_8h_addf468d6b7ac2f8adfcead4293348062}} 
+\index{irs.h@{irs.h}!MSG\_OBTER\_REMUNERACAO@{MSG\_OBTER\_REMUNERACAO}}
+\index{MSG\_OBTER\_REMUNERACAO@{MSG\_OBTER\_REMUNERACAO}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{MSG\_OBTER\_REMUNERACAO}{MSG\_OBTER\_REMUNERACAO}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+O\+B\+T\+E\+R\+\_\+\+R\+E\+M\+U\+N\+E\+R\+A\+C\+AO~\char`\"{}Insira o valor da renumeração mensal\+: \char`\"{}}
+
+\mbox{\Hypertarget{irs_8h_a98421bdc73548c88f13092582b08cc9c}\label{irs_8h_a98421bdc73548c88f13092582b08cc9c}} 
+\index{irs.h@{irs.h}!MSG\_OBTER\_REMUNERACAO\_ALT@{MSG\_OBTER\_REMUNERACAO\_ALT}}
+\index{MSG\_OBTER\_REMUNERACAO\_ALT@{MSG\_OBTER\_REMUNERACAO\_ALT}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{MSG\_OBTER\_REMUNERACAO\_ALT}{MSG\_OBTER\_REMUNERACAO\_ALT}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+O\+B\+T\+E\+R\+\_\+\+R\+E\+M\+U\+N\+E\+R\+A\+C\+A\+O\+\_\+\+A\+LT~\char`\"{}Insira o valor limite da renumeração mensal que quer alterar\+: \char`\"{}}
+
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{irs_8h_ab2fafe7dd02622bbd557d0ab308b4b2a}\label{irs_8h_ab2fafe7dd02622bbd557d0ab308b4b2a}} 
+\index{irs.h@{irs.h}!adicionarTabelaIRS@{adicionarTabelaIRS}}
+\index{adicionarTabelaIRS@{adicionarTabelaIRS}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{adicionarTabelaIRS()}{adicionarTabelaIRS()}}
+{\footnotesize\ttfamily void adicionar\+Tabela\+I\+RS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$$\ast$}]{irs,  }\item[{int $\ast$}]{contador,  }\item[{int $\ast$}]{tam }\end{DoxyParamCaption})}
+
+Função utilizada para adicionar uma linha de dados da tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em irs} & -\/ apontador onde serão guardados os dados relativos à tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em contador} & -\/ valor correspondente ao número de linhas com dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em tam} & -\/ valor correspondente ao limite máximo de dados de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{irs_8h_aefb925e2ffcb9f5af6def6115dc514a6}\label{irs_8h_aefb925e2ffcb9f5af6def6115dc514a6}} 
+\index{irs.h@{irs.h}!alterarTabelaIRS@{alterarTabelaIRS}}
+\index{alterarTabelaIRS@{alterarTabelaIRS}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{alterarTabelaIRS()}{alterarTabelaIRS()}}
+{\footnotesize\ttfamily void alterar\+Tabela\+I\+RS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$$\ast$}]{irs,  }\item[{int $\ast$}]{contador }\end{DoxyParamCaption})}
+
+Função utilizada para alterar uma linha de dados da tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em irs} & -\/ apontador onde se encontram guardados os dados relativos à tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em contador} & -\/ valor correspondente ao número de linhas com dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{irs_8h_a7307041024bd9df6acc3e94613550235}\label{irs_8h_a7307041024bd9df6acc3e94613550235}} 
+\index{irs.h@{irs.h}!atualizarFicheiroIRS@{atualizarFicheiroIRS}}
+\index{atualizarFicheiroIRS@{atualizarFicheiroIRS}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{atualizarFicheiroIRS()}{atualizarFicheiroIRS()}}
+{\footnotesize\ttfamily void atualizar\+Ficheiro\+I\+RS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$}]{irs,  }\item[{int}]{contador,  }\item[{char $\ast$}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+Função utilizada para atualizar um determinado ficheiro de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em irs} & -\/ apontador onde se encontram guardados os dados relativos à tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em contador} & -\/ valor correspondente ao número de linhas com dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}} que irão ser guardados no ficheiro \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em nome\+Ficheiro} & -\/ valor correspondente ao nome do ficheiro onde será guardada a informação do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{irs_8h_a2797575bc9a26cf856589bee7483cc5d}\label{irs_8h_a2797575bc9a26cf856589bee7483cc5d}} 
+\index{irs.h@{irs.h}!carregarDadosFicheiroIRS@{carregarDadosFicheiroIRS}}
+\index{carregarDadosFicheiroIRS@{carregarDadosFicheiroIRS}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{carregarDadosFicheiroIRS()}{carregarDadosFicheiroIRS()}}
+{\footnotesize\ttfamily void carregar\+Dados\+Ficheiro\+I\+RS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$$\ast$}]{irs,  }\item[{int $\ast$}]{contador,  }\item[{int $\ast$}]{tam,  }\item[{char $\ast$}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+Função utilizada para importar os dados de um determinado ficheiro de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em irs} & -\/ apontador onde serão guardados os dados relativos à tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em contador} & -\/ valor correspondente ao número de linhas com dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}} que irão ser importadas no ficheiro \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em tam} & -\/ valor correspondente ao limite máximo de dados de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em nome\+Ficheiro} & -\/ valor correspondente ao nome do ficheiro onde será guardada a informação do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{irs_8h_a7094661077d34b62d77bc7b75e4deeef}\label{irs_8h_a7094661077d34b62d77bc7b75e4deeef}} 
+\index{irs.h@{irs.h}!eliminarTabelaIRS@{eliminarTabelaIRS}}
+\index{eliminarTabelaIRS@{eliminarTabelaIRS}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{eliminarTabelaIRS()}{eliminarTabelaIRS()}}
+{\footnotesize\ttfamily void eliminar\+Tabela\+I\+RS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$$\ast$}]{irs,  }\item[{int $\ast$}]{contador }\end{DoxyParamCaption})}
+
+Função utilizada para verificar se um valor de \mbox{\hyperlink{struct_i_r_s}{I\+RS}} existe e caso exista, chamar a função \char`\"{}apagar\+Dados\+I\+R\+S\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em irs} & -\/ apontador onde se encontram guardados os dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em contador} & -\/ valor correspondente ao número de linhas com dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{irs_8h_a0cf57e332eba99ce7af95208d88ee0ea}\label{irs_8h_a0cf57e332eba99ce7af95208d88ee0ea}} 
+\index{irs.h@{irs.h}!getIrs@{getIrs}}
+\index{getIrs@{getIrs}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{getIrs()}{getIrs()}}
+{\footnotesize\ttfamily float get\+Irs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{float}]{salario,  }\item[{int}]{n\+Filhos,  }\item[{int}]{estado\+Civil }\end{DoxyParamCaption})}
+
+Função utilizada para verificar o estado civil recebido como parâmetro e chamar a função \char`\"{}get\+Irs\+Final\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em irsdados} & -\/ apontador onde se encontram guardados os dados relativos à tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em salario} & -\/ valor correspondente ao valor do salário a ser pesquisado na tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em n\+Filhos} & -\/ valor correspondente ao número de filhos a ser pesquisado na tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em estado\+Civil} & -\/ valor correspondente ao estado civil a ser processado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor correspondente ao retorno da função \char`\"{}get\+Irs\+Final\char`\"{}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{irs_8h_a587ffa6fa7574e772232e11dd9634aab}\label{irs_8h_a587ffa6fa7574e772232e11dd9634aab}} 
+\index{irs.h@{irs.h}!listarIRS@{listarIRS}}
+\index{listarIRS@{listarIRS}!irs.h@{irs.h}}
+\doxysubsubsection{\texorpdfstring{listarIRS()}{listarIRS()}}
+{\footnotesize\ttfamily void listar\+I\+RS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$}]{irs,  }\item[{int}]{contador,  }\item[{char $\ast$}]{mensagem }\end{DoxyParamCaption})}
+
+Função utilizada listar todos os dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}} (utilizada para testes). 
+\begin{DoxyParams}{Parâmetros}
+{\em irs} & -\/ apontador onde se encontram guardados os dados relativos à tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em contador} & -\/ valor correspondente ao número de linhas com dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em mensagem} & -\/ valor correspondente à mensagem a ser mostrada antes da listagem dos dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+\end{DoxyParams}

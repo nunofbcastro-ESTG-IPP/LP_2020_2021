@@ -1,0 +1,151 @@
+\hypertarget{seguranca_social_8h}{}\doxysection{Referência ao ficheiro seguranca\+Social.\+h}
+\label{seguranca_social_8h}\index{segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsection*{Estruturas de Dados}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_taxa_contributiva}{Taxa\+Contributiva}}
+\item 
+struct \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{seguranca_social_8h_af735670d9b1cd3dfa2d927db387f7123}{I\+NC}}~5
+\item 
+\#define \mbox{\hyperlink{seguranca_social_8h_a3a06b66ae0895a19ec5ab99b96a804be}{M\+S\+G\+\_\+\+O\+B\+T\+E\+R\+\_\+\+I\+N\+F\+O\+R\+M\+A\+C\+AO}}~\char`\"{}Mensagem de Informação da Taxa\+:\char`\"{}
+\item 
+\#define \mbox{\hyperlink{seguranca_social_8h_ac2310f0ebbafa48c8011b23395da2ef2}{M\+S\+G\+\_\+\+O\+B\+T\+E\+R\+\_\+\+P\+\_\+\+E\+N\+T\+I\+D\+A\+D\+E\+\_\+\+E\+M\+P\+R\+E\+G\+A\+D\+O\+RA}}~\char`\"{}Percentagem Entidade Empregadora\+:\char`\"{}
+\item 
+\#define \mbox{\hyperlink{seguranca_social_8h_ac8e0db980ed5758de119d0f4e068578c}{M\+S\+G\+\_\+\+O\+B\+T\+E\+R\+\_\+\+P\+\_\+\+T\+R\+A\+B\+A\+L\+H\+A\+D\+OR}}~\char`\"{}Percentagem Trabalhador\+:\char`\"{}
+\item 
+\#define \mbox{\hyperlink{seguranca_social_8h_a76cf78597012abc479ea63206aa9e5e5}{M\+S\+G\+\_\+\+A\+L\+T\+E\+R\+A\+R\+\_\+\+T\+A\+XA}}~\char`\"{}Selecione a taxa que pretende atualizar\+:\char`\"{}
+\item 
+\#define \mbox{\hyperlink{seguranca_social_8h_a66223189acc2350dc11b22791ef7eebd}{ficheiro\+Taxas\+Contributiva}}~\char`\"{}./src/Taxas\+Contributivas.\+txt\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{seguranca_social_8h_a38bd5fed20a514c3af69702857d88c8d}{carregar\+Dados\+Ficheiro\+Taxas\+Contributivas}} (\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas, char $\ast$nome\+Ficheiro)
+\item 
+void \mbox{\hyperlink{seguranca_social_8h_af166ae1919dda9883691768c46ef082a}{guardar\+Dados\+Ficheiro\+Taxas\+Contributivas}} (\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas, char $\ast$nome\+Ficheiro)
+\item 
+void \mbox{\hyperlink{seguranca_social_8h_aadb043f24fee00c934d0f84a521e99c6}{listar\+Taxas\+Contributivas}} (\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+void \mbox{\hyperlink{seguranca_social_8h_a8e2bf700f0e9e7eafbfac3e9a5d93611}{adicionar\+Taxa\+Contributiva}} (\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+void \mbox{\hyperlink{seguranca_social_8h_a63660fc38a332c98244bf52a1af52673}{atualizar\+Taxa\+Contributiva}} (\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+void \mbox{\hyperlink{seguranca_social_8h_a68b5619e7990d20eeeb032570d0d37e6}{lista\+Taxa\+Contributiva}} (\mbox{\hyperlink{struct_taxa_contributiva}{Taxa\+Contributiva}} $\ast$taxa\+Contributiva)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das macros}
+\mbox{\Hypertarget{seguranca_social_8h_a66223189acc2350dc11b22791ef7eebd}\label{seguranca_social_8h_a66223189acc2350dc11b22791ef7eebd}} 
+\index{segurancaSocial.h@{segurancaSocial.h}!ficheiroTaxasContributiva@{ficheiroTaxasContributiva}}
+\index{ficheiroTaxasContributiva@{ficheiroTaxasContributiva}!segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsubsection{\texorpdfstring{ficheiroTaxasContributiva}{ficheiroTaxasContributiva}}
+{\footnotesize\ttfamily \#define ficheiro\+Taxas\+Contributiva~\char`\"{}./src/Taxas\+Contributivas.\+txt\char`\"{}}
+
+\mbox{\Hypertarget{seguranca_social_8h_af735670d9b1cd3dfa2d927db387f7123}\label{seguranca_social_8h_af735670d9b1cd3dfa2d927db387f7123}} 
+\index{segurancaSocial.h@{segurancaSocial.h}!INC@{INC}}
+\index{INC@{INC}!segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsubsection{\texorpdfstring{INC}{INC}}
+{\footnotesize\ttfamily \#define I\+NC~5}
+
+\mbox{\Hypertarget{seguranca_social_8h_a76cf78597012abc479ea63206aa9e5e5}\label{seguranca_social_8h_a76cf78597012abc479ea63206aa9e5e5}} 
+\index{segurancaSocial.h@{segurancaSocial.h}!MSG\_ALTERAR\_TAXA@{MSG\_ALTERAR\_TAXA}}
+\index{MSG\_ALTERAR\_TAXA@{MSG\_ALTERAR\_TAXA}!segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsubsection{\texorpdfstring{MSG\_ALTERAR\_TAXA}{MSG\_ALTERAR\_TAXA}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+A\+L\+T\+E\+R\+A\+R\+\_\+\+T\+A\+XA~\char`\"{}Selecione a taxa que pretende atualizar\+:\char`\"{}}
+
+\mbox{\Hypertarget{seguranca_social_8h_a3a06b66ae0895a19ec5ab99b96a804be}\label{seguranca_social_8h_a3a06b66ae0895a19ec5ab99b96a804be}} 
+\index{segurancaSocial.h@{segurancaSocial.h}!MSG\_OBTER\_INFORMACAO@{MSG\_OBTER\_INFORMACAO}}
+\index{MSG\_OBTER\_INFORMACAO@{MSG\_OBTER\_INFORMACAO}!segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsubsection{\texorpdfstring{MSG\_OBTER\_INFORMACAO}{MSG\_OBTER\_INFORMACAO}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+O\+B\+T\+E\+R\+\_\+\+I\+N\+F\+O\+R\+M\+A\+C\+AO~\char`\"{}Mensagem de Informação da Taxa\+:\char`\"{}}
+
+\mbox{\Hypertarget{seguranca_social_8h_ac2310f0ebbafa48c8011b23395da2ef2}\label{seguranca_social_8h_ac2310f0ebbafa48c8011b23395da2ef2}} 
+\index{segurancaSocial.h@{segurancaSocial.h}!MSG\_OBTER\_P\_ENTIDADE\_EMPREGADORA@{MSG\_OBTER\_P\_ENTIDADE\_EMPREGADORA}}
+\index{MSG\_OBTER\_P\_ENTIDADE\_EMPREGADORA@{MSG\_OBTER\_P\_ENTIDADE\_EMPREGADORA}!segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsubsection{\texorpdfstring{MSG\_OBTER\_P\_ENTIDADE\_EMPREGADORA}{MSG\_OBTER\_P\_ENTIDADE\_EMPREGADORA}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+O\+B\+T\+E\+R\+\_\+\+P\+\_\+\+E\+N\+T\+I\+D\+A\+D\+E\+\_\+\+E\+M\+P\+R\+E\+G\+A\+D\+O\+RA~\char`\"{}Percentagem Entidade Empregadora\+:\char`\"{}}
+
+\mbox{\Hypertarget{seguranca_social_8h_ac8e0db980ed5758de119d0f4e068578c}\label{seguranca_social_8h_ac8e0db980ed5758de119d0f4e068578c}} 
+\index{segurancaSocial.h@{segurancaSocial.h}!MSG\_OBTER\_P\_TRABALHADOR@{MSG\_OBTER\_P\_TRABALHADOR}}
+\index{MSG\_OBTER\_P\_TRABALHADOR@{MSG\_OBTER\_P\_TRABALHADOR}!segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsubsection{\texorpdfstring{MSG\_OBTER\_P\_TRABALHADOR}{MSG\_OBTER\_P\_TRABALHADOR}}
+{\footnotesize\ttfamily \#define M\+S\+G\+\_\+\+O\+B\+T\+E\+R\+\_\+\+P\+\_\+\+T\+R\+A\+B\+A\+L\+H\+A\+D\+OR~\char`\"{}Percentagem Trabalhador\+:\char`\"{}}
+
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{seguranca_social_8h_a8e2bf700f0e9e7eafbfac3e9a5d93611}\label{seguranca_social_8h_a8e2bf700f0e9e7eafbfac3e9a5d93611}} 
+\index{segurancaSocial.h@{segurancaSocial.h}!adicionarTaxaContributiva@{adicionarTaxaContributiva}}
+\index{adicionarTaxaContributiva@{adicionarTaxaContributiva}!segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsubsection{\texorpdfstring{adicionarTaxaContributiva()}{adicionarTaxaContributiva()}}
+{\footnotesize\ttfamily void adicionar\+Taxa\+Contributiva (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Função utilizada para alocar espaços para as taxas contributivas e chamar a função \char`\"{}adicionar\+Nova\+Taxa\+Contributiva\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram os dados das taxas contributivas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{seguranca_social_8h_a63660fc38a332c98244bf52a1af52673}\label{seguranca_social_8h_a63660fc38a332c98244bf52a1af52673}} 
+\index{segurancaSocial.h@{segurancaSocial.h}!atualizarTaxaContributiva@{atualizarTaxaContributiva}}
+\index{atualizarTaxaContributiva@{atualizarTaxaContributiva}!segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsubsection{\texorpdfstring{atualizarTaxaContributiva()}{atualizarTaxaContributiva()}}
+{\footnotesize\ttfamily void atualizar\+Taxa\+Contributiva (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Função utilizada para atualizar as taxas contributivas. 
+\begin{DoxyParams}{Parâmetros}
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram os dados das taxas contributivas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{seguranca_social_8h_a38bd5fed20a514c3af69702857d88c8d}\label{seguranca_social_8h_a38bd5fed20a514c3af69702857d88c8d}} 
+\index{segurancaSocial.h@{segurancaSocial.h}!carregarDadosFicheiroTaxasContributivas@{carregarDadosFicheiroTaxasContributivas}}
+\index{carregarDadosFicheiroTaxasContributivas@{carregarDadosFicheiroTaxasContributivas}!segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsubsection{\texorpdfstring{carregarDadosFicheiroTaxasContributivas()}{carregarDadosFicheiroTaxasContributivas()}}
+{\footnotesize\ttfamily void carregar\+Dados\+Ficheiro\+Taxas\+Contributivas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas,  }\item[{char $\ast$}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+Função utilizada para importar a informação das taxas contributivas de um ficheiro. 
+\begin{DoxyParams}{Parâmetros}
+{\em taxas\+Contributivas} & -\/ apontador onde irão ficar guardadas os dados das taxas contributivas. \\
+\hline
+{\em nome\+Ficheiro} & -\/ valor correspondente ao nome do ficheiro onde se encontra guardada a informação. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{seguranca_social_8h_af166ae1919dda9883691768c46ef082a}\label{seguranca_social_8h_af166ae1919dda9883691768c46ef082a}} 
+\index{segurancaSocial.h@{segurancaSocial.h}!guardarDadosFicheiroTaxasContributivas@{guardarDadosFicheiroTaxasContributivas}}
+\index{guardarDadosFicheiroTaxasContributivas@{guardarDadosFicheiroTaxasContributivas}!segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsubsection{\texorpdfstring{guardarDadosFicheiroTaxasContributivas()}{guardarDadosFicheiroTaxasContributivas()}}
+{\footnotesize\ttfamily void guardar\+Dados\+Ficheiro\+Taxas\+Contributivas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas,  }\item[{char $\ast$}]{nome\+Ficheiro }\end{DoxyParamCaption})}
+
+Função utilizada para armazenar a informação das taxas contributivas num ficheiro. 
+\begin{DoxyParams}{Parâmetros}
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram os dados das taxas contributivas. \\
+\hline
+{\em nome\+Ficheiro} & -\/ valor correspondente ao nome do ficheiro onde serão armazenadas as informações. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{seguranca_social_8h_aadb043f24fee00c934d0f84a521e99c6}\label{seguranca_social_8h_aadb043f24fee00c934d0f84a521e99c6}} 
+\index{segurancaSocial.h@{segurancaSocial.h}!listarTaxasContributivas@{listarTaxasContributivas}}
+\index{listarTaxasContributivas@{listarTaxasContributivas}!segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsubsection{\texorpdfstring{listarTaxasContributivas()}{listarTaxasContributivas()}}
+{\footnotesize\ttfamily void listar\+Taxas\+Contributivas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Função utilizada para verificar se existem taxas contributivas e caso existam, chamar a função \char`\"{}lista\+Taxa\+Contributiva\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram os dados das taxas contributivas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{seguranca_social_8h_a68b5619e7990d20eeeb032570d0d37e6}\label{seguranca_social_8h_a68b5619e7990d20eeeb032570d0d37e6}} 
+\index{segurancaSocial.h@{segurancaSocial.h}!listaTaxaContributiva@{listaTaxaContributiva}}
+\index{listaTaxaContributiva@{listaTaxaContributiva}!segurancaSocial.h@{segurancaSocial.h}}
+\doxysubsubsection{\texorpdfstring{listaTaxaContributiva()}{listaTaxaContributiva()}}
+{\footnotesize\ttfamily void lista\+Taxa\+Contributiva (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_taxa_contributiva}{Taxa\+Contributiva}} $\ast$}]{taxa\+Contributiva }\end{DoxyParamCaption})}
+
+Função utilizada para listar uma taxa contributiva. 
+\begin{DoxyParams}{Parâmetros}
+{\em taxa\+Contributiva} & -\/ apontador onde se encontram os dados da taxa contributiva. \\
+\hline
+\end{DoxyParams}

@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LP_G13_Projeto: Código-Fonte de funcoes.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LP_G13_Projeto
+   &#160;<span id="projectnumber">Versão 1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('funcoes_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">funcoes.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="funcoes_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef FUNCOES_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define FUNCOES_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="seguranca_social_8h.html">segurancaSocial.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="funcionario_8h.html">funcionario.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#a3076524f5392bf8c8782c34e7192d78b">primeirosDigitos</a>(<span class="keywordtype">int</span> n, <span class="keywordtype">int</span> nd);</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#aac0a5840b5a421f4f30a0a3015485380">numero_digitos</a>(<span class="keywordtype">int</span> n);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funcoes_8h.html#a6d48c6ef129e0dd4260cfd45e5b0ee99">limpar</a>();</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#ada8473a21b2f5de79ee5365dc16d172b">verificaAnoBissexto</a>(<span class="keywordtype">int</span> ano);</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="funcoes_8h.html#a1960361149d4067a5d3f06b541f1c312">   11</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#a1960361149d4067a5d3f06b541f1c312">verificaData</a>(<span class="keywordtype">int</span> dia, <span class="keywordtype">int</span> mes, <span class="keywordtype">int</span> ano);</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#a3fdcca4005a91688d1c43b900a342900">getAnoAtual</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#a24a3a9e51fbbf4091829c84fe54af3d3">getNumeroDiasMes</a>(<span class="keywordtype">int</span> mes, <span class="keywordtype">int</span> ano);</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#a2a96be80c91241d8f59638f82ef17e45">verifica_Telemovel</a>(<span class="keywordtype">int</span> numero);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#a4f0443a8256a2b8272544304ec7795c2">verificaDataNascimento</a>(<span class="keywordtype">int</span> dia, <span class="keywordtype">int</span> mes, <span class="keywordtype">int</span> ano);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#af360cb0f8ee6384016daa42f83177a5e">verificaDataSaida</a>(<a class="code" href="struct_data.html">Data</a> *dataSaida, <a class="code" href="struct_data.html">Data</a> *dataEntrada);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#a3a0f12435f7b31196770f7fd55618959">verificarPalavras</a>(<span class="keywordtype">char</span> *frase, <span class="keywordtype">char</span> *verifica);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funcoes_8h.html#a556e09ade87e7e0bc600868a7810b60d">juntar2Strings</a>(<span class="keywordtype">char</span> *s1, <span class="keywordtype">char</span> *s2);</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funcoes_8h.html#a5d99b14c6c7670ffec4e2fe2dd7aeb7b">juntar4Strings</a>(<span class="keywordtype">char</span> *s1, <span class="keywordtype">char</span> *s2, <span class="keywordtype">char</span> *s3, <span class="keywordtype">char</span> *s4);</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#a448f090df1c73924116ba869c04e4307">verificaString</a>(<span class="keywordtype">char</span> *s1, <span class="keywordtype">char</span> *s2);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#af5921164738a2a3bfe3bb3c60d36fedb">getDiasFinsSemana</a>(<span class="keywordtype">int</span> mes, <span class="keywordtype">int</span> ano) ;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#a57087df0e59334dad2fbe88d702444ee">getTaxaContributiva</a>(<a class="code" href="struct_taxas_contributivas.html">TaxasContributivas</a> *taxasContributivas, <a class="code" href="struct_funcionario.html">Funcionario</a> *funcionario, <span class="keywordtype">int</span> idade,<span class="keywordtype">int</span> anosTrabalho);</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keywordtype">int</span> <a class="code" href="funcoes_8h.html#a9d56b19a8efb07ad22b5172e1ee81e08">idadeFimMes</a>(<span class="keywordtype">int</span> mes, <span class="keywordtype">int</span> ano, <span class="keywordtype">int</span> mesAtual, <span class="keywordtype">int</span> anoAtual);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* FUNCOES_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="astruct_taxas_contributivas_html_a3616be7f0b6a1c052b4b689f7206c6fa"><div class="ttname"><a href="struct_taxas_contributivas.html#a3616be7f0b6a1c052b4b689f7206c6fa">TaxasContributivas::taxasContributivas</a></div><div class="ttdeci">TaxaContributiva * taxasContributivas</div><div class="ttdef"><b>Definition:</b> segurancaSocial.h:26</div></div>
+<div class="ttc" id="afuncoes_8h_html_a4f0443a8256a2b8272544304ec7795c2"><div class="ttname"><a href="funcoes_8h.html#a4f0443a8256a2b8272544304ec7795c2">verificaDataNascimento</a></div><div class="ttdeci">int verificaDataNascimento(int dia, int mes, int ano)</div><div class="ttdef"><b>Definition:</b> funcoes.c:132</div></div>
+<div class="ttc" id="afuncoes_8h_html"><div class="ttname"><a href="funcoes_8h.html">funcoes.h</a></div></div>
+<div class="ttc" id="astruct_data_html_a9fc86758220eae0e735655f81fd9d9bc"><div class="ttname"><a href="struct_data.html#a9fc86758220eae0e735655f81fd9d9bc">Data::mes</a></div><div class="ttdeci">int mes</div><div class="ttdef"><b>Definition:</b> funcionario.h:112</div></div>
+<div class="ttc" id="afuncoes_8c_html_a556e09ade87e7e0bc600868a7810b60d"><div class="ttname"><a href="funcoes_8c.html#a556e09ade87e7e0bc600868a7810b60d">juntar2Strings</a></div><div class="ttdeci">void juntar2Strings(char *s1, char *s2)</div><div class="ttdef"><b>Definition:</b> funcoes.c:289</div></div>
+<div class="ttc" id="afuncionario_8h_html"><div class="ttname"><a href="funcionario_8h.html">funcionario.h</a></div></div>
+<div class="ttc" id="astruct_data_html_a3d1171ac670a8e8a672c481f22d1fa9f"><div class="ttname"><a href="struct_data.html#a3d1171ac670a8e8a672c481f22d1fa9f">Data::dia</a></div><div class="ttdeci">int dia</div><div class="ttdef"><b>Definition:</b> funcionario.h:112</div></div>
+<div class="ttc" id="afuncoes_8c_html_a4f0443a8256a2b8272544304ec7795c2"><div class="ttname"><a href="funcoes_8c.html#a4f0443a8256a2b8272544304ec7795c2">verificaDataNascimento</a></div><div class="ttdeci">int verificaDataNascimento(int dia, int mes, int ano)</div><div class="ttdef"><b>Definition:</b> funcoes.c:132</div></div>
+<div class="ttc" id="astruct_taxas_contributivas_html"><div class="ttname"><a href="struct_taxas_contributivas.html">TaxasContributivas</a></div><div class="ttdef"><b>Definition:</b> segurancaSocial.h:25</div></div>
+<div class="ttc" id="afuncoes_8c_html_aac0a5840b5a421f4f30a0a3015485380"><div class="ttname"><a href="funcoes_8c.html#aac0a5840b5a421f4f30a0a3015485380">numero_digitos</a></div><div class="ttdeci">int numero_digitos(int n)</div><div class="ttdef"><b>Definition:</b> funcoes.c:14</div></div>
+<div class="ttc" id="afuncoes_8h_html_af360cb0f8ee6384016daa42f83177a5e"><div class="ttname"><a href="funcoes_8h.html#af360cb0f8ee6384016daa42f83177a5e">verificaDataSaida</a></div><div class="ttdeci">int verificaDataSaida(Data *dataSaida, Data *dataEntrada)</div><div class="ttdef"><b>Definition:</b> funcoes.c:168</div></div>
+<div class="ttc" id="afuncoes_8c_html_a3076524f5392bf8c8782c34e7192d78b"><div class="ttname"><a href="funcoes_8c.html#a3076524f5392bf8c8782c34e7192d78b">primeirosDigitos</a></div><div class="ttdeci">int primeirosDigitos(int n, int nd)</div><div class="ttdef"><b>Definition:</b> funcoes.c:29</div></div>
+<div class="ttc" id="afuncoes_8c_html_a2a96be80c91241d8f59638f82ef17e45"><div class="ttname"><a href="funcoes_8c.html#a2a96be80c91241d8f59638f82ef17e45">verifica_Telemovel</a></div><div class="ttdeci">int verifica_Telemovel(int numero)</div><div class="ttdef"><b>Definition:</b> funcoes.c:42</div></div>
+<div class="ttc" id="afuncoes_8c_html_ade6182e633a4d83d978fa876eac8969b"><div class="ttname"><a href="funcoes_8c.html#ade6182e633a4d83d978fa876eac8969b">minuscula</a></div><div class="ttdeci">void minuscula(char *s)</div><div class="ttdef"><b>Definition:</b> funcoes.c:183</div></div>
+<div class="ttc" id="afuncoes_8c_html_a1bd1bd302627216ca9c09539dfb97c61"><div class="ttname"><a href="funcoes_8c.html#a1bd1bd302627216ca9c09539dfb97c61">getPalavra</a></div><div class="ttdeci">void getPalavra(char *s1, char *s2, int posicaoPalavra)</div><div class="ttdef"><b>Definition:</b> funcoes.c:225</div></div>
+<div class="ttc" id="afuncoes_8h_html_a2a96be80c91241d8f59638f82ef17e45"><div class="ttname"><a href="funcoes_8h.html#a2a96be80c91241d8f59638f82ef17e45">verifica_Telemovel</a></div><div class="ttdeci">int verifica_Telemovel(int numero)</div><div class="ttdef"><b>Definition:</b> funcoes.c:42</div></div>
+<div class="ttc" id="afuncoes_8h_html_af5921164738a2a3bfe3bb3c60d36fedb"><div class="ttname"><a href="funcoes_8h.html#af5921164738a2a3bfe3bb3c60d36fedb">getDiasFinsSemana</a></div><div class="ttdeci">int getDiasFinsSemana(int mes, int ano)</div><div class="ttdef"><b>Definition:</b> funcoes.c:115</div></div>
+<div class="ttc" id="afuncoes_8c_html_ac07713fe73c72054f31722dad245d90d"><div class="ttname"><a href="funcoes_8c.html#ac07713fe73c72054f31722dad245d90d">contarPalavras</a></div><div class="ttdeci">int contarPalavras(char *string)</div><div class="ttdef"><b>Definition:</b> funcoes.c:243</div></div>
+<div class="ttc" id="astruct_data_html"><div class="ttname"><a href="struct_data.html">Data</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:111</div></div>
+<div class="ttc" id="afuncoes_8h_html_aac0a5840b5a421f4f30a0a3015485380"><div class="ttname"><a href="funcoes_8h.html#aac0a5840b5a421f4f30a0a3015485380">numero_digitos</a></div><div class="ttdeci">int numero_digitos(int n)</div><div class="ttdef"><b>Definition:</b> funcoes.c:14</div></div>
+<div class="ttc" id="afuncoes_8c_html_a24a3a9e51fbbf4091829c84fe54af3d3"><div class="ttname"><a href="funcoes_8c.html#a24a3a9e51fbbf4091829c84fe54af3d3">getNumeroDiasMes</a></div><div class="ttdeci">int getNumeroDiasMes(int mes, int ano)</div><div class="ttdef"><b>Definition:</b> funcoes.c:81</div></div>
+<div class="ttc" id="afuncoes_8h_html_a3a0f12435f7b31196770f7fd55618959"><div class="ttname"><a href="funcoes_8h.html#a3a0f12435f7b31196770f7fd55618959">verificarPalavras</a></div><div class="ttdeci">int verificarPalavras(char *frase, char *verifica)</div><div class="ttdef"><b>Definition:</b> funcoes.c:259</div></div>
+<div class="ttc" id="afuncoes_8c_html_af360cb0f8ee6384016daa42f83177a5e"><div class="ttname"><a href="funcoes_8c.html#af360cb0f8ee6384016daa42f83177a5e">verificaDataSaida</a></div><div class="ttdeci">int verificaDataSaida(Data *dataSaida, Data *dataEntrada)</div><div class="ttdef"><b>Definition:</b> funcoes.c:168</div></div>
+<div class="ttc" id="afuncoes_8h_html_ada8473a21b2f5de79ee5365dc16d172b"><div class="ttname"><a href="funcoes_8h.html#ada8473a21b2f5de79ee5365dc16d172b">verificaAnoBissexto</a></div><div class="ttdeci">int verificaAnoBissexto(int ano)</div><div class="ttdef"><b>Definition:</b> funcoes.c:65</div></div>
+<div class="ttc" id="afuncoes_8c_html_a3458fdc2d3b6cae2d90c7558bb673c4f"><div class="ttname"><a href="funcoes_8c.html#a3458fdc2d3b6cae2d90c7558bb673c4f">getDiaSemana</a></div><div class="ttdeci">int getDiaSemana(int dia, int mes, int ano)</div><div class="ttdef"><b>Definition:</b> funcoes.c:99</div></div>
+<div class="ttc" id="astruct_taxas_contributivas_html_a3a1efcbb9eba6f463a5494b993abf4dc"><div class="ttname"><a href="struct_taxas_contributivas.html#a3a1efcbb9eba6f463a5494b993abf4dc">TaxasContributivas::numeroTaxasContributivas</a></div><div class="ttdeci">int numeroTaxasContributivas</div><div class="ttdef"><b>Definition:</b> segurancaSocial.h:28</div></div>
+<div class="ttc" id="airs_8h_html"><div class="ttname"><a href="irs_8h.html">irs.h</a></div></div>
+<div class="ttc" id="aseguranca_social_8h_html"><div class="ttname"><a href="seguranca_social_8h.html">segurancaSocial.h</a></div></div>
+<div class="ttc" id="astruct_taxa_contributiva_html_a4769e19e596574ab89573868533714a4"><div class="ttname"><a href="struct_taxa_contributiva.html#a4769e19e596574ab89573868533714a4">TaxaContributiva::cargo</a></div><div class="ttdeci">int cargo</div><div class="ttdef"><b>Definition:</b> segurancaSocial.h:19</div></div>
+<div class="ttc" id="afuncoes_8h_html_a24a3a9e51fbbf4091829c84fe54af3d3"><div class="ttname"><a href="funcoes_8h.html#a24a3a9e51fbbf4091829c84fe54af3d3">getNumeroDiasMes</a></div><div class="ttdeci">int getNumeroDiasMes(int mes, int ano)</div><div class="ttdef"><b>Definition:</b> funcoes.c:81</div></div>
+<div class="ttc" id="afuncoes_8h_html_a9d56b19a8efb07ad22b5172e1ee81e08"><div class="ttname"><a href="funcoes_8h.html#a9d56b19a8efb07ad22b5172e1ee81e08">idadeFimMes</a></div><div class="ttdeci">int idadeFimMes(int mes, int ano, int mesAtual, int anoAtual)</div><div class="ttdef"><b>Definition:</b> funcoes.c:329</div></div>
+<div class="ttc" id="afuncoes_8h_html_a5d99b14c6c7670ffec4e2fe2dd7aeb7b"><div class="ttname"><a href="funcoes_8h.html#a5d99b14c6c7670ffec4e2fe2dd7aeb7b">juntar4Strings</a></div><div class="ttdeci">void juntar4Strings(char *s1, char *s2, char *s3, char *s4)</div><div class="ttdef"><b>Definition:</b> funcoes.c:306</div></div>
+<div class="ttc" id="astruct_funcionario_html_a4227719f25ce9f03412fcef9cc714172"><div class="ttname"><a href="struct_funcionario.html#a4227719f25ce9f03412fcef9cc714172">Funcionario::cargo</a></div><div class="ttdeci">Cargo cargo</div><div class="ttdef"><b>Definition:</b> funcionario.h:122</div></div>
+<div class="ttc" id="astruct_data_html_ac404d93cbf0169fd9e89edc17d0c5572"><div class="ttname"><a href="struct_data.html#ac404d93cbf0169fd9e89edc17d0c5572">Data::ano</a></div><div class="ttdeci">int ano</div><div class="ttdef"><b>Definition:</b> funcionario.h:112</div></div>
+<div class="ttc" id="afuncoes_8h_html_a6d48c6ef129e0dd4260cfd45e5b0ee99"><div class="ttname"><a href="funcoes_8h.html#a6d48c6ef129e0dd4260cfd45e5b0ee99">limpar</a></div><div class="ttdeci">void limpar()</div><div class="ttdef"><b>Definition:</b> funcoes.c:53</div></div>
+<div class="ttc" id="afuncoes_8h_html_a1960361149d4067a5d3f06b541f1c312"><div class="ttname"><a href="funcoes_8h.html#a1960361149d4067a5d3f06b541f1c312">verificaData</a></div><div class="ttdeci">int verificaData(int dia, int mes, int ano)</div></div>
+<div class="ttc" id="astruct_taxa_contributiva_html_ad5ea2e19b7deb827930edce70e13e3b8"><div class="ttname"><a href="struct_taxa_contributiva.html#ad5ea2e19b7deb827930edce70e13e3b8">TaxaContributiva::idade</a></div><div class="ttdeci">int idade</div><div class="ttdef"><b>Definition:</b> segurancaSocial.h:21</div></div>
+<div class="ttc" id="afuncoes_8c_html_a448f090df1c73924116ba869c04e4307"><div class="ttname"><a href="funcoes_8c.html#a448f090df1c73924116ba869c04e4307">verificaString</a></div><div class="ttdeci">int verificaString(char *s1, char *s2)</div><div class="ttdef"><b>Definition:</b> funcoes.c:206</div></div>
+<div class="ttc" id="afuncoes_8h_html_a3fdcca4005a91688d1c43b900a342900"><div class="ttname"><a href="funcoes_8h.html#a3fdcca4005a91688d1c43b900a342900">getAnoAtual</a></div><div class="ttdeci">int getAnoAtual()</div><div class="ttdef"><b>Definition:</b> funcoes.c:156</div></div>
+<div class="ttc" id="afuncoes_8c_html_a3a0f12435f7b31196770f7fd55618959"><div class="ttname"><a href="funcoes_8c.html#a3a0f12435f7b31196770f7fd55618959">verificarPalavras</a></div><div class="ttdeci">int verificarPalavras(char *frase, char *verifica)</div><div class="ttdef"><b>Definition:</b> funcoes.c:259</div></div>
+<div class="ttc" id="afuncoes_8c_html_a6d48c6ef129e0dd4260cfd45e5b0ee99"><div class="ttname"><a href="funcoes_8c.html#a6d48c6ef129e0dd4260cfd45e5b0ee99">limpar</a></div><div class="ttdeci">void limpar()</div><div class="ttdef"><b>Definition:</b> funcoes.c:53</div></div>
+<div class="ttc" id="astruct_funcionario_html"><div class="ttname"><a href="struct_funcionario.html">Funcionario</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:115</div></div>
+<div class="ttc" id="astruct_taxa_contributiva_html_a0269e490cc0f674eb34864b01f7decec"><div class="ttname"><a href="struct_taxa_contributiva.html#a0269e490cc0f674eb34864b01f7decec">TaxaContributiva::anosEmpresa</a></div><div class="ttdeci">int anosEmpresa</div><div class="ttdef"><b>Definition:</b> segurancaSocial.h:22</div></div>
+<div class="ttc" id="afuncoes_8h_html_a556e09ade87e7e0bc600868a7810b60d"><div class="ttname"><a href="funcoes_8h.html#a556e09ade87e7e0bc600868a7810b60d">juntar2Strings</a></div><div class="ttdeci">void juntar2Strings(char *s1, char *s2)</div><div class="ttdef"><b>Definition:</b> funcoes.c:289</div></div>
+<div class="ttc" id="astruct_taxa_contributiva_html_a16fa64574a39261036723730941c5521"><div class="ttname"><a href="struct_taxa_contributiva.html#a16fa64574a39261036723730941c5521">TaxaContributiva::sinal</a></div><div class="ttdeci">int sinal</div><div class="ttdef"><b>Definition:</b> segurancaSocial.h:20</div></div>
+<div class="ttc" id="afuncoes_8h_html_a3076524f5392bf8c8782c34e7192d78b"><div class="ttname"><a href="funcoes_8h.html#a3076524f5392bf8c8782c34e7192d78b">primeirosDigitos</a></div><div class="ttdeci">int primeirosDigitos(int n, int nd)</div><div class="ttdef"><b>Definition:</b> funcoes.c:29</div></div>
+<div class="ttc" id="afuncoes_8c_html_a57087df0e59334dad2fbe88d702444ee"><div class="ttname"><a href="funcoes_8c.html#a57087df0e59334dad2fbe88d702444ee">getTaxaContributiva</a></div><div class="ttdeci">int getTaxaContributiva(TaxasContributivas *taxasContributivas, Funcionario *funcionario, int idade, int anosTrabalho)</div><div class="ttdef"><b>Definition:</b> funcoes.c:345</div></div>
+<div class="ttc" id="afuncoes_8h_html_a448f090df1c73924116ba869c04e4307"><div class="ttname"><a href="funcoes_8h.html#a448f090df1c73924116ba869c04e4307">verificaString</a></div><div class="ttdeci">int verificaString(char *s1, char *s2)</div><div class="ttdef"><b>Definition:</b> funcoes.c:206</div></div>
+<div class="ttc" id="afuncoes_8c_html_a9d56b19a8efb07ad22b5172e1ee81e08"><div class="ttname"><a href="funcoes_8c.html#a9d56b19a8efb07ad22b5172e1ee81e08">idadeFimMes</a></div><div class="ttdeci">int idadeFimMes(int mes, int ano, int mesAtual, int anoAtual)</div><div class="ttdef"><b>Definition:</b> funcoes.c:329</div></div>
+<div class="ttc" id="afuncoes_8c_html_a5d99b14c6c7670ffec4e2fe2dd7aeb7b"><div class="ttname"><a href="funcoes_8c.html#a5d99b14c6c7670ffec4e2fe2dd7aeb7b">juntar4Strings</a></div><div class="ttdeci">void juntar4Strings(char *s1, char *s2, char *s3, char *s4)</div><div class="ttdef"><b>Definition:</b> funcoes.c:306</div></div>
+<div class="ttc" id="afuncoes_8c_html_ada8473a21b2f5de79ee5365dc16d172b"><div class="ttname"><a href="funcoes_8c.html#ada8473a21b2f5de79ee5365dc16d172b">verificaAnoBissexto</a></div><div class="ttdeci">int verificaAnoBissexto(int ano)</div><div class="ttdef"><b>Definition:</b> funcoes.c:65</div></div>
+<div class="ttc" id="afuncoes_8h_html_a57087df0e59334dad2fbe88d702444ee"><div class="ttname"><a href="funcoes_8h.html#a57087df0e59334dad2fbe88d702444ee">getTaxaContributiva</a></div><div class="ttdeci">int getTaxaContributiva(TaxasContributivas *taxasContributivas, Funcionario *funcionario, int idade, int anosTrabalho)</div><div class="ttdef"><b>Definition:</b> funcoes.c:345</div></div>
+<div class="ttc" id="afuncoes_8c_html_a3fdcca4005a91688d1c43b900a342900"><div class="ttname"><a href="funcoes_8c.html#a3fdcca4005a91688d1c43b900a342900">getAnoAtual</a></div><div class="ttdeci">int getAnoAtual()</div><div class="ttdef"><b>Definition:</b> funcoes.c:156</div></div>
+<div class="ttc" id="afuncoes_8c_html_a2b1a7498b436cc545afb7e950aa99fae"><div class="ttname"><a href="funcoes_8c.html#a2b1a7498b436cc545afb7e950aa99fae">tamanhoString</a></div><div class="ttdeci">int tamanhoString(char *s)</div><div class="ttdef"><b>Definition:</b> funcoes.c:194</div></div>
+<div class="ttc" id="afuncoes_8c_html_af5921164738a2a3bfe3bb3c60d36fedb"><div class="ttname"><a href="funcoes_8c.html#af5921164738a2a3bfe3bb3c60d36fedb">getDiasFinsSemana</a></div><div class="ttdeci">int getDiasFinsSemana(int mes, int ano)</div><div class="ttdef"><b>Definition:</b> funcoes.c:115</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="funcoes_8h.html">funcoes.h</a></li>
+    <li class="footer">Gerado por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

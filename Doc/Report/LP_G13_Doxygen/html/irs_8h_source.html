@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LP_G13_Projeto: Código-Fonte de irs.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LP_G13_Projeto
+   &#160;<span id="projectnumber">Versão 1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('irs_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">irs.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="irs_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef IRC_H</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define IRC_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="irs_8h.html#af735670d9b1cd3dfa2d927db387f7123">    4</a></span>&#160;<span class="preprocessor">#define INC 5</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="irs_8h.html#a041859a7225c6871fecf3cc7a93266bf">    6</a></span>&#160;<span class="preprocessor">#define FicheiroCasadoUnico           &quot;./src/CasadosDois.txt&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="irs_8h.html#aa09eb5d6b0aff8eae18cbd96b6142654">    7</a></span>&#160;<span class="preprocessor">#define FicheiroCasadoDois            &quot;./src/CasadoUnico.txt&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="irs_8h.html#a4cca17251f8a41c5748de91a359d4e5f">    8</a></span>&#160;<span class="preprocessor">#define FicheiroNaoCasado             &quot;./src/NaoCasado.txt&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="irs_8h.html#ac33a4ae787d01fe6150e3dd68e39a5c0">   10</a></span>&#160;<span class="preprocessor">#define ERRO_PESQUISA_SALARIO         &quot;Salário não encontrado.&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="irs_8h.html#addf468d6b7ac2f8adfcead4293348062">   11</a></span>&#160;<span class="preprocessor">#define MSG_OBTER_REMUNERACAO         &quot;Insira o valor da renumeração mensal: &quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="irs_8h.html#a98421bdc73548c88f13092582b08cc9c">   12</a></span>&#160;<span class="preprocessor">#define MSG_OBTER_REMUNERACAO_ALT     &quot;Insira o valor limite da renumeração mensal que quer alterar: &quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="irs_8h.html#a616373a90bb57c6b320e065f6c285a2e">   13</a></span>&#160;<span class="preprocessor">#define MIN_REMUNERACAO               0</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="irs_8h.html#a38441b72cca44c71ec7a3d175c2db617">   14</a></span>&#160;<span class="preprocessor">#define MSG_OBTER_PERCENTAGEM         &quot;Insira o valor percentual do IRS correspondente ao número de filhos [%.2f - %.2f]: &quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="struct_i_r_s.html">   16</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_i_r_s.html#a231f70727a973baa935dbbd3d3ea7cb9">   17</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="struct_i_r_s.html#a231f70727a973baa935dbbd3d3ea7cb9">salario</a>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_i_r_s.html#aafa7f10cfbd0e3b68ac3563e5d0aee2e">   18</a></span>&#160;    <span class="keywordtype">float</span> percentagem[6];</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;} <a class="code" href="struct_i_r_s.html">IRS</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="struct_i_r_s_dados.html">   21</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="struct_i_r_s_dados.html#a3a82f750aa0e7825bb59ec08e12efd6c">   22</a></span>&#160;    <a class="code" href="struct_i_r_s.html">IRS</a> *<a class="code" href="struct_i_r_s_dados.html#a3a82f750aa0e7825bb59ec08e12efd6c">casadoUnicoIRS</a>;</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="struct_i_r_s_dados.html#a72107d14e2ac99f76323bcd8f422294d">   23</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_i_r_s_dados.html#a72107d14e2ac99f76323bcd8f422294d">contadorCasadoUnicoIRS</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="struct_i_r_s_dados.html#ad72c7df7b9939510f041e45b69cd972b">   24</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_i_r_s_dados.html#ad72c7df7b9939510f041e45b69cd972b">tamcontadorCasadoUnicoIRS</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="struct_i_r_s_dados.html#aa3fdf7d6adb31c564fcc4ada2358cd54">   26</a></span>&#160;    <a class="code" href="struct_i_r_s.html">IRS</a> *<a class="code" href="struct_i_r_s_dados.html#aa3fdf7d6adb31c564fcc4ada2358cd54">casadoDoisIRS</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_i_r_s_dados.html#a9dc590c84aff16ce7f97c6046c0e54cd">   27</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_i_r_s_dados.html#a9dc590c84aff16ce7f97c6046c0e54cd">contadorCasadoDoisIRS</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_i_r_s_dados.html#a61ba567cf4a324e41f2da2edd1c3992b">   28</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_i_r_s_dados.html#a61ba567cf4a324e41f2da2edd1c3992b">tamcontadorCasadoDoisIRS</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="struct_i_r_s_dados.html#a5b8310fa0da692a1ee0527f96dad2d54">   30</a></span>&#160;    <a class="code" href="struct_i_r_s.html">IRS</a> *<a class="code" href="struct_i_r_s_dados.html#a5b8310fa0da692a1ee0527f96dad2d54">solteiroIRS</a>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_i_r_s_dados.html#a773554a25b2a68cdebb305ac0d860851">   31</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_i_r_s_dados.html#a773554a25b2a68cdebb305ac0d860851">contadorSolteiroIRS</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_i_r_s_dados.html#a4d36655f5941f5d4613bd358afd69c1f">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_i_r_s_dados.html#a4d36655f5941f5d4613bd358afd69c1f">tamcontadorSolteiroIRS</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;} <a class="code" href="struct_i_r_s_dados.html">IRSDados</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keywordtype">void</span> <a class="code" href="irs_8h.html#a7307041024bd9df6acc3e94613550235">atualizarFicheiroIRS</a>(<a class="code" href="struct_i_r_s.html">IRS</a> *irs, <span class="keywordtype">int</span> contador, <span class="keywordtype">char</span> *nomeFicheiro);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="irs_8h.html#a2797575bc9a26cf856589bee7483cc5d">carregarDadosFicheiroIRS</a>(<a class="code" href="struct_i_r_s.html">IRS</a> **irs, <span class="keywordtype">int</span> *contador, <span class="keywordtype">int</span> *tam, <span class="keywordtype">char</span> *nomeFicheiro);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="irs_8h.html#a587ffa6fa7574e772232e11dd9634aab">listarIRS</a>(<a class="code" href="struct_i_r_s.html">IRS</a> *irs, <span class="keywordtype">int</span> contador, <span class="keywordtype">char</span>* mensagem);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="irs_8h.html#ab2fafe7dd02622bbd557d0ab308b4b2a">adicionarTabelaIRS</a>(<a class="code" href="struct_i_r_s.html">IRS</a> **irs, <span class="keywordtype">int</span> *contador, <span class="keywordtype">int</span> *tam);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="irs_8h.html#aefb925e2ffcb9f5af6def6115dc514a6">alterarTabelaIRS</a>(<a class="code" href="struct_i_r_s.html">IRS</a> **irs, <span class="keywordtype">int</span> *contador);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">void</span> <a class="code" href="irs_8h.html#a7094661077d34b62d77bc7b75e4deeef">eliminarTabelaIRS</a>(<a class="code" href="struct_i_r_s.html">IRS</a> **irs, <span class="keywordtype">int</span> *contador);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">float</span> <a class="code" href="irs_8h.html#a0cf57e332eba99ce7af95208d88ee0ea">getIrs</a>(<a class="code" href="struct_i_r_s_dados.html">IRSDados</a> *irsdados,<span class="keywordtype">float</span> salario, <span class="keywordtype">int</span> nFilhos, <span class="keywordtype">int</span> estadoCivil);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* IRC_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="afuncionario_8h_html_a20454225008553cef4e5cb14a37d4c1da036ca4fd5ae6258ccaccb73a23ee6f58"><div class="ttname"><a href="funcionario_8h.html#a20454225008553cef4e5cb14a37d4c1da036ca4fd5ae6258ccaccb73a23ee6f58">Divorciado</a></div><div class="ttdeci">@ Divorciado</div><div class="ttdef"><b>Definition:</b> funcionario.h:104</div></div>
+<div class="ttc" id="airs_8c_html_a87e66fbe0d1b65842b9b222a13df3b52"><div class="ttname"><a href="irs_8c.html#a87e66fbe0d1b65842b9b222a13df3b52">pesquisarSalario</a></div><div class="ttdeci">int pesquisarSalario(IRS *irs, float remuneracao, int inicio, int fim)</div><div class="ttdef"><b>Definition:</b> irs.c:110</div></div>
+<div class="ttc" id="afuncoes_8h_html"><div class="ttname"><a href="funcoes_8h.html">funcoes.h</a></div></div>
+<div class="ttc" id="afuncionario_8h_html"><div class="ttname"><a href="funcionario_8h.html">funcionario.h</a></div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a9dc590c84aff16ce7f97c6046c0e54cd"><div class="ttname"><a href="struct_i_r_s_dados.html#a9dc590c84aff16ce7f97c6046c0e54cd">IRSDados::contadorCasadoDoisIRS</a></div><div class="ttdeci">int contadorCasadoDoisIRS</div><div class="ttdef"><b>Definition:</b> irs.h:27</div></div>
+<div class="ttc" id="airs_8h_html_a38441b72cca44c71ec7a3d175c2db617"><div class="ttname"><a href="irs_8h.html#a38441b72cca44c71ec7a3d175c2db617">MSG_OBTER_PERCENTAGEM</a></div><div class="ttdeci">#define MSG_OBTER_PERCENTAGEM</div><div class="ttdef"><b>Definition:</b> irs.h:14</div></div>
+<div class="ttc" id="airs_8h_html_a7307041024bd9df6acc3e94613550235"><div class="ttname"><a href="irs_8h.html#a7307041024bd9df6acc3e94613550235">atualizarFicheiroIRS</a></div><div class="ttdeci">void atualizarFicheiroIRS(IRS *irs, int contador, char *nomeFicheiro)</div><div class="ttdef"><b>Definition:</b> irs.c:15</div></div>
+<div class="ttc" id="afuncionario_8h_html_a20454225008553cef4e5cb14a37d4c1da5791027cfd735d937f692b0886b258d9"><div class="ttname"><a href="funcionario_8h.html#a20454225008553cef4e5cb14a37d4c1da5791027cfd735d937f692b0886b258d9">Casado</a></div><div class="ttdeci">@ Casado</div><div class="ttdef"><b>Definition:</b> funcionario.h:104</div></div>
+<div class="ttc" id="astruct_i_r_s_html_a231f70727a973baa935dbbd3d3ea7cb9"><div class="ttname"><a href="struct_i_r_s.html#a231f70727a973baa935dbbd3d3ea7cb9">IRS::salario</a></div><div class="ttdeci">float salario</div><div class="ttdef"><b>Definition:</b> irs.h:17</div></div>
+<div class="ttc" id="airs_8c_html_ab2fafe7dd02622bbd557d0ab308b4b2a"><div class="ttname"><a href="irs_8c.html#ab2fafe7dd02622bbd557d0ab308b4b2a">adicionarTabelaIRS</a></div><div class="ttdeci">void adicionarTabelaIRS(IRS **irs, int *contador, int *tam)</div><div class="ttdef"><b>Definition:</b> irs.c:168</div></div>
+<div class="ttc" id="afuncionario_8h_html_a20454225008553cef4e5cb14a37d4c1da8b4138720866ea38001d749c86026c67"><div class="ttname"><a href="funcionario_8h.html#a20454225008553cef4e5cb14a37d4c1da8b4138720866ea38001d749c86026c67">Solteiro</a></div><div class="ttdeci">@ Solteiro</div><div class="ttdef"><b>Definition:</b> funcionario.h:104</div></div>
+<div class="ttc" id="airs_8c_html_a0cf57e332eba99ce7af95208d88ee0ea"><div class="ttname"><a href="irs_8c.html#a0cf57e332eba99ce7af95208d88ee0ea">getIrs</a></div><div class="ttdeci">float getIrs(IRSDados *irsdados, float salario, int nFilhos, int estadoCivil)</div><div class="ttdef"><b>Definition:</b> irs.c:346</div></div>
+<div class="ttc" id="astruct_i_r_s_html_aafa7f10cfbd0e3b68ac3563e5d0aee2e"><div class="ttname"><a href="struct_i_r_s.html#aafa7f10cfbd0e3b68ac3563e5d0aee2e">IRS::percentagem</a></div><div class="ttdeci">float percentagem[6]</div><div class="ttdef"><b>Definition:</b> irs.h:18</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a3a82f750aa0e7825bb59ec08e12efd6c"><div class="ttname"><a href="struct_i_r_s_dados.html#a3a82f750aa0e7825bb59ec08e12efd6c">IRSDados::casadoUnicoIRS</a></div><div class="ttdeci">IRS * casadoUnicoIRS</div><div class="ttdef"><b>Definition:</b> irs.h:22</div></div>
+<div class="ttc" id="airs_8c_html_a56575e16e97e866a8b51110b0fbaaff2"><div class="ttname"><a href="irs_8c.html#a56575e16e97e866a8b51110b0fbaaff2">ordenarSalarios</a></div><div class="ttdeci">void ordenarSalarios(IRS *irs, int inicio, int fim)</div><div class="ttdef"><b>Definition:</b> irs.c:132</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html"><div class="ttname"><a href="struct_i_r_s_dados.html">IRSDados</a></div><div class="ttdef"><b>Definition:</b> irs.h:21</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a72107d14e2ac99f76323bcd8f422294d"><div class="ttname"><a href="struct_i_r_s_dados.html#a72107d14e2ac99f76323bcd8f422294d">IRSDados::contadorCasadoUnicoIRS</a></div><div class="ttdeci">int contadorCasadoUnicoIRS</div><div class="ttdef"><b>Definition:</b> irs.h:23</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a4d36655f5941f5d4613bd358afd69c1f"><div class="ttname"><a href="struct_i_r_s_dados.html#a4d36655f5941f5d4613bd358afd69c1f">IRSDados::tamcontadorSolteiroIRS</a></div><div class="ttdeci">int tamcontadorSolteiroIRS</div><div class="ttdef"><b>Definition:</b> irs.h:32</div></div>
+<div class="ttc" id="airs_8c_html_a14949b60a3d21b123b782269eeb86cd3"><div class="ttname"><a href="irs_8c.html#a14949b60a3d21b123b782269eeb86cd3">alterarIRSSalario</a></div><div class="ttdeci">void alterarIRSSalario(IRS *irs, int index, int contador)</div><div class="ttdef"><b>Definition:</b> irs.c:212</div></div>
+<div class="ttc" id="airs_8h_html_ab2fafe7dd02622bbd557d0ab308b4b2a"><div class="ttname"><a href="irs_8h.html#ab2fafe7dd02622bbd557d0ab308b4b2a">adicionarTabelaIRS</a></div><div class="ttdeci">void adicionarTabelaIRS(IRS **irs, int *contador, int *tam)</div><div class="ttdef"><b>Definition:</b> irs.c:168</div></div>
+<div class="ttc" id="airs_8c_html_a2fe58d221f58affc075bc6ea4e489fcc"><div class="ttname"><a href="irs_8c.html#a2fe58d221f58affc075bc6ea4e489fcc">pesquisarSalarioAlterar</a></div><div class="ttdeci">int pesquisarSalarioAlterar(IRS *irs, int contador, float remuneracao, int inicio, int fim)</div><div class="ttdef"><b>Definition:</b> irs.c:84</div></div>
+<div class="ttc" id="ainput_8c_html_aa8f067a5ff0a81c9af0f5fd554750960"><div class="ttname"><a href="input_8c.html#aa8f067a5ff0a81c9af0f5fd554750960">obterInteiro</a></div><div class="ttdeci">int obterInteiro(int minValor, int maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:28</div></div>
+<div class="ttc" id="airs_8h_html_a7094661077d34b62d77bc7b75e4deeef"><div class="ttname"><a href="irs_8h.html#a7094661077d34b62d77bc7b75e4deeef">eliminarTabelaIRS</a></div><div class="ttdeci">void eliminarTabelaIRS(IRS **irs, int *contador)</div><div class="ttdef"><b>Definition:</b> irs.c:293</div></div>
+<div class="ttc" id="airs_8h_html_a0cf57e332eba99ce7af95208d88ee0ea"><div class="ttname"><a href="irs_8h.html#a0cf57e332eba99ce7af95208d88ee0ea">getIrs</a></div><div class="ttdeci">float getIrs(IRSDados *irsdados, float salario, int nFilhos, int estadoCivil)</div><div class="ttdef"><b>Definition:</b> irs.c:346</div></div>
+<div class="ttc" id="airs_8c_html_ab38ae9fa522c15f3ccc6cc655e826054"><div class="ttname"><a href="irs_8c.html#ab38ae9fa522c15f3ccc6cc655e826054">getIrsFinal</a></div><div class="ttdeci">float getIrsFinal(IRS *irs, int contador, float salario, int nFilhos)</div><div class="ttdef"><b>Definition:</b> irs.c:318</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_ad72c7df7b9939510f041e45b69cd972b"><div class="ttname"><a href="struct_i_r_s_dados.html#ad72c7df7b9939510f041e45b69cd972b">IRSDados::tamcontadorCasadoUnicoIRS</a></div><div class="ttdeci">int tamcontadorCasadoUnicoIRS</div><div class="ttdef"><b>Definition:</b> irs.h:24</div></div>
+<div class="ttc" id="ainput_8c_html_acf0457ff431a6ac3c752715e778b566e"><div class="ttname"><a href="input_8c.html#acf0457ff431a6ac3c752715e778b566e">obterFloat</a></div><div class="ttdeci">float obterFloat(float minValor, float maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:47</div></div>
+<div class="ttc" id="airs_8c_html_a2797575bc9a26cf856589bee7483cc5d"><div class="ttname"><a href="irs_8c.html#a2797575bc9a26cf856589bee7483cc5d">carregarDadosFicheiroIRS</a></div><div class="ttdeci">void carregarDadosFicheiroIRS(IRS **irs, int *contador, int *tam, char *nomeFicheiro)</div><div class="ttdef"><b>Definition:</b> irs.c:36</div></div>
+<div class="ttc" id="airs_8h_html"><div class="ttname"><a href="irs_8h.html">irs.h</a></div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a773554a25b2a68cdebb305ac0d860851"><div class="ttname"><a href="struct_i_r_s_dados.html#a773554a25b2a68cdebb305ac0d860851">IRSDados::contadorSolteiroIRS</a></div><div class="ttdeci">int contadorSolteiroIRS</div><div class="ttdef"><b>Definition:</b> irs.h:31</div></div>
+<div class="ttc" id="airs_8h_html_addf468d6b7ac2f8adfcead4293348062"><div class="ttname"><a href="irs_8h.html#addf468d6b7ac2f8adfcead4293348062">MSG_OBTER_REMUNERACAO</a></div><div class="ttdeci">#define MSG_OBTER_REMUNERACAO</div><div class="ttdef"><b>Definition:</b> irs.h:11</div></div>
+<div class="ttc" id="astruct_i_r_s_html"><div class="ttname"><a href="struct_i_r_s.html">IRS</a></div><div class="ttdef"><b>Definition:</b> irs.h:16</div></div>
+<div class="ttc" id="airs_8c_html_a7307041024bd9df6acc3e94613550235"><div class="ttname"><a href="irs_8c.html#a7307041024bd9df6acc3e94613550235">atualizarFicheiroIRS</a></div><div class="ttdeci">void atualizarFicheiroIRS(IRS *irs, int contador, char *nomeFicheiro)</div><div class="ttdef"><b>Definition:</b> irs.c:15</div></div>
+<div class="ttc" id="adados_8h_html_af735670d9b1cd3dfa2d927db387f7123"><div class="ttname"><a href="dados_8h.html#af735670d9b1cd3dfa2d927db387f7123">INC</a></div><div class="ttdeci">#define INC</div><div class="ttdef"><b>Definition:</b> dados.h:9</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a61ba567cf4a324e41f2da2edd1c3992b"><div class="ttname"><a href="struct_i_r_s_dados.html#a61ba567cf4a324e41f2da2edd1c3992b">IRSDados::tamcontadorCasadoDoisIRS</a></div><div class="ttdeci">int tamcontadorCasadoDoisIRS</div><div class="ttdef"><b>Definition:</b> irs.h:28</div></div>
+<div class="ttc" id="airs_8c_html_aefb925e2ffcb9f5af6def6115dc514a6"><div class="ttname"><a href="irs_8c.html#aefb925e2ffcb9f5af6def6115dc514a6">alterarTabelaIRS</a></div><div class="ttdeci">void alterarTabelaIRS(IRS **irs, int *contador)</div><div class="ttdef"><b>Definition:</b> irs.c:250</div></div>
+<div class="ttc" id="airs_8h_html_aefb925e2ffcb9f5af6def6115dc514a6"><div class="ttname"><a href="irs_8h.html#aefb925e2ffcb9f5af6def6115dc514a6">alterarTabelaIRS</a></div><div class="ttdeci">void alterarTabelaIRS(IRS **irs, int *contador)</div><div class="ttdef"><b>Definition:</b> irs.c:250</div></div>
+<div class="ttc" id="airs_8h_html_a2797575bc9a26cf856589bee7483cc5d"><div class="ttname"><a href="irs_8h.html#a2797575bc9a26cf856589bee7483cc5d">carregarDadosFicheiroIRS</a></div><div class="ttdeci">void carregarDadosFicheiroIRS(IRS **irs, int *contador, int *tam, char *nomeFicheiro)</div><div class="ttdef"><b>Definition:</b> irs.c:36</div></div>
+<div class="ttc" id="airs_8h_html_a587ffa6fa7574e772232e11dd9634aab"><div class="ttname"><a href="irs_8h.html#a587ffa6fa7574e772232e11dd9634aab">listarIRS</a></div><div class="ttdeci">void listarIRS(IRS *irs, int contador, char *mensagem)</div><div class="ttdef"><b>Definition:</b> irs.c:64</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a5b8310fa0da692a1ee0527f96dad2d54"><div class="ttname"><a href="struct_i_r_s_dados.html#a5b8310fa0da692a1ee0527f96dad2d54">IRSDados::solteiroIRS</a></div><div class="ttdeci">IRS * solteiroIRS</div><div class="ttdef"><b>Definition:</b> irs.h:30</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_aa3fdf7d6adb31c564fcc4ada2358cd54"><div class="ttname"><a href="struct_i_r_s_dados.html#aa3fdf7d6adb31c564fcc4ada2358cd54">IRSDados::casadoDoisIRS</a></div><div class="ttdeci">IRS * casadoDoisIRS</div><div class="ttdef"><b>Definition:</b> irs.h:26</div></div>
+<div class="ttc" id="airs_8c_html_a587ffa6fa7574e772232e11dd9634aab"><div class="ttname"><a href="irs_8c.html#a587ffa6fa7574e772232e11dd9634aab">listarIRS</a></div><div class="ttdeci">void listarIRS(IRS *irs, int contador, char *mensagem)</div><div class="ttdef"><b>Definition:</b> irs.c:64</div></div>
+<div class="ttc" id="airs_8c_html_ab8400c9a091be9ee5fc83095f63bef7f"><div class="ttname"><a href="irs_8c.html#ab8400c9a091be9ee5fc83095f63bef7f">apagarDadosIRS</a></div><div class="ttdeci">void apagarDadosIRS(IRS *irs)</div><div class="ttdef"><b>Definition:</b> irs.c:281</div></div>
+<div class="ttc" id="airs_8h_html_ac33a4ae787d01fe6150e3dd68e39a5c0"><div class="ttname"><a href="irs_8h.html#ac33a4ae787d01fe6150e3dd68e39a5c0">ERRO_PESQUISA_SALARIO</a></div><div class="ttdeci">#define ERRO_PESQUISA_SALARIO</div><div class="ttdef"><b>Definition:</b> irs.h:10</div></div>
+<div class="ttc" id="ainput_8c_html_acb2f7923e89b8568ef861b155ff06405"><div class="ttname"><a href="input_8c.html#acb2f7923e89b8568ef861b155ff06405">obterSalarioAlterar</a></div><div class="ttdeci">float obterSalarioAlterar(float minValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:241</div></div>
+<div class="ttc" id="ainput_8c_html_ad4831e802b5c013e9563d9c584c88be6"><div class="ttname"><a href="input_8c.html#ad4831e802b5c013e9563d9c584c88be6">obterSalario</a></div><div class="ttdeci">void obterSalario(IRS *irs, int contador, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:212</div></div>
+<div class="ttc" id="ainput_8h_html"><div class="ttname"><a href="input_8h.html">input.h</a></div></div>
+<div class="ttc" id="airs_8c_html_a7094661077d34b62d77bc7b75e4deeef"><div class="ttname"><a href="irs_8c.html#a7094661077d34b62d77bc7b75e4deeef">eliminarTabelaIRS</a></div><div class="ttdeci">void eliminarTabelaIRS(IRS **irs, int *contador)</div><div class="ttdef"><b>Definition:</b> irs.c:293</div></div>
+<div class="ttc" id="airs_8c_html_aa3d7e7560dc00eab8f00165ca94d8a36"><div class="ttname"><a href="irs_8c.html#aa3d7e7560dc00eab8f00165ca94d8a36">alterarIRSPercentagens</a></div><div class="ttdeci">void alterarIRSPercentagens(IRS *irs, int index, int contador)</div><div class="ttdef"><b>Definition:</b> irs.c:228</div></div>
+<div class="ttc" id="ainput_8c_html_a0ac0ec7217e9f505f282659c7e149b67"><div class="ttname"><a href="input_8c.html#a0ac0ec7217e9f505f282659c7e149b67">obterIRS_Percentagem</a></div><div class="ttdeci">float obterIRS_Percentagem(float minValor, float maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:260</div></div>
+<div class="ttc" id="afuncionario_8h_html_abce9b1c05c172c399cb1e599478a2f19"><div class="ttname"><a href="funcionario_8h.html#abce9b1c05c172c399cb1e599478a2f19">MSG_OBTER_OPCAO</a></div><div class="ttdeci">#define MSG_OBTER_OPCAO</div><div class="ttdef"><b>Definition:</b> funcionario.h:51</div></div>
+<div class="ttc" id="airs_8h_html_a98421bdc73548c88f13092582b08cc9c"><div class="ttname"><a href="irs_8h.html#a98421bdc73548c88f13092582b08cc9c">MSG_OBTER_REMUNERACAO_ALT</a></div><div class="ttdeci">#define MSG_OBTER_REMUNERACAO_ALT</div><div class="ttdef"><b>Definition:</b> irs.h:12</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="irs_8h.html">irs.h</a></li>
+    <li class="footer">Gerado por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

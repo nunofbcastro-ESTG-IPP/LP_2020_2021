@@ -1,0 +1,286 @@
+\hypertarget{input_8c}{}\doxysection{Referência ao ficheiro input.\+c}
+\label{input_8c}\index{input.c@{input.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}funcoes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}irs.\+h\char`\"{}}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}{clean\+Input\+Buffer}} ()
+\item 
+int \mbox{\hyperlink{input_8c_aa8f067a5ff0a81c9af0f5fd554750960}{obter\+Inteiro}} (int min\+Valor, int max\+Valor, char $\ast$msg)
+\item 
+float \mbox{\hyperlink{input_8c_acf0457ff431a6ac3c752715e778b566e}{obter\+Float}} (float min\+Valor, float max\+Valor, char $\ast$msg)
+\item 
+double \mbox{\hyperlink{input_8c_a21f2b70641e75f55e2bd11550fedd899}{obter\+Double}} (double min\+Valor, double max\+Valor, char $\ast$msg)
+\item 
+char \mbox{\hyperlink{input_8c_ae15b6840f5e86d21d0d01c31b5d25cc0}{obter\+Char}} (char $\ast$msg)
+\item 
+void \mbox{\hyperlink{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}{ler\+String}} (char $\ast$string, unsigned int tamanho, char $\ast$msg)
+\item 
+int \mbox{\hyperlink{input_8c_aecc16017a8a86c7511b2d3d53d89fdd8}{obter\+Telemovel}} (char $\ast$msg)
+\item 
+int \mbox{\hyperlink{input_8c_ab3a5d2363e8c971759ed3811c443ea50}{obter\+Telefone}} (char $\ast$msg)
+\item 
+void \mbox{\hyperlink{input_8c_a994fd1c0e4201c7db9cedbd43d2ece7c}{obter\+Data\+Nacimento}} (\mbox{\hyperlink{struct_data}{Data}} $\ast$data\+Nasc, char $\ast$msg)
+\item 
+void \mbox{\hyperlink{input_8c_a90fa44a5b8ae6160a4664638c2baf9c5}{obter\+Data\+Nacimento\+\_\+\+Alterar}} (\mbox{\hyperlink{struct_data}{Data}} $\ast$data\+Nasc, \mbox{\hyperlink{struct_data}{Data}} $\ast$data\+Entrada, char $\ast$msg)
+\item 
+void \mbox{\hyperlink{input_8c_a3fa5737cd1ddb22024f6541733d5a1d1}{obter\+Data\+Entrada}} (\mbox{\hyperlink{struct_data}{Data}} $\ast$data\+Entrada, \mbox{\hyperlink{struct_data}{Data}} $\ast$data\+Nasc, char $\ast$msg)
+\item 
+void \mbox{\hyperlink{input_8c_ae60c947b12296a55faeb377f88b1b4c9}{obter\+Data\+Saida}} (\mbox{\hyperlink{struct_data}{Data}} $\ast$data\+Saida, int ano, int mes, char $\ast$msg)
+\item 
+void \mbox{\hyperlink{input_8c_ad4831e802b5c013e9563d9c584c88be6}{obter\+Salario}} (\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$irs, int contador, char $\ast$msg)
+\item 
+float \mbox{\hyperlink{input_8c_acb2f7923e89b8568ef861b155ff06405}{obter\+Salario\+Alterar}} (float min\+Valor, char $\ast$msg)
+\item 
+float \mbox{\hyperlink{input_8c_a0ac0ec7217e9f505f282659c7e149b67}{obter\+I\+R\+S\+\_\+\+Percentagem}} (float min\+Valor, float max\+Valor, char $\ast$msg)
+\item 
+int \mbox{\hyperlink{input_8c_a886212c0113dc1ace57c470fb1b9cf5e}{obter\+Ano\+Faltas}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario, char $\ast$msg)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}\label{input_8c_a11ac4d3ec555747d95fee8ae7aa18b5d}} 
+\index{input.c@{input.c}!cleanInputBuffer@{cleanInputBuffer}}
+\index{cleanInputBuffer@{cleanInputBuffer}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{cleanInputBuffer()}{cleanInputBuffer()}}
+{\footnotesize\ttfamily void clean\+Input\+Buffer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Função utilizada para limpar o buffer do teclado. \mbox{\Hypertarget{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}\label{input_8c_a8deaff72b3466f323d5ffe40426e1ea1}} 
+\index{input.c@{input.c}!lerString@{lerString}}
+\index{lerString@{lerString}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{lerString()}{lerString()}}
+{\footnotesize\ttfamily void ler\+String (\begin{DoxyParamCaption}\item[{char $\ast$}]{string,  }\item[{unsigned int}]{tamanho,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura de strings. 
+\begin{DoxyParams}{Parâmetros}
+{\em string} & -\/ apontador onde será guardada a string. \\
+\hline
+{\em tamanho} & -\/ valor correspondente ao tamanho máximo que a string pode ter. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura da string. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{input_8c_a886212c0113dc1ace57c470fb1b9cf5e}\label{input_8c_a886212c0113dc1ace57c470fb1b9cf5e}} 
+\index{input.c@{input.c}!obterAnoFaltas@{obterAnoFaltas}}
+\index{obterAnoFaltas@{obterAnoFaltas}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterAnoFaltas()}{obterAnoFaltas()}}
+{\footnotesize\ttfamily int obter\+Ano\+Faltas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para obter o índice de um ano após verificação que este existe. 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador onde se encontram guardados os dados do funcionário. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura do ano. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor inteiro correspondente ao índice do ano inserido. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8c_ae15b6840f5e86d21d0d01c31b5d25cc0}\label{input_8c_ae15b6840f5e86d21d0d01c31b5d25cc0}} 
+\index{input.c@{input.c}!obterChar@{obterChar}}
+\index{obterChar@{obterChar}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterChar()}{obterChar()}}
+{\footnotesize\ttfamily char obter\+Char (\begin{DoxyParamCaption}\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura de carateres. 
+\begin{DoxyParams}{Parâmetros}
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura do carater. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+carater inserido. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8c_a3fa5737cd1ddb22024f6541733d5a1d1}\label{input_8c_a3fa5737cd1ddb22024f6541733d5a1d1}} 
+\index{input.c@{input.c}!obterDataEntrada@{obterDataEntrada}}
+\index{obterDataEntrada@{obterDataEntrada}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterDataEntrada()}{obterDataEntrada()}}
+{\footnotesize\ttfamily void obter\+Data\+Entrada (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} $\ast$}]{data\+Entrada,  }\item[{\mbox{\hyperlink{struct_data}{Data}} $\ast$}]{data\+Nasc,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura da data de entrada na empresa. 
+\begin{DoxyParams}{Parâmetros}
+{\em data\+Entrada} & -\/ apontador onde será guardada a data de entrada na empresa. \\
+\hline
+{\em data\+Nasc} & -\/ apontador que contém a data de nascimento, utilizada para a realização de verificações. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura da data de entrada na empresa. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{input_8c_a994fd1c0e4201c7db9cedbd43d2ece7c}\label{input_8c_a994fd1c0e4201c7db9cedbd43d2ece7c}} 
+\index{input.c@{input.c}!obterDataNacimento@{obterDataNacimento}}
+\index{obterDataNacimento@{obterDataNacimento}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterDataNacimento()}{obterDataNacimento()}}
+{\footnotesize\ttfamily void obter\+Data\+Nacimento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} $\ast$}]{data\+Nasc,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura da data de nascimento. 
+\begin{DoxyParams}{Parâmetros}
+{\em data\+Nasc} & -\/ apontador onde será guardada a data de nascimento. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura da data de nascimento. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{input_8c_a90fa44a5b8ae6160a4664638c2baf9c5}\label{input_8c_a90fa44a5b8ae6160a4664638c2baf9c5}} 
+\index{input.c@{input.c}!obterDataNacimento\_Alterar@{obterDataNacimento\_Alterar}}
+\index{obterDataNacimento\_Alterar@{obterDataNacimento\_Alterar}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterDataNacimento\_Alterar()}{obterDataNacimento\_Alterar()}}
+{\footnotesize\ttfamily void obter\+Data\+Nacimento\+\_\+\+Alterar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} $\ast$}]{data\+Nasc,  }\item[{\mbox{\hyperlink{struct_data}{Data}} $\ast$}]{data\+Entrada,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para alteração da data de nascimento. 
+\begin{DoxyParams}{Parâmetros}
+{\em data\+Nasc} & -\/ apontador onde será guardada a data de nascimento. \\
+\hline
+{\em data\+Entrada} & -\/ apontador que contém a data de entrada na empresa, utilizada para a realização de verificações. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura da data de nascimento. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{input_8c_ae60c947b12296a55faeb377f88b1b4c9}\label{input_8c_ae60c947b12296a55faeb377f88b1b4c9}} 
+\index{input.c@{input.c}!obterDataSaida@{obterDataSaida}}
+\index{obterDataSaida@{obterDataSaida}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterDataSaida()}{obterDataSaida()}}
+{\footnotesize\ttfamily void obter\+Data\+Saida (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_data}{Data}} $\ast$}]{data\+Saida,  }\item[{int}]{ano,  }\item[{int}]{mes,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura da data de saida da empresa. 
+\begin{DoxyParams}{Parâmetros}
+{\em data\+Saida} & -\/ apontador onde será guardada a data de saida da empresa. \\
+\hline
+{\em data\+Entrada} & -\/ apontador que contém a data de entrada na empresa, utilizada para a realização de verificações. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura da data de saida da empresa. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{input_8c_a21f2b70641e75f55e2bd11550fedd899}\label{input_8c_a21f2b70641e75f55e2bd11550fedd899}} 
+\index{input.c@{input.c}!obterDouble@{obterDouble}}
+\index{obterDouble@{obterDouble}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterDouble()}{obterDouble()}}
+{\footnotesize\ttfamily double obter\+Double (\begin{DoxyParamCaption}\item[{double}]{min\+Valor,  }\item[{double}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura de valores double. 
+\begin{DoxyParams}{Parâmetros}
+{\em min\+Valor} & -\/ valor correspondente ao limite mínimo a ser inserido. \\
+\hline
+{\em max\+Valor} & -\/ valor correspondente ao limite máximo a ser inserido. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura do valor double. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor double inserido após verificação do mesmo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8c_acf0457ff431a6ac3c752715e778b566e}\label{input_8c_acf0457ff431a6ac3c752715e778b566e}} 
+\index{input.c@{input.c}!obterFloat@{obterFloat}}
+\index{obterFloat@{obterFloat}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterFloat()}{obterFloat()}}
+{\footnotesize\ttfamily float obter\+Float (\begin{DoxyParamCaption}\item[{float}]{min\+Valor,  }\item[{float}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura de valores reais. 
+\begin{DoxyParams}{Parâmetros}
+{\em min\+Valor} & -\/ valor correspondente ao limite mínimo a ser inserido. \\
+\hline
+{\em max\+Valor} & -\/ valor correspondente ao limite máximo a ser inserido. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura do valor real. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor real inserido após verificação do mesmo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8c_aa8f067a5ff0a81c9af0f5fd554750960}\label{input_8c_aa8f067a5ff0a81c9af0f5fd554750960}} 
+\index{input.c@{input.c}!obterInteiro@{obterInteiro}}
+\index{obterInteiro@{obterInteiro}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterInteiro()}{obterInteiro()}}
+{\footnotesize\ttfamily int obter\+Inteiro (\begin{DoxyParamCaption}\item[{int}]{min\+Valor,  }\item[{int}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura de valores inteiros. 
+\begin{DoxyParams}{Parâmetros}
+{\em min\+Valor} & -\/ valor correspondente ao limite mínimo a ser inserido. \\
+\hline
+{\em max\+Valor} & -\/ valor correspondente ao limite máximo a ser inserido. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura do valor inteiro. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor inteiro inserido após verificação do mesmo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8c_a0ac0ec7217e9f505f282659c7e149b67}\label{input_8c_a0ac0ec7217e9f505f282659c7e149b67}} 
+\index{input.c@{input.c}!obterIRS\_Percentagem@{obterIRS\_Percentagem}}
+\index{obterIRS\_Percentagem@{obterIRS\_Percentagem}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterIRS\_Percentagem()}{obterIRS\_Percentagem()}}
+{\footnotesize\ttfamily float obter\+I\+R\+S\+\_\+\+Percentagem (\begin{DoxyParamCaption}\item[{float}]{min\+Valor,  }\item[{float}]{max\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura do valor percentual do \mbox{\hyperlink{struct_i_r_s}{I\+RS}} correspondente ao número de filhos. 
+\begin{DoxyParams}{Parâmetros}
+{\em min\+Valor} & -\/ valor correspondente ao limite mínimo a ser inserido. \\
+\hline
+{\em max\+Valor} & -\/ valor correspondente ao limite máximo a ser inserido. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura do valor percentual do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor real inserido (correspodente ao valor percentual do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}) após verificação do mesmo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8c_ad4831e802b5c013e9563d9c584c88be6}\label{input_8c_ad4831e802b5c013e9563d9c584c88be6}} 
+\index{input.c@{input.c}!obterSalario@{obterSalario}}
+\index{obterSalario@{obterSalario}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterSalario()}{obterSalario()}}
+{\footnotesize\ttfamily void obter\+Salario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_r_s}{I\+RS}} $\ast$}]{irs,  }\item[{int}]{contador,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura da remuneração mensal da tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em irs} & -\/ apontador onde será guardado o salário da tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em contador} & -\/ valor correspondente ao número de linhas existentes na tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura do salário. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{input_8c_acb2f7923e89b8568ef861b155ff06405}\label{input_8c_acb2f7923e89b8568ef861b155ff06405}} 
+\index{input.c@{input.c}!obterSalarioAlterar@{obterSalarioAlterar}}
+\index{obterSalarioAlterar@{obterSalarioAlterar}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterSalarioAlterar()}{obterSalarioAlterar()}}
+{\footnotesize\ttfamily float obter\+Salario\+Alterar (\begin{DoxyParamCaption}\item[{float}]{min\+Valor,  }\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura do salário limite da tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em min\+Valor} & -\/ valor correspondente ao limite mínimo a ser inserido. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura do salário. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor real inserido (correspodente ao salário) após verificação do mesmo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8c_ab3a5d2363e8c971759ed3811c443ea50}\label{input_8c_ab3a5d2363e8c971759ed3811c443ea50}} 
+\index{input.c@{input.c}!obterTelefone@{obterTelefone}}
+\index{obterTelefone@{obterTelefone}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterTelefone()}{obterTelefone()}}
+{\footnotesize\ttfamily int obter\+Telefone (\begin{DoxyParamCaption}\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura do número de telefone. 
+\begin{DoxyParams}{Parâmetros}
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura do número de telefone. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+número de telefone inserido após a verificação do mesmo. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{input_8c_aecc16017a8a86c7511b2d3d53d89fdd8}\label{input_8c_aecc16017a8a86c7511b2d3d53d89fdd8}} 
+\index{input.c@{input.c}!obterTelemovel@{obterTelemovel}}
+\index{obterTelemovel@{obterTelemovel}!input.c@{input.c}}
+\doxysubsubsection{\texorpdfstring{obterTelemovel()}{obterTelemovel()}}
+{\footnotesize\ttfamily int obter\+Telemovel (\begin{DoxyParamCaption}\item[{char $\ast$}]{msg }\end{DoxyParamCaption})}
+
+Função utilizada para leitura do número de telemóvel. 
+\begin{DoxyParams}{Parâmetros}
+{\em msg} & -\/ valor correspondente à mensagem a ser mostrada antes da leitura do número de telemóvel. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+número de telemóvel inserido após a verificação do mesmo. 
+\end{DoxyReturn}

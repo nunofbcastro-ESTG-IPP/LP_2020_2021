@@ -1,0 +1,173 @@
+\hypertarget{main_8c}{}\doxysection{Referência ao ficheiro main.\+c}
+\label{main_8c}\index{main.c@{main.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}funcionario.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}funcoes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}irs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dados.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}seguranca\+Social.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{main_8c_ab8e2b331e41f6604e14848ed7a5074c7}{P\+R\+O\+J\+E\+TO}}~\char`\"{}Projeto AC -\/ Grupo 13\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8c_ac64a267f88914c3a1d8a3c9d6e21e842}{Menu\+Gestao\+Funcionarios}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{main_8c_a5097ea1f5221731d4d7ea2e6a4f48ee8}{Menu\+Gestao\+I\+RS}} (\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, char $\ast$msg, int n)
+\item 
+void \mbox{\hyperlink{main_8c_aeca86657575ec2b41e07bebf58e04ff3}{Menu\+Gestao\+Tabelas\+I\+RS}} (\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados)
+\item 
+void \mbox{\hyperlink{main_8c_ab2e470926628c8beb8909460045c0f61}{Menu\+Gestao\+Seguranca\+Social}} (\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+void \mbox{\hyperlink{main_8c_abaab38e9aba65d19e804cdb950ffb949}{Menu\+Processamento\+Salario}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas)
+\item 
+void \mbox{\hyperlink{main_8c_a4e935cbc9c25153afda57b7c7c98ebd0}{Menu\+Pesquisa\+Funcionario}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{main_8c_a0074a016162bee87aa02fcec6bd6cc9f}{Menu\+Gastos\+Empresa}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{main_8c_a0cfa9074fa433fc040655992d623cfaf}{Menu\+Pesquisas}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+void \mbox{\hyperlink{main_8c_a934719a737433c58322a448eb63da037}{Menu}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$nomes\+Empresas, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+int \mbox{\hyperlink{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das macros}
+\mbox{\Hypertarget{main_8c_ab8e2b331e41f6604e14848ed7a5074c7}\label{main_8c_ab8e2b331e41f6604e14848ed7a5074c7}} 
+\index{main.c@{main.c}!PROJETO@{PROJETO}}
+\index{PROJETO@{PROJETO}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{PROJETO}{PROJETO}}
+{\footnotesize\ttfamily \#define P\+R\+O\+J\+E\+TO~\char`\"{}Projeto AC -\/ Grupo 13\char`\"{}}
+
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8c_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.c@{main.c}!main@{main}}
+\index{main@{main}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+A função Main é por onde é iniciado o programa. \mbox{\Hypertarget{main_8c_a934719a737433c58322a448eb63da037}\label{main_8c_a934719a737433c58322a448eb63da037}} 
+\index{main.c@{main.c}!Menu@{Menu}}
+\index{Menu@{Menu}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{Menu()}{Menu()}}
+{\footnotesize\ttfamily void Menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Função utilizada como menu principal. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram guardados os funcionários. \\
+\hline
+{\em irsdados} & -\/ apontador onde se encontram guardados dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador onde se encontram guardados os nomes das empresas. \\
+\hline
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram guardados dados das taxas contributivas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_a0074a016162bee87aa02fcec6bd6cc9f}\label{main_8c_a0074a016162bee87aa02fcec6bd6cc9f}} 
+\index{main.c@{main.c}!MenuGastosEmpresa@{MenuGastosEmpresa}}
+\index{MenuGastosEmpresa@{MenuGastosEmpresa}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MenuGastosEmpresa()}{MenuGastosEmpresa()}}
+{\footnotesize\ttfamily void Menu\+Gastos\+Empresa (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada como menu para as funcionalidades de pesquisas relacionadas com os gastos de uma determinada empresa. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_ac64a267f88914c3a1d8a3c9d6e21e842}\label{main_8c_ac64a267f88914c3a1d8a3c9d6e21e842}} 
+\index{main.c@{main.c}!MenuGestaoFuncionarios@{MenuGestaoFuncionarios}}
+\index{MenuGestaoFuncionarios@{MenuGestaoFuncionarios}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MenuGestaoFuncionarios()}{MenuGestaoFuncionarios()}}
+{\footnotesize\ttfamily void Menu\+Gestao\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada como menu para as funcionalidades da gestão dos funcionários. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_a5097ea1f5221731d4d7ea2e6a4f48ee8}\label{main_8c_a5097ea1f5221731d4d7ea2e6a4f48ee8}} 
+\index{main.c@{main.c}!MenuGestaoIRS@{MenuGestaoIRS}}
+\index{MenuGestaoIRS@{MenuGestaoIRS}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MenuGestaoIRS()}{MenuGestaoIRS()}}
+{\footnotesize\ttfamily void Menu\+Gestao\+I\+RS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{char $\ast$}]{msg,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Função utilizada como menu para as funcionalidades da gestão do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. 
+\begin{DoxyParams}{Parâmetros}
+{\em irsdados} & -\/ apontador onde se encontram guardados dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em msg} & -\/ valor correspondente à mensagem relativa à tabela de \mbox{\hyperlink{struct_i_r_s}{I\+RS}} escolhida no menu \char`\"{}\+Menu\+Gestao\+Tabelas\+I\+R\+S\char`\"{}. \\
+\hline
+{\em n} & -\/ valor correspondente ao ficheiro selecionado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_ab2e470926628c8beb8909460045c0f61}\label{main_8c_ab2e470926628c8beb8909460045c0f61}} 
+\index{main.c@{main.c}!MenuGestaoSegurancaSocial@{MenuGestaoSegurancaSocial}}
+\index{MenuGestaoSegurancaSocial@{MenuGestaoSegurancaSocial}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MenuGestaoSegurancaSocial()}{MenuGestaoSegurancaSocial()}}
+{\footnotesize\ttfamily void Menu\+Gestao\+Seguranca\+Social (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Função utilizada como menu para as funcionalidades da gestão das taxas contributivas. 
+\begin{DoxyParams}{Parâmetros}
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram guardados dados das taxas contributivas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_aeca86657575ec2b41e07bebf58e04ff3}\label{main_8c_aeca86657575ec2b41e07bebf58e04ff3}} 
+\index{main.c@{main.c}!MenuGestaoTabelasIRS@{MenuGestaoTabelasIRS}}
+\index{MenuGestaoTabelasIRS@{MenuGestaoTabelasIRS}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MenuGestaoTabelasIRS()}{MenuGestaoTabelasIRS()}}
+{\footnotesize\ttfamily void Menu\+Gestao\+Tabelas\+I\+RS (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados }\end{DoxyParamCaption})}
+
+Função utilizada como menu para escolher o ficheiro de \mbox{\hyperlink{struct_i_r_s}{I\+RS}} a utilizar (ficheiro não casado, ficheiro casado unico titular e casado dois titulares.) 
+\begin{DoxyParams}{Parâmetros}
+{\em irsdados} & -\/ apontador onde se encontram guardados dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_a4e935cbc9c25153afda57b7c7c98ebd0}\label{main_8c_a4e935cbc9c25153afda57b7c7c98ebd0}} 
+\index{main.c@{main.c}!MenuPesquisaFuncionario@{MenuPesquisaFuncionario}}
+\index{MenuPesquisaFuncionario@{MenuPesquisaFuncionario}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MenuPesquisaFuncionario()}{MenuPesquisaFuncionario()}}
+{\footnotesize\ttfamily void Menu\+Pesquisa\+Funcionario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada como menu para as funcionalidades de pesquisas relacionadas com os funcionários. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_a0cfa9074fa433fc040655992d623cfaf}\label{main_8c_a0cfa9074fa433fc040655992d623cfaf}} 
+\index{main.c@{main.c}!MenuPesquisas@{MenuPesquisas}}
+\index{MenuPesquisas@{MenuPesquisas}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MenuPesquisas()}{MenuPesquisas()}}
+{\footnotesize\ttfamily void Menu\+Pesquisas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Função utilizada como menu para as funcionalidades de pesquisas. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram guardados os funcionários. \\
+\hline
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram guardados dados das taxas contributivas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{main_8c_abaab38e9aba65d19e804cdb950ffb949}\label{main_8c_abaab38e9aba65d19e804cdb950ffb949}} 
+\index{main.c@{main.c}!MenuProcessamentoSalario@{MenuProcessamentoSalario}}
+\index{MenuProcessamentoSalario@{MenuProcessamentoSalario}!main.c@{main.c}}
+\doxysubsubsection{\texorpdfstring{MenuProcessamentoSalario()}{MenuProcessamentoSalario()}}
+{\footnotesize\ttfamily void Menu\+Processamento\+Salario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas,  }\item[{\mbox{\hyperlink{struct_nomes_empresas}{Nomes\+Empresas}} $\ast$}]{nomes\+Empresas }\end{DoxyParamCaption})}
+
+Função utilizada como menu para as funcionalidades do processamento do salário. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram guardados os funcionários. \\
+\hline
+{\em irsdados} & -\/ apontador onde se encontram guardados dados do \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram guardados dados das taxas contributivas. \\
+\hline
+{\em nomes\+Empresas} & -\/ apontador onde se encontram guardados os nomes das empresas. \\
+\hline
+\end{DoxyParams}

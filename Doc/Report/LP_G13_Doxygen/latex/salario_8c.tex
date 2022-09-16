@@ -1,0 +1,363 @@
+\hypertarget{salario_8c}{}\doxysection{Referência ao ficheiro salario.\+c}
+\label{salario_8c}\index{salario.c@{salario.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}funcionario.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}funcoes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}dados.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{salario_8c_aaa94a903882bff91a193968336f7f971}{Bonus\+Base\+Antiguidade}}~0.\+01
+\item 
+\#define \mbox{\hyperlink{salario_8c_a5aee03b9e8586b321824ed6203c6595d}{Bonus\+Base\+Idade}}~0.\+05
+\item 
+\#define \mbox{\hyperlink{salario_8c_af667ce5839c89a1c76f2c75129740ad0}{Bonus\+Base\+Nao\+Faltar}}~0.\+05
+\end{DoxyCompactItemize}
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{salario_8c_aee22b1430b72be2dcf1d9ef356722ff3}{ordenar\+Por\+Ano\+Trabalho}} (\mbox{\hyperlink{struct_ano}{Ano}} $\ast$anos, int inicio, int fim)
+\item 
+void \mbox{\hyperlink{salario_8c_a9a11fffeaf2d48d7d4292a0391d86f57}{ordenar\+Por\+Mes\+Trabalho}} (\mbox{\hyperlink{struct_mes}{Mes}} $\ast$\mbox{\hyperlink{salario_8c_a6ce3769212c1a4843a5d102622c18e38}{meses}}, int inicio, int fim)
+\item 
+int \mbox{\hyperlink{salario_8c_ae04bbc3c97d0b6d22196d29856ac170b}{procurar\+Ano\+Trabalho}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario, int ano, int inicio, int fim)
+\item 
+int \mbox{\hyperlink{salario_8c_a6ce86a1b93484be0fb5147a223a92776}{procurar\+Mes\+Trabalho}} (\mbox{\hyperlink{struct_ano}{Ano}} $\ast$ano, int mes, int inicio, int fim)
+\item 
+int \mbox{\hyperlink{salario_8c_a5fcc44d326be0ba5c7181b2c89087158}{verifica\+Ano\+Mes}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, int ano, int mes)
+\item 
+int \mbox{\hyperlink{salario_8c_adf497e79fdc5ea79f49036da508f8d87}{get\+Mes\+Atual\+Atualizar}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario, int id\+Ano)
+\item 
+void \mbox{\hyperlink{salario_8c_a30cfda1a1274680edade194bf7cf4314}{inserir\+Trabalho\+Dados}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas, int n\+Meses, int id\+Ano)
+\item 
+void \mbox{\hyperlink{salario_8c_aed7050cfea51fde9b8cfd77455d01e35}{inserir\+Trabalho\+Mes}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas, int max\+Mes, int id\+Ano)
+\item 
+void \mbox{\hyperlink{salario_8c_ab035ced65eafc9cfc3749f4dbca95a50}{adicionar\+Ano}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario, int $\ast$id\+Ano, int ano)
+\item 
+void \mbox{\hyperlink{salario_8c_ae860588763a3ce13f944334893997c4c}{inserir\+Trabalho\+Ano}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+void \mbox{\hyperlink{salario_8c_a9bf45fbac97c348e5438ea9e79d16721}{inserir\+Trabalho}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, \mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$irsdados, \mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas)
+\item 
+void \mbox{\hyperlink{salario_8c_ab17143696e19ac56e0775ef614ed64af}{lista\+Trabalho\+Mes}} (\mbox{\hyperlink{struct_mes}{Mes}} $\ast$mes)
+\item 
+void \mbox{\hyperlink{salario_8c_a1c2ec69caf093fc24aabaa44e2eeee02}{listar\+Trabalho\+Ano}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario)
+\item 
+void \mbox{\hyperlink{salario_8c_a883368fe7618ca234c8ed1ce02d05487}{listar\+Trabalho}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+int \mbox{\hyperlink{salario_8c_ae8cdfefd23b5c69b75b5c622d8b87fde}{verifica\+Existe\+Ano}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+int \mbox{\hyperlink{salario_8c_aef3fd9a4026418078cb3f4d74993e3e8}{listar\+Gastos\+Ano}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+int \mbox{\hyperlink{salario_8c_af4cea7b00cdf1650fa3e4ed371ccaa05}{listar\+Gastos\+Mes}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{salario_8c_a28d2226ae20225a637cc9c3e0129b7c8}{listar\+Func\+Valor\+Hora}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variáveis}
+\begin{DoxyCompactItemize}
+\item 
+const char \mbox{\hyperlink{salario_8c_a6ce3769212c1a4843a5d102622c18e38}{meses}} \mbox{[}12\mbox{]}\mbox{[}10\mbox{]} = \{\char`\"{}Janeiro\char`\"{}, \char`\"{}Fevereiro\char`\"{}, \char`\"{}Março\char`\"{}, \char`\"{}Abril\char`\"{}, \char`\"{}Maio\char`\"{}, \char`\"{}Junho\char`\"{}, \char`\"{}Julho\char`\"{}, \char`\"{}Agosto\char`\"{}, \char`\"{}Setembro\char`\"{}, \char`\"{}Outubro\char`\"{}, \char`\"{}Novembro\char`\"{}, \char`\"{}Dezembro\char`\"{}\}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das macros}
+\mbox{\Hypertarget{salario_8c_aaa94a903882bff91a193968336f7f971}\label{salario_8c_aaa94a903882bff91a193968336f7f971}} 
+\index{salario.c@{salario.c}!BonusBaseAntiguidade@{BonusBaseAntiguidade}}
+\index{BonusBaseAntiguidade@{BonusBaseAntiguidade}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{BonusBaseAntiguidade}{BonusBaseAntiguidade}}
+{\footnotesize\ttfamily \#define Bonus\+Base\+Antiguidade~0.\+01}
+
+\mbox{\Hypertarget{salario_8c_a5aee03b9e8586b321824ed6203c6595d}\label{salario_8c_a5aee03b9e8586b321824ed6203c6595d}} 
+\index{salario.c@{salario.c}!BonusBaseIdade@{BonusBaseIdade}}
+\index{BonusBaseIdade@{BonusBaseIdade}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{BonusBaseIdade}{BonusBaseIdade}}
+{\footnotesize\ttfamily \#define Bonus\+Base\+Idade~0.\+05}
+
+\mbox{\Hypertarget{salario_8c_af667ce5839c89a1c76f2c75129740ad0}\label{salario_8c_af667ce5839c89a1c76f2c75129740ad0}} 
+\index{salario.c@{salario.c}!BonusBaseNaoFaltar@{BonusBaseNaoFaltar}}
+\index{BonusBaseNaoFaltar@{BonusBaseNaoFaltar}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{BonusBaseNaoFaltar}{BonusBaseNaoFaltar}}
+{\footnotesize\ttfamily \#define Bonus\+Base\+Nao\+Faltar~0.\+05}
+
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{salario_8c_ab035ced65eafc9cfc3749f4dbca95a50}\label{salario_8c_ab035ced65eafc9cfc3749f4dbca95a50}} 
+\index{salario.c@{salario.c}!adicionarAno@{adicionarAno}}
+\index{adicionarAno@{adicionarAno}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{adicionarAno()}{adicionarAno()}}
+{\footnotesize\ttfamily void adicionar\+Ano (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario,  }\item[{int $\ast$}]{id\+Ano,  }\item[{int}]{ano }\end{DoxyParamCaption})}
+
+Função utilizada adicionar um ano em que um funcionário trabalhou. 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador onde se encontram os dados do funcionário. \\
+\hline
+{\em id\+Ano} & -\/ valor correspondente ao índice do ano a ser processado. \\
+\hline
+{\em ano} & -\/ valor correspondente ao ano a ser processado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{salario_8c_adf497e79fdc5ea79f49036da508f8d87}\label{salario_8c_adf497e79fdc5ea79f49036da508f8d87}} 
+\index{salario.c@{salario.c}!getMesAtualAtualizar@{getMesAtualAtualizar}}
+\index{getMesAtualAtualizar@{getMesAtualAtualizar}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{getMesAtualAtualizar()}{getMesAtualAtualizar()}}
+{\footnotesize\ttfamily int get\+Mes\+Atual\+Atualizar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario,  }\item[{int}]{id\+Ano }\end{DoxyParamCaption})}
+
+Esta função retorna o valor o mes -\/ 1 que ainda falta inserir os seus dados 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador com os dados de um funcionario \\
+\hline
+{\em id\+Ano} & -\/ inteiro como o id do ano \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+número do mês que ainda falta inserir 
+\end{DoxyReturn}
+\mbox{\Hypertarget{salario_8c_a9bf45fbac97c348e5438ea9e79d16721}\label{salario_8c_a9bf45fbac97c348e5438ea9e79d16721}} 
+\index{salario.c@{salario.c}!inserirTrabalho@{inserirTrabalho}}
+\index{inserirTrabalho@{inserirTrabalho}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{inserirTrabalho()}{inserirTrabalho()}}
+{\footnotesize\ttfamily void inserir\+Trabalho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Função utilizada para verificar se um funcionário existe e caso exista, chamar a função \char`\"{}inserir\+Trabalho\+Ano\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+{\em irsdados} & -\/ apontador onde se encontram guardados os dados relativos ao \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram guardados os dados relativos às taxas contributivas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{salario_8c_ae860588763a3ce13f944334893997c4c}\label{salario_8c_ae860588763a3ce13f944334893997c4c}} 
+\index{salario.c@{salario.c}!inserirTrabalhoAno@{inserirTrabalhoAno}}
+\index{inserirTrabalhoAno@{inserirTrabalhoAno}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{inserirTrabalhoAno()}{inserirTrabalhoAno()}}
+{\footnotesize\ttfamily void inserir\+Trabalho\+Ano (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas }\end{DoxyParamCaption})}
+
+Função utilizada para alocar espaço para os anos trabalhados por um funcionário e chamar a função \char`\"{}inserir\+Trabalho\+Mes\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador onde se encontram os dados do funcionário. \\
+\hline
+{\em irsdados} & -\/ apontador onde se encontram guardados os dados relativos ao \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram guardados os dados relativos às taxas contributivas. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{salario_8c_a30cfda1a1274680edade194bf7cf4314}\label{salario_8c_a30cfda1a1274680edade194bf7cf4314}} 
+\index{salario.c@{salario.c}!inserirTrabalhoDados@{inserirTrabalhoDados}}
+\index{inserirTrabalhoDados@{inserirTrabalhoDados}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{inserirTrabalhoDados()}{inserirTrabalhoDados()}}
+{\footnotesize\ttfamily void inserir\+Trabalho\+Dados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas,  }\item[{int}]{n\+Meses,  }\item[{int}]{id\+Ano }\end{DoxyParamCaption})}
+
+Função utilizada para inserir os dados relativos ao número de dias que um funcionário trabalhou num determinado ano e, após obter os dados, calcular o salário de cada mês. 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador onde serão guardados os dados relativos ao processamento do salário do funcionário. \\
+\hline
+{\em irsdados} & -\/ apontador onde se encontram guardados os dados relativos ao \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram guardados os dados relativos às taxas contributivas. \\
+\hline
+{\em n\+Meses} & -\/ valor correspondente ao número de meses a serem processados. \\
+\hline
+{\em id\+Ano} & -\/ valor correspondente ao índice do ano a ser processado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{salario_8c_aed7050cfea51fde9b8cfd77455d01e35}\label{salario_8c_aed7050cfea51fde9b8cfd77455d01e35}} 
+\index{salario.c@{salario.c}!inserirTrabalhoMes@{inserirTrabalhoMes}}
+\index{inserirTrabalhoMes@{inserirTrabalhoMes}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{inserirTrabalhoMes()}{inserirTrabalhoMes()}}
+{\footnotesize\ttfamily void inserir\+Trabalho\+Mes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario,  }\item[{\mbox{\hyperlink{struct_i_r_s_dados}{I\+R\+S\+Dados}} $\ast$}]{irsdados,  }\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas,  }\item[{int}]{max\+Mes,  }\item[{int}]{id\+Ano }\end{DoxyParamCaption})}
+
+Função utilizada para alocar espaço para os meses trabalhados por um funcionário e chamar a função \char`\"{}inserir\+Trabalho\+Dados\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador onde se encontram os dados do funcionário. \\
+\hline
+{\em irsdados} & -\/ apontador onde se encontram guardados os dados relativos ao \mbox{\hyperlink{struct_i_r_s}{I\+RS}}. \\
+\hline
+{\em taxas\+Contributivas} & -\/ apontador onde se encontram guardados os dados relativos às taxas contributivas. \\
+\hline
+{\em max\+Mes} & -\/ valor correspondente ao número máximo de meses que podem ser processados. \\
+\hline
+{\em id\+Ano} & -\/ valor correspondente ao índice do ano a ser processado. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{salario_8c_a28d2226ae20225a637cc9c3e0129b7c8}\label{salario_8c_a28d2226ae20225a637cc9c3e0129b7c8}} 
+\index{salario.c@{salario.c}!listarFuncValorHora@{listarFuncValorHora}}
+\index{listarFuncValorHora@{listarFuncValorHora}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{listarFuncValorHora()}{listarFuncValorHora()}}
+{\footnotesize\ttfamily void listar\+Func\+Valor\+Hora (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada para listar os funcionários que ganham igual ou mais do que determinado valor por hora. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{salario_8c_aef3fd9a4026418078cb3f4d74993e3e8}\label{salario_8c_aef3fd9a4026418078cb3f4d74993e3e8}} 
+\index{salario.c@{salario.c}!listarGastosAno@{listarGastosAno}}
+\index{listarGastosAno@{listarGastosAno}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{listarGastosAno()}{listarGastosAno()}}
+{\footnotesize\ttfamily int listar\+Gastos\+Ano (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada para listar os gastos que a empresa teve num ano. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor correspondente aos gastos que a empresa teve num ano. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{salario_8c_af4cea7b00cdf1650fa3e4ed371ccaa05}\label{salario_8c_af4cea7b00cdf1650fa3e4ed371ccaa05}} 
+\index{salario.c@{salario.c}!listarGastosMes@{listarGastosMes}}
+\index{listarGastosMes@{listarGastosMes}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{listarGastosMes()}{listarGastosMes()}}
+{\footnotesize\ttfamily int listar\+Gastos\+Mes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada para listar os gastos que a empresa teve num mês. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+valor correspondente aos gastos que a empresa teve num mês. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{salario_8c_a883368fe7618ca234c8ed1ce02d05487}\label{salario_8c_a883368fe7618ca234c8ed1ce02d05487}} 
+\index{salario.c@{salario.c}!listarTrabalho@{listarTrabalho}}
+\index{listarTrabalho@{listarTrabalho}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{listarTrabalho()}{listarTrabalho()}}
+{\footnotesize\ttfamily void listar\+Trabalho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada para verificar se um funcionário existe e caso exista, chamar a função \char`\"{}listar\+Trabalho\+Ano\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{salario_8c_a1c2ec69caf093fc24aabaa44e2eeee02}\label{salario_8c_a1c2ec69caf093fc24aabaa44e2eeee02}} 
+\index{salario.c@{salario.c}!listarTrabalhoAno@{listarTrabalhoAno}}
+\index{listarTrabalhoAno@{listarTrabalhoAno}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{listarTrabalhoAno()}{listarTrabalhoAno()}}
+{\footnotesize\ttfamily void listar\+Trabalho\+Ano (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario }\end{DoxyParamCaption})}
+
+Função utilizada para verificar se um funcionário trabalhou num determinado ano e caso tenha trabalhado, chamar a função \char`\"{}lista\+Trabalho\+Mes\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador onde se encontam guardados os dados do funcionário. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{salario_8c_ab17143696e19ac56e0775ef614ed64af}\label{salario_8c_ab17143696e19ac56e0775ef614ed64af}} 
+\index{salario.c@{salario.c}!listaTrabalhoMes@{listaTrabalhoMes}}
+\index{listaTrabalhoMes@{listaTrabalhoMes}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{listaTrabalhoMes()}{listaTrabalhoMes()}}
+{\footnotesize\ttfamily void lista\+Trabalho\+Mes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mes}{Mes}} $\ast$}]{mes }\end{DoxyParamCaption})}
+
+Função utilizada para listar os dados guardados correspondentes ao processamento do salário de um mês. 
+\begin{DoxyParams}{Parâmetros}
+{\em mes} & -\/ apontador onde se encontram os dados do mês. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{salario_8c_aee22b1430b72be2dcf1d9ef356722ff3}\label{salario_8c_aee22b1430b72be2dcf1d9ef356722ff3}} 
+\index{salario.c@{salario.c}!ordenarPorAnoTrabalho@{ordenarPorAnoTrabalho}}
+\index{ordenarPorAnoTrabalho@{ordenarPorAnoTrabalho}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{ordenarPorAnoTrabalho()}{ordenarPorAnoTrabalho()}}
+{\footnotesize\ttfamily void ordenar\+Por\+Ano\+Trabalho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ano}{Ano}} $\ast$}]{anos,  }\item[{int}]{inicio,  }\item[{int}]{fim }\end{DoxyParamCaption})}
+
+Função utilizada para ordenar os anos de trabalho de um funcionário. 
+\begin{DoxyParams}{Parâmetros}
+{\em anos} & -\/ apontador onde se encontram guardados os anos que um funcionário trabalhou. \\
+\hline
+{\em inicio} & -\/ valor correspondente à primeira posição do apontador. \\
+\hline
+{\em fim} & -\/ valor correspondente à primeira posição do apontador. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{salario_8c_a9a11fffeaf2d48d7d4292a0391d86f57}\label{salario_8c_a9a11fffeaf2d48d7d4292a0391d86f57}} 
+\index{salario.c@{salario.c}!ordenarPorMesTrabalho@{ordenarPorMesTrabalho}}
+\index{ordenarPorMesTrabalho@{ordenarPorMesTrabalho}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{ordenarPorMesTrabalho()}{ordenarPorMesTrabalho()}}
+{\footnotesize\ttfamily void ordenar\+Por\+Mes\+Trabalho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_mes}{Mes}} $\ast$}]{meses,  }\item[{int}]{inicio,  }\item[{int}]{fim }\end{DoxyParamCaption})}
+
+Função utilizada para ordenar os meses de trabalho de um funcionário. 
+\begin{DoxyParams}{Parâmetros}
+{\em meses} & -\/ apontador onde se encontram guardados os meses que um funcionário trabalhou. \\
+\hline
+{\em inicio} & -\/ valor correspondente à primeira posição do apontador. \\
+\hline
+{\em fim} & -\/ valor correspondente à primeira posição do apontador. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{salario_8c_ae04bbc3c97d0b6d22196d29856ac170b}\label{salario_8c_ae04bbc3c97d0b6d22196d29856ac170b}} 
+\index{salario.c@{salario.c}!procurarAnoTrabalho@{procurarAnoTrabalho}}
+\index{procurarAnoTrabalho@{procurarAnoTrabalho}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{procurarAnoTrabalho()}{procurarAnoTrabalho()}}
+{\footnotesize\ttfamily int procurar\+Ano\+Trabalho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario,  }\item[{int}]{ano,  }\item[{int}]{inicio,  }\item[{int}]{fim }\end{DoxyParamCaption})}
+
+Função utilizada para procurar se um funcionário trabalhou num determinado ano. 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador onde se encontra armazenadoguardado o funcionário. \\
+\hline
+{\em ano} & -\/ valor correspondente ao ano a ser procurado. \\
+\hline
+{\em inicio} & -\/ valor correspondente à primeira posição do apontador. \\
+\hline
+{\em fim} & -\/ valor correspondente à última posição do apontador. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+indice do ano (caso seja encontrado), -\/1 (caso não seja encontrado). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{salario_8c_a6ce86a1b93484be0fb5147a223a92776}\label{salario_8c_a6ce86a1b93484be0fb5147a223a92776}} 
+\index{salario.c@{salario.c}!procurarMesTrabalho@{procurarMesTrabalho}}
+\index{procurarMesTrabalho@{procurarMesTrabalho}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{procurarMesTrabalho()}{procurarMesTrabalho()}}
+{\footnotesize\ttfamily int procurar\+Mes\+Trabalho (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_ano}{Ano}} $\ast$}]{ano,  }\item[{int}]{mes,  }\item[{int}]{inicio,  }\item[{int}]{fim }\end{DoxyParamCaption})}
+
+Função utilizada para procurar se um ano contém um determinado mês. 
+\begin{DoxyParams}{Parâmetros}
+{\em ano} & -\/ apontador onde se encontram guardados os anos que um funcionário trabalhou. \\
+\hline
+{\em mes} & -\/ valor correspondente ao mês a ser procurado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+indice do mês (caso seja encontrado), -\/1 (caso não seja encontrado). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{salario_8c_a5fcc44d326be0ba5c7181b2c89087158}\label{salario_8c_a5fcc44d326be0ba5c7181b2c89087158}} 
+\index{salario.c@{salario.c}!verificaAnoMes@{verificaAnoMes}}
+\index{verificaAnoMes@{verificaAnoMes}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{verificaAnoMes()}{verificaAnoMes()}}
+{\footnotesize\ttfamily int verifica\+Ano\+Mes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{int}]{ano,  }\item[{int}]{mes }\end{DoxyParamCaption})}
+
+Função que verifica se existem dados de um mês de um ano específico 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+{\em ano} & -\/ Inteiro como o ano. \\
+\hline
+{\em mes} & -\/ Inteiro como o mês. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+0 (Se não existir), 1 (Se existir) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{salario_8c_ae8cdfefd23b5c69b75b5c622d8b87fde}\label{salario_8c_ae8cdfefd23b5c69b75b5c622d8b87fde}} 
+\index{salario.c@{salario.c}!verificaExisteAno@{verificaExisteAno}}
+\index{verificaExisteAno@{verificaExisteAno}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{verificaExisteAno()}{verificaExisteAno()}}
+{\footnotesize\ttfamily int verifica\+Existe\+Ano (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função que verifica se existe salarios inseridos 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+0 (se não existir), 1 (se existir) 
+\end{DoxyReturn}
+
+
+\doxysubsection{Documentação das variáveis}
+\mbox{\Hypertarget{salario_8c_a6ce3769212c1a4843a5d102622c18e38}\label{salario_8c_a6ce3769212c1a4843a5d102622c18e38}} 
+\index{salario.c@{salario.c}!meses@{meses}}
+\index{meses@{meses}!salario.c@{salario.c}}
+\doxysubsubsection{\texorpdfstring{meses}{meses}}
+{\footnotesize\ttfamily const char meses\mbox{[}12\mbox{]}\mbox{[}10\mbox{]} = \{\char`\"{}Janeiro\char`\"{}, \char`\"{}Fevereiro\char`\"{}, \char`\"{}Março\char`\"{}, \char`\"{}Abril\char`\"{}, \char`\"{}Maio\char`\"{}, \char`\"{}Junho\char`\"{}, \char`\"{}Julho\char`\"{}, \char`\"{}Agosto\char`\"{}, \char`\"{}Setembro\char`\"{}, \char`\"{}Outubro\char`\"{}, \char`\"{}Novembro\char`\"{}, \char`\"{}Dezembro\char`\"{}\}}
+

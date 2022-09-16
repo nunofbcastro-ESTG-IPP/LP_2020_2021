@@ -1,0 +1,323 @@
+\hypertarget{funcionario_8c}{}\doxysection{Referência ao ficheiro funcionario.\+c}
+\label{funcionario_8c}\index{funcionario.c@{funcionario.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}funcionario.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}funcoes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}input.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}seguranca\+Social.\+h\char`\"{}}\newline
+\doxysubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{funcionario_8c_acdc52f8d4389adbe4918bf443629bc27}{procurar\+Funcionarios}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, int codigo, int inicio, int fim)
+\item 
+void \mbox{\hyperlink{funcionario_8c_acecfff5511fdd0926bb4b8513e8dea2e}{ordena\+Funcionarios\+Codigo}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionarios, int inicio, int fim)
+\item 
+int \mbox{\hyperlink{funcionario_8c_ac72d361824c824d582b6bbbe37feeabe}{inserir\+Funcionario}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{funcionario_8c_a62ba05969480e1197b0e9f01dff5eff8}{inserir\+Funcionarios}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{funcionario_8c_a026f4f1c7662f062917b55a6fc116298}{listar\+Funcionario}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario)
+\item 
+void \mbox{\hyperlink{funcionario_8c_af132ff999dfb4743d061f80bb984c2ce}{atualizar\+Funcionario}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario, \mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{funcionario_8c_a3e81c1d0b09c4bb0fe0f76cec5269b59}{atualizar\+Funcionarios}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{funcionario_8c_abf8e111eb2407282256998465eee4075}{eliminar\+Funcionario}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario)
+\item 
+void \mbox{\hyperlink{funcionario_8c_aa9cd22f580f2221cbb12570af9672052}{eliminar\+Funcionarios}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{funcionario_8c_a5aafbae5b651a3b74035e2eaf989cfbf}{pesquisar\+Funcionario\+Codigo}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+int \mbox{\hyperlink{funcionario_8c_a70a9d51dabcc65fb533cc61dd207dfd2}{add\+Id\+Funcionario}} (int $\ast$$\ast$id\+Funcionario, int $\ast$max, int $\ast$posicao, int n)
+\item 
+void \mbox{\hyperlink{funcionario_8c_ab7f9cf697d539fb4ea2003102a4ab6ca}{pesquisar\+Funcionario\+Nome}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{funcionario_8c_ae6288764fae37c93c9a3fc754179c551}{lista\+Funcionarios}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{funcionario_8c_ab35d4f1eacc44a8c6d799d72ded83ead}{lista\+Funcionarios\+Atuais}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{funcionario_8c_a2bb7f01559238430409384ca1bbb7f9f}{lista\+Funcionarios\+Eliminados}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{funcionario_8c_a526444a203d8eb3813ec3347d996590b}{atualizacontador}} (int contador, char $\ast$ficheiro)
+\item 
+void \mbox{\hyperlink{funcionario_8c_a9d3b73d4bdecaa1652b9071fc5633edf}{armazena\+Dados}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, char $\ast$ficheiro)
+\item 
+void \mbox{\hyperlink{funcionario_8c_ae42f81d517139534b1b6cca5dfb48877}{importa\+Dados}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa, char $\ast$ficheiro)
+\item 
+void \mbox{\hyperlink{funcionario_8c_a4ee7e38de82e05cd4baa46c1288fd983}{media\+Faltas\+Func}} (\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$funcionario)
+\item 
+void \mbox{\hyperlink{funcionario_8c_aca58bf03139901a9d88f6627008a5468}{media\+Faltas}} (\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\item 
+void \mbox{\hyperlink{funcionario_8c_a772d94dc6708b4797f6cc314e3bf7a4c}{pesquisar\+Taxa\+Funcionario}} (\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$taxas\+Contributivas, \mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$empresa)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Documentação das funções}
+\mbox{\Hypertarget{funcionario_8c_a70a9d51dabcc65fb533cc61dd207dfd2}\label{funcionario_8c_a70a9d51dabcc65fb533cc61dd207dfd2}} 
+\index{funcionario.c@{funcionario.c}!addIdFuncionario@{addIdFuncionario}}
+\index{addIdFuncionario@{addIdFuncionario}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{addIdFuncionario()}{addIdFuncionario()}}
+{\footnotesize\ttfamily int add\+Id\+Funcionario (\begin{DoxyParamCaption}\item[{int $\ast$$\ast$}]{id\+Funcionario,  }\item[{int $\ast$}]{max,  }\item[{int $\ast$}]{posicao,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Função utilizada para guardar os índices de determinados funcionários num apontador. 
+\begin{DoxyParams}{Parâmetros}
+{\em id\+Funcionario} & -\/ apontador onde serão guardados os índices dos funcionários. \\
+\hline
+{\em max} & -\/ valor correspondente ao número máximo de espaços disponíveis. \\
+\hline
+{\em posicao} & -\/ valor correspondente ao número de índices guardados. \\
+\hline
+{\em n} & -\/ valor correspondente ao índice a ser armazenado. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 (caso a função seja executada com sucesso) ou 0 (caso a função não seja executada com sucesso). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcionario_8c_a9d3b73d4bdecaa1652b9071fc5633edf}\label{funcionario_8c_a9d3b73d4bdecaa1652b9071fc5633edf}} 
+\index{funcionario.c@{funcionario.c}!armazenaDados@{armazenaDados}}
+\index{armazenaDados@{armazenaDados}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{armazenaDados()}{armazenaDados()}}
+{\footnotesize\ttfamily void armazena\+Dados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{char $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+Função utilizada para guardar todos os dados dos funcionários num ficheiro. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram guardados os funcionários. \\
+\hline
+{\em ficheiro} & -\/ nome do ficheiro onde serão guardados os dados. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_a526444a203d8eb3813ec3347d996590b}\label{funcionario_8c_a526444a203d8eb3813ec3347d996590b}} 
+\index{funcionario.c@{funcionario.c}!atualizacontador@{atualizacontador}}
+\index{atualizacontador@{atualizacontador}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{atualizacontador()}{atualizacontador()}}
+{\footnotesize\ttfamily void atualizacontador (\begin{DoxyParamCaption}\item[{int}]{contador,  }\item[{char $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+Função utilizada para guardar o número de funcionários num ficheiro. 
+\begin{DoxyParams}{Parâmetros}
+{\em contador} & -\/ valor correspondente ao número de funcionários. \\
+\hline
+{\em ficheiro} & -\/ nome do ficheiro onde será armazenada a informação. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_af132ff999dfb4743d061f80bb984c2ce}\label{funcionario_8c_af132ff999dfb4743d061f80bb984c2ce}} 
+\index{funcionario.c@{funcionario.c}!atualizarFuncionario@{atualizarFuncionario}}
+\index{atualizarFuncionario@{atualizarFuncionario}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{atualizarFuncionario()}{atualizarFuncionario()}}
+{\footnotesize\ttfamily void atualizar\+Funcionario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario,  }\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada para atualizar os dados de um funcionário. 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador onde se encontra guardado o funcionário. \\
+\hline
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários (utilizado para pesquisa). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_a3e81c1d0b09c4bb0fe0f76cec5269b59}\label{funcionario_8c_a3e81c1d0b09c4bb0fe0f76cec5269b59}} 
+\index{funcionario.c@{funcionario.c}!atualizarFuncionarios@{atualizarFuncionarios}}
+\index{atualizarFuncionarios@{atualizarFuncionarios}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{atualizarFuncionarios()}{atualizarFuncionarios()}}
+{\footnotesize\ttfamily void atualizar\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada para verificar se um funcionário existe e caso exista, chamar a função \char`\"{}atualizar\+Funcionario\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_abf8e111eb2407282256998465eee4075}\label{funcionario_8c_abf8e111eb2407282256998465eee4075}} 
+\index{funcionario.c@{funcionario.c}!eliminarFuncionario@{eliminarFuncionario}}
+\index{eliminarFuncionario@{eliminarFuncionario}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{eliminarFuncionario()}{eliminarFuncionario()}}
+{\footnotesize\ttfamily void eliminar\+Funcionario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario }\end{DoxyParamCaption})}
+
+Função utilizada para eliminar um funcionário (atualiza a data de saída da empresa de um funcionário). 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador onde se encontra guardado o funcionário. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_aa9cd22f580f2221cbb12570af9672052}\label{funcionario_8c_aa9cd22f580f2221cbb12570af9672052}} 
+\index{funcionario.c@{funcionario.c}!eliminarFuncionarios@{eliminarFuncionarios}}
+\index{eliminarFuncionarios@{eliminarFuncionarios}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{eliminarFuncionarios()}{eliminarFuncionarios()}}
+{\footnotesize\ttfamily void eliminar\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada para verificar se um funcionário existe e caso exista, chamar a função \char`\"{}eliminar\+Funcionario\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_ae42f81d517139534b1b6cca5dfb48877}\label{funcionario_8c_ae42f81d517139534b1b6cca5dfb48877}} 
+\index{funcionario.c@{funcionario.c}!importaDados@{importaDados}}
+\index{importaDados@{importaDados}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{importaDados()}{importaDados()}}
+{\footnotesize\ttfamily void importa\+Dados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{char $\ast$}]{ficheiro }\end{DoxyParamCaption})}
+
+Função utilizada para importar todos os dados dos funcionários de um ficheiro. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador serão guardados os dados dos funcionários. \\
+\hline
+{\em ficheiro} & -\/ nome do ficheiro onde se encontram guardados os dados. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_ac72d361824c824d582b6bbbe37feeabe}\label{funcionario_8c_ac72d361824c824d582b6bbbe37feeabe}} 
+\index{funcionario.c@{funcionario.c}!inserirFuncionario@{inserirFuncionario}}
+\index{inserirFuncionario@{inserirFuncionario}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{inserirFuncionario()}{inserirFuncionario()}}
+{\footnotesize\ttfamily int inserir\+Funcionario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada para inserir um novo funcionário após verificação do código. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde será guardado o funcionário. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+-\/1 (caso o funcionário seja inserido), índice do funcionário (caso o código de funcionário já tenha sido atribuído). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funcionario_8c_a62ba05969480e1197b0e9f01dff5eff8}\label{funcionario_8c_a62ba05969480e1197b0e9f01dff5eff8}} 
+\index{funcionario.c@{funcionario.c}!inserirFuncionarios@{inserirFuncionarios}}
+\index{inserirFuncionarios@{inserirFuncionarios}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{inserirFuncionarios()}{inserirFuncionarios()}}
+{\footnotesize\ttfamily void inserir\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada para alocar espaço para os funcionários e chamar a função \char`\"{}inserir\+Funcionario\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde será guardado o funcionário. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_ae6288764fae37c93c9a3fc754179c551}\label{funcionario_8c_ae6288764fae37c93c9a3fc754179c551}} 
+\index{funcionario.c@{funcionario.c}!listaFuncionarios@{listaFuncionarios}}
+\index{listaFuncionarios@{listaFuncionarios}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{listaFuncionarios()}{listaFuncionarios()}}
+{\footnotesize\ttfamily void lista\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada listar todos os funcionários da empresa. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_ab35d4f1eacc44a8c6d799d72ded83ead}\label{funcionario_8c_ab35d4f1eacc44a8c6d799d72ded83ead}} 
+\index{funcionario.c@{funcionario.c}!listaFuncionariosAtuais@{listaFuncionariosAtuais}}
+\index{listaFuncionariosAtuais@{listaFuncionariosAtuais}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{listaFuncionariosAtuais()}{listaFuncionariosAtuais()}}
+{\footnotesize\ttfamily void lista\+Funcionarios\+Atuais (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada listar todos os funcionários atuais da empresa. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_a2bb7f01559238430409384ca1bbb7f9f}\label{funcionario_8c_a2bb7f01559238430409384ca1bbb7f9f}} 
+\index{funcionario.c@{funcionario.c}!listaFuncionariosEliminados@{listaFuncionariosEliminados}}
+\index{listaFuncionariosEliminados@{listaFuncionariosEliminados}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{listaFuncionariosEliminados()}{listaFuncionariosEliminados()}}
+{\footnotesize\ttfamily void lista\+Funcionarios\+Eliminados (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada listar todos os funcionários que já saíram da empresa. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_a026f4f1c7662f062917b55a6fc116298}\label{funcionario_8c_a026f4f1c7662f062917b55a6fc116298}} 
+\index{funcionario.c@{funcionario.c}!listarFuncionario@{listarFuncionario}}
+\index{listarFuncionario@{listarFuncionario}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{listarFuncionario()}{listarFuncionario()}}
+{\footnotesize\ttfamily void listar\+Funcionario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario }\end{DoxyParamCaption})}
+
+Função utilizada para listar um determinado funcionário. 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador onde se encontra guardado o funcionário. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_aca58bf03139901a9d88f6627008a5468}\label{funcionario_8c_aca58bf03139901a9d88f6627008a5468}} 
+\index{funcionario.c@{funcionario.c}!mediaFaltas@{mediaFaltas}}
+\index{mediaFaltas@{mediaFaltas}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{mediaFaltas()}{mediaFaltas()}}
+{\footnotesize\ttfamily void media\+Faltas (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada para verificar se um funcionário existe e caso exista, chamar a função \char`\"{}media\+Faltas\+Func\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_a4ee7e38de82e05cd4baa46c1288fd983}\label{funcionario_8c_a4ee7e38de82e05cd4baa46c1288fd983}} 
+\index{funcionario.c@{funcionario.c}!mediaFaltasFunc@{mediaFaltasFunc}}
+\index{mediaFaltasFunc@{mediaFaltasFunc}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{mediaFaltasFunc()}{mediaFaltasFunc()}}
+{\footnotesize\ttfamily void media\+Faltas\+Func (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionario }\end{DoxyParamCaption})}
+
+Função utilizada para obter a média de faltas de um funcionário num determinado ano. 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionario} & -\/ apontador onde se encontram guardados os dados do funcionário. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_acecfff5511fdd0926bb4b8513e8dea2e}\label{funcionario_8c_acecfff5511fdd0926bb4b8513e8dea2e}} 
+\index{funcionario.c@{funcionario.c}!ordenaFuncionariosCodigo@{ordenaFuncionariosCodigo}}
+\index{ordenaFuncionariosCodigo@{ordenaFuncionariosCodigo}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{ordenaFuncionariosCodigo()}{ordenaFuncionariosCodigo()}}
+{\footnotesize\ttfamily void ordena\+Funcionarios\+Codigo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_funcionario}{Funcionario}} $\ast$}]{funcionarios,  }\item[{int}]{inicio,  }\item[{int}]{fim }\end{DoxyParamCaption})}
+
+Função utilizada para ordenar os funcionários através dos códigos, utilizando o método de ordenação \char`\"{}\+Quick\+Sort\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em funcionarios} & -\/ apontador onde se encontram guardados os funcionários. \\
+\hline
+{\em inicio} & -\/ valor correspondente à primeira posição do apontador. \\
+\hline
+{\em fim} & -\/ valor correspondente à última posição do apontador. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_a5aafbae5b651a3b74035e2eaf989cfbf}\label{funcionario_8c_a5aafbae5b651a3b74035e2eaf989cfbf}} 
+\index{funcionario.c@{funcionario.c}!pesquisarFuncionarioCodigo@{pesquisarFuncionarioCodigo}}
+\index{pesquisarFuncionarioCodigo@{pesquisarFuncionarioCodigo}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{pesquisarFuncionarioCodigo()}{pesquisarFuncionarioCodigo()}}
+{\footnotesize\ttfamily void pesquisar\+Funcionario\+Codigo (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada para verificar se um funcionário existe e caso exista, chamar a função \char`\"{}listar\+Funcionario\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_ab7f9cf697d539fb4ea2003102a4ab6ca}\label{funcionario_8c_ab7f9cf697d539fb4ea2003102a4ab6ca}} 
+\index{funcionario.c@{funcionario.c}!pesquisarFuncionarioNome@{pesquisarFuncionarioNome}}
+\index{pesquisarFuncionarioNome@{pesquisarFuncionarioNome}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{pesquisarFuncionarioNome()}{pesquisarFuncionarioNome()}}
+{\footnotesize\ttfamily void pesquisar\+Funcionario\+Nome (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada para ler um nome, listar o nome dos funcionários que contenham o nome inserido e após o utilizador selecionar um funcionário, chamar a função \char`\"{}listar\+Funcionario\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_a772d94dc6708b4797f6cc314e3bf7a4c}\label{funcionario_8c_a772d94dc6708b4797f6cc314e3bf7a4c}} 
+\index{funcionario.c@{funcionario.c}!pesquisarTaxaFuncionario@{pesquisarTaxaFuncionario}}
+\index{pesquisarTaxaFuncionario@{pesquisarTaxaFuncionario}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{pesquisarTaxaFuncionario()}{pesquisarTaxaFuncionario()}}
+{\footnotesize\ttfamily void pesquisar\+Taxa\+Funcionario (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_taxas_contributivas}{Taxas\+Contributivas}} $\ast$}]{taxas\+Contributivas,  }\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa }\end{DoxyParamCaption})}
+
+Função utilizada procurar a taxa contributiva a ser utilizada num funcionário e chamar a função \char`\"{}lista\+Taxa\+Contributiva\char`\"{}. 
+\begin{DoxyParams}{Parâmetros}
+{\em taxas\+Contributivas} & -\/ apontador onde se encontam guardadas as taxas contributivas. \\
+\hline
+{\em empresa} & -\/ apontador onde se encontam guardados os funcionários. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funcionario_8c_acdc52f8d4389adbe4918bf443629bc27}\label{funcionario_8c_acdc52f8d4389adbe4918bf443629bc27}} 
+\index{funcionario.c@{funcionario.c}!procurarFuncionarios@{procurarFuncionarios}}
+\index{procurarFuncionarios@{procurarFuncionarios}!funcionario.c@{funcionario.c}}
+\doxysubsubsection{\texorpdfstring{procurarFuncionarios()}{procurarFuncionarios()}}
+{\footnotesize\ttfamily int procurar\+Funcionarios (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_empresa}{Empresa}} $\ast$}]{empresa,  }\item[{int}]{codigo,  }\item[{int}]{inicio,  }\item[{int}]{fim }\end{DoxyParamCaption})}
+
+Função utilizada para pesquisar um funcionário através do seu código. 
+\begin{DoxyParams}{Parâmetros}
+{\em empresa} & -\/ apontador onde se encontram guardados os funcionários. \\
+\hline
+{\em codigo} & -\/ valor correspondente ao código do funcionário a ser pesquisado. \\
+\hline
+{\em inicio} & -\/ valor correspondente à primeira posição a ser procurada. \\
+\hline
+{\em fim} & -\/ valor correspondente à última posição a ser procurada. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+indice do funcionário (caso seja encontrado), -\/1 (caso não seja encontrado) ou -\/2 (caso este já tenha saido da empresa). 
+\end{DoxyReturn}

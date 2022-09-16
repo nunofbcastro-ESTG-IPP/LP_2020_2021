@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.20"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>LP_G13_Projeto: Código-Fonte de dados.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">LP_G13_Projeto
+   &#160;<span id="projectnumber">Versão 1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.20 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Localizar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Localizar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('dados_8h_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dados.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dados_8h.html">Ir para a documentação deste ficheiro.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef DADOS_H</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define DADOS_H</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="funcionario_8h.html">funcionario.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="irs_8h.html">irs.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="seguranca_social_8h.html">segurancaSocial.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="dados_8h.html#af735670d9b1cd3dfa2d927db387f7123">    9</a></span>&#160;<span class="preprocessor">#define INC                            5</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="dados_8h.html#a36fac549c1e13d7a2d666c5fce147800">   11</a></span>&#160;<span class="preprocessor">#define ficheiroNomeEmpresas           &quot;./src/nomeEmpresas.bin&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="dados_8h.html#afb460bebed4b711f210829cc921c504a">   12</a></span>&#160;<span class="preprocessor">#define BASEPASTANAME                  &quot;./src/&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="dados_8h.html#abbed7ac0be5b98c2a1828b5d7b8b64d2">   13</a></span>&#160;<span class="preprocessor">#define BASEFicheiroCasadoUnico        &quot;/CasadosDois.txt&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="dados_8h.html#a3522e3072c482eed65bdcbb9b39abc60">   14</a></span>&#160;<span class="preprocessor">#define BASEFicheiroCasadoDois         &quot;/CasadoUnico.txt&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="dados_8h.html#ab08916c04afa089e7dc93479bda95ceb">   15</a></span>&#160;<span class="preprocessor">#define BASEFicheiroNaoCasado          &quot;/NaoCasado.txt&quot;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="dados_8h.html#aff6ca7c38423e7f213c7bc484d9d9380">   16</a></span>&#160;<span class="preprocessor">#define BASEFicheiroTaxasContributivas &quot;/TaxasContributivas.txt&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="dados_8h.html#a6307d2dd4a1ef9125ab0d9c00506a114">   17</a></span>&#160;<span class="preprocessor">#define BASEDADOSNAME                  &quot;/dados.bin&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="dados_8h.html#a3c510cea9021d31cd8179f94e2fa930c">   19</a></span>&#160;<span class="preprocessor">#define SEMDADOGUAR                    &quot;Sem dados para importar.&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="dados_8h.html#ad22cb034b4e391078799966926beb6c0">   20</a></span>&#160;<span class="preprocessor">#define GUARDADOS_SUCESSO              &quot;Dados guardados com sucesso&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="dados_8h.html#ad3573ef516857a26d812b788a801bb2e">   21</a></span>&#160;<span class="preprocessor">#define IMPORTADOS_SUCESSO             &quot;Dados importados com sucesso.&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="dados_8h.html#a87faffe615a3010cd8c979396a7971a7">   23</a></span>&#160;<span class="preprocessor">#define maxPasta                       20</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="dados_8h.html#a2ba2d95736a28ef4f31fa568d374b0ad">   24</a></span>&#160;<span class="preprocessor">#define maxFILENAME                    37</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="dados_8h.html#ab0c500c060b26c444b9dc9da0f3f384a">   25</a></span>&#160;<span class="preprocessor">#define maxComando                     39</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="struct_nome_empresa.html">   27</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="struct_nome_empresa.html#a9ccb3b1009c0baf8e49e38488c83732a">   28</a></span>&#160;    <span class="keywordtype">char</span> nome[20];</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;} <a class="code" href="struct_nome_empresa.html">NomeEmpresa</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_nomes_empresas.html">   31</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span>{</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="struct_nomes_empresas.html#af75c2e33720c90fc157758e60d4d24a7">   32</a></span>&#160;    <a class="code" href="struct_nome_empresa.html">NomeEmpresa</a> *<a class="code" href="struct_nomes_empresas.html#af75c2e33720c90fc157758e60d4d24a7">nomesEmpresas</a>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="struct_nomes_empresas.html#aaa204863e2ad60aba66199f3404d16f6">   33</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_nomes_empresas.html#aaa204863e2ad60aba66199f3404d16f6">numeroEmpresas</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="struct_nomes_empresas.html#a2b7576b5581d4924a7e875da65f347e3">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_nomes_empresas.html#a2b7576b5581d4924a7e875da65f347e3">numeroMaxEmpresas</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;} <a class="code" href="struct_nomes_empresas.html">NomesEmpresas</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keywordtype">void</span> <a class="code" href="dados_8h.html#aaea24a0f92619679ff4dac67f8e66e45">importarNomesEmpresas</a>(<a class="code" href="struct_nomes_empresas.html">NomesEmpresas</a> *nomesEmpresas, <span class="keywordtype">char</span> *ficheiro);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keywordtype">void</span> <a class="code" href="dados_8h.html#a1daa4e59a92d3762287a7f31120d0ff6">inserirNomeEmpresaFX</a>(<a class="code" href="struct_nomes_empresas.html">NomesEmpresas</a> *nomesEmpresas, <span class="keywordtype">char</span> *ficheiro);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keywordtype">void</span> <a class="code" href="dados_8h.html#a931fb81974224710ef6db350c54572bc">inserirNomeEmpresa</a>(<a class="code" href="struct_nomes_empresas.html">NomesEmpresas</a> *nomesEmpresas, <span class="keywordtype">char</span> *nome);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keywordtype">int</span> <a class="code" href="dados_8h.html#a4599813d42c79a5e6315df596df10c5f">guardar</a>(<a class="code" href="struct_empresa.html">Empresa</a> *empresa, <a class="code" href="struct_i_r_s_dados.html">IRSDados</a> *irsdados, <a class="code" href="struct_nomes_empresas.html">NomesEmpresas</a> *nomesEmpresas, <a class="code" href="struct_taxas_contributivas.html">TaxasContributivas</a> *taxasContributivas);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keywordtype">void</span> <a class="code" href="dados_8h.html#a5dcd42e555de1708bc92bb9ab6890659">importar</a>(<a class="code" href="struct_empresa.html">Empresa</a> *empresa, <a class="code" href="struct_i_r_s_dados.html">IRSDados</a> *irsdados, <a class="code" href="struct_nomes_empresas.html">NomesEmpresas</a> *nomesEmpresas, <a class="code" href="struct_taxas_contributivas.html">TaxasContributivas</a> *taxasContributivas);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keywordtype">void</span> <a class="code" href="dados_8h.html#a6d954d658be28127f89770b7058fb52d">limparDados</a>(<a class="code" href="struct_empresa.html">Empresa</a> *empresa, <a class="code" href="struct_i_r_s_dados.html">IRSDados</a> *irsdados, <a class="code" href="struct_nomes_empresas.html">NomesEmpresas</a> *nomesEmpresas, <a class="code" href="struct_taxas_contributivas.html">TaxasContributivas</a> *taxasContributivas, <span class="keywordtype">int</span> limparNomesEmpresas);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> <a class="code" href="dados_8h.html#a1e41189e2b30954508c4f32d6c1ae093">exportarRelatorio</a>(<a class="code" href="struct_empresa.html">Empresa</a> *empresa, <a class="code" href="struct_i_r_s_dados.html">IRSDados</a> *irsdados, <a class="code" href="struct_nomes_empresas.html">NomesEmpresas</a> *nomesEmpresas, <a class="code" href="struct_taxas_contributivas.html">TaxasContributivas</a> *taxasContributivas);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> <a class="code" href="dados_8h.html#a997d32e1a256c1920e49a857ba419adb">importarRelatorio</a>(<a class="code" href="struct_empresa.html">Empresa</a> *empresa, <a class="code" href="struct_nomes_empresas.html">NomesEmpresas</a> *nomesEmpresas);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* DADOS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="afuncionario_8c_html_acdc52f8d4389adbe4918bf443629bc27"><div class="ttname"><a href="funcionario_8c.html#acdc52f8d4389adbe4918bf443629bc27">procurarFuncionarios</a></div><div class="ttdeci">int procurarFuncionarios(Empresa *empresa, int codigo, int inicio, int fim)</div><div class="ttdef"><b>Definition:</b> funcionario.c:17</div></div>
+<div class="ttc" id="adados_8h_html_a5dcd42e555de1708bc92bb9ab6890659"><div class="ttname"><a href="dados_8h.html#a5dcd42e555de1708bc92bb9ab6890659">importar</a></div><div class="ttdeci">void importar(Empresa *empresa, IRSDados *irsdados, NomesEmpresas *nomesEmpresas, TaxasContributivas *taxasContributivas)</div><div class="ttdef"><b>Definition:</b> dados.c:230</div></div>
+<div class="ttc" id="astruct_taxas_contributivas_html_a3616be7f0b6a1c052b4b689f7206c6fa"><div class="ttname"><a href="struct_taxas_contributivas.html#a3616be7f0b6a1c052b4b689f7206c6fa">TaxasContributivas::taxasContributivas</a></div><div class="ttdeci">TaxaContributiva * taxasContributivas</div><div class="ttdef"><b>Definition:</b> segurancaSocial.h:26</div></div>
+<div class="ttc" id="afuncionario_8c_html_ae42f81d517139534b1b6cca5dfb48877"><div class="ttname"><a href="funcionario_8c.html#ae42f81d517139534b1b6cca5dfb48877">importaDados</a></div><div class="ttdeci">void importaDados(Empresa *empresa, char *ficheiro)</div><div class="ttdef"><b>Definition:</b> funcionario.c:486</div></div>
+<div class="ttc" id="astruct_mes_html"><div class="ttname"><a href="struct_mes.html">Mes</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:73</div></div>
+<div class="ttc" id="adados_8c_html_a42c9d4acb9ad16c8032d5c8adacee2fe"><div class="ttname"><a href="dados_8c.html#a42c9d4acb9ad16c8032d5c8adacee2fe">adicionarSalarioRelatorio</a></div><div class="ttdeci">void adicionarSalarioRelatorio(Empresa *empresa, int codigoFuncionario, int ano, Mes dados)</div><div class="ttdef"><b>Definition:</b> dados.c:332</div></div>
+<div class="ttc" id="afuncoes_8h_html"><div class="ttname"><a href="funcoes_8h.html">funcoes.h</a></div></div>
+<div class="ttc" id="afuncoes_8c_html_a556e09ade87e7e0bc600868a7810b60d"><div class="ttname"><a href="funcoes_8c.html#a556e09ade87e7e0bc600868a7810b60d">juntar2Strings</a></div><div class="ttdeci">void juntar2Strings(char *s1, char *s2)</div><div class="ttdef"><b>Definition:</b> funcoes.c:289</div></div>
+<div class="ttc" id="afuncionario_8h_html"><div class="ttname"><a href="funcionario_8h.html">funcionario.h</a></div></div>
+<div class="ttc" id="astruct_ano_html_a1b6f3131dc6631705c8e56c83e3958cf"><div class="ttname"><a href="struct_ano.html#a1b6f3131dc6631705c8e56c83e3958cf">Ano::meses</a></div><div class="ttdeci">Mes * meses</div><div class="ttdef"><b>Definition:</b> funcionario.h:91</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a9dc590c84aff16ce7f97c6046c0e54cd"><div class="ttname"><a href="struct_i_r_s_dados.html#a9dc590c84aff16ce7f97c6046c0e54cd">IRSDados::contadorCasadoDoisIRS</a></div><div class="ttdeci">int contadorCasadoDoisIRS</div><div class="ttdef"><b>Definition:</b> irs.h:27</div></div>
+<div class="ttc" id="astruct_ano_html_acdf2e05c8f2550ecafabb992c161b86e"><div class="ttname"><a href="struct_ano.html#acdf2e05c8f2550ecafabb992c161b86e">Ano::tamMeses</a></div><div class="ttdeci">int tamMeses</div><div class="ttdef"><b>Definition:</b> funcionario.h:94</div></div>
+<div class="ttc" id="astruct_nome_empresa_html"><div class="ttname"><a href="struct_nome_empresa.html">NomeEmpresa</a></div><div class="ttdef"><b>Definition:</b> dados.h:27</div></div>
+<div class="ttc" id="astruct_empresa_html_a2ff75f0179d46f95f9f36f58520aa794"><div class="ttname"><a href="struct_empresa.html#a2ff75f0179d46f95f9f36f58520aa794">Empresa::funcionarios</a></div><div class="ttdeci">Funcionario * funcionarios</div><div class="ttdef"><b>Definition:</b> funcionario.h:137</div></div>
+<div class="ttc" id="astruct_funcionario_html_ab6bf4cb01a3be7589a2224e9bf24652c"><div class="ttname"><a href="struct_funcionario.html#ab6bf4cb01a3be7589a2224e9bf24652c">Funcionario::trabalho</a></div><div class="ttdeci">Trabalho trabalho</div><div class="ttdef"><b>Definition:</b> funcionario.h:124</div></div>
+<div class="ttc" id="astruct_empresa_html_af1ee54e91e78743e86662e680b3fa795"><div class="ttname"><a href="struct_empresa.html#af1ee54e91e78743e86662e680b3fa795">Empresa::nFuncionarios</a></div><div class="ttdeci">int nFuncionarios</div><div class="ttdef"><b>Definition:</b> funcionario.h:134</div></div>
+<div class="ttc" id="astruct_nomes_empresas_html_aaa204863e2ad60aba66199f3404d16f6"><div class="ttname"><a href="struct_nomes_empresas.html#aaa204863e2ad60aba66199f3404d16f6">NomesEmpresas::numeroEmpresas</a></div><div class="ttdeci">int numeroEmpresas</div><div class="ttdef"><b>Definition:</b> dados.h:33</div></div>
+<div class="ttc" id="astruct_taxas_contributivas_html"><div class="ttname"><a href="struct_taxas_contributivas.html">TaxasContributivas</a></div><div class="ttdef"><b>Definition:</b> segurancaSocial.h:25</div></div>
+<div class="ttc" id="astruct_mes_html_abb17fa662b51135f3b87fc277fa12a93"><div class="ttname"><a href="struct_mes.html#abb17fa662b51135f3b87fc277fa12a93">Mes::Mes</a></div><div class="ttdeci">int Mes</div><div class="ttdef"><b>Definition:</b> funcionario.h:74</div></div>
+<div class="ttc" id="adados_8h_html_abbed7ac0be5b98c2a1828b5d7b8b64d2"><div class="ttname"><a href="dados_8h.html#abbed7ac0be5b98c2a1828b5d7b8b64d2">BASEFicheiroCasadoUnico</a></div><div class="ttdeci">#define BASEFicheiroCasadoUnico</div><div class="ttdef"><b>Definition:</b> dados.h:13</div></div>
+<div class="ttc" id="astruct_funcionario_html_af1636dbbd58c9ecd1bbcdb81b776187f"><div class="ttname"><a href="struct_funcionario.html#af1636dbbd58c9ecd1bbcdb81b776187f">Funcionario::codigoFuncionario</a></div><div class="ttdeci">int codigoFuncionario</div><div class="ttdef"><b>Definition:</b> funcionario.h:116</div></div>
+<div class="ttc" id="adados_8c_html_a6d954d658be28127f89770b7058fb52d"><div class="ttname"><a href="dados_8c.html#a6d954d658be28127f89770b7058fb52d">limparDados</a></div><div class="ttdeci">void limparDados(Empresa *empresa, IRSDados *irsdados, NomesEmpresas *nomesEmpresas, TaxasContributivas *taxasContributivas, int limparNomesEmpresas)</div><div class="ttdef"><b>Definition:</b> dados.c:187</div></div>
+<div class="ttc" id="adados_8h_html_ad3573ef516857a26d812b788a801bb2e"><div class="ttname"><a href="dados_8h.html#ad3573ef516857a26d812b788a801bb2e">IMPORTADOS_SUCESSO</a></div><div class="ttdeci">#define IMPORTADOS_SUCESSO</div><div class="ttdef"><b>Definition:</b> dados.h:21</div></div>
+<div class="ttc" id="astruct_mes_html_a1eae065c21bc225a30c855f5c215dc98"><div class="ttname"><a href="struct_mes.html#a1eae065c21bc225a30c855f5c215dc98">Mes::salarioFinal</a></div><div class="ttdeci">float salarioFinal</div><div class="ttdef"><b>Definition:</b> funcionario.h:82</div></div>
+<div class="ttc" id="astruct_mes_html_abf043f07b486c0e2e5d1314c5ac05472"><div class="ttname"><a href="struct_mes.html#abf043f07b486c0e2e5d1314c5ac05472">Mes::nMaxDias</a></div><div class="ttdeci">int nMaxDias</div><div class="ttdef"><b>Definition:</b> funcionario.h:75</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a3a82f750aa0e7825bb59ec08e12efd6c"><div class="ttname"><a href="struct_i_r_s_dados.html#a3a82f750aa0e7825bb59ec08e12efd6c">IRSDados::casadoUnicoIRS</a></div><div class="ttdeci">IRS * casadoUnicoIRS</div><div class="ttdef"><b>Definition:</b> irs.h:22</div></div>
+<div class="ttc" id="adados_8c_html_a4599813d42c79a5e6315df596df10c5f"><div class="ttname"><a href="dados_8c.html#a4599813d42c79a5e6315df596df10c5f">guardar</a></div><div class="ttdeci">int guardar(Empresa *empresa, IRSDados *irsdados, NomesEmpresas *nomesEmpresas, TaxasContributivas *taxasContributivas)</div><div class="ttdef"><b>Definition:</b> dados.c:126</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html"><div class="ttname"><a href="struct_i_r_s_dados.html">IRSDados</a></div><div class="ttdef"><b>Definition:</b> irs.h:21</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a72107d14e2ac99f76323bcd8f422294d"><div class="ttname"><a href="struct_i_r_s_dados.html#a72107d14e2ac99f76323bcd8f422294d">IRSDados::contadorCasadoUnicoIRS</a></div><div class="ttdeci">int contadorCasadoUnicoIRS</div><div class="ttdef"><b>Definition:</b> irs.h:23</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a4d36655f5941f5d4613bd358afd69c1f"><div class="ttname"><a href="struct_i_r_s_dados.html#a4d36655f5941f5d4613bd358afd69c1f">IRSDados::tamcontadorSolteiroIRS</a></div><div class="ttdeci">int tamcontadorSolteiroIRS</div><div class="ttdef"><b>Definition:</b> irs.h:32</div></div>
+<div class="ttc" id="astruct_nomes_empresas_html_af75c2e33720c90fc157758e60d4d24a7"><div class="ttname"><a href="struct_nomes_empresas.html#af75c2e33720c90fc157758e60d4d24a7">NomesEmpresas::nomesEmpresas</a></div><div class="ttdeci">NomeEmpresa * nomesEmpresas</div><div class="ttdef"><b>Definition:</b> dados.h:32</div></div>
+<div class="ttc" id="adados_8h_html_a931fb81974224710ef6db350c54572bc"><div class="ttname"><a href="dados_8h.html#a931fb81974224710ef6db350c54572bc">inserirNomeEmpresa</a></div><div class="ttdeci">void inserirNomeEmpresa(NomesEmpresas *nomesEmpresas, char *nome)</div><div class="ttdef"><b>Definition:</b> dados.c:90</div></div>
+<div class="ttc" id="astruct_trabalho_html_aaedf55e0572bbb0c198b94bcb84cff3c"><div class="ttname"><a href="struct_trabalho.html#aaedf55e0572bbb0c198b94bcb84cff3c">Trabalho::tamAnos</a></div><div class="ttdeci">int tamAnos</div><div class="ttdef"><b>Definition:</b> funcionario.h:100</div></div>
+<div class="ttc" id="adados_8h_html_a997d32e1a256c1920e49a857ba419adb"><div class="ttname"><a href="dados_8h.html#a997d32e1a256c1920e49a857ba419adb">importarRelatorio</a></div><div class="ttdeci">void importarRelatorio(Empresa *empresa, NomesEmpresas *nomesEmpresas)</div><div class="ttdef"><b>Definition:</b> dados.c:421</div></div>
+<div class="ttc" id="adados_8h_html_a3522e3072c482eed65bdcbb9b39abc60"><div class="ttname"><a href="dados_8h.html#a3522e3072c482eed65bdcbb9b39abc60">BASEFicheiroCasadoDois</a></div><div class="ttdeci">#define BASEFicheiroCasadoDois</div><div class="ttdef"><b>Definition:</b> dados.h:14</div></div>
+<div class="ttc" id="astruct_trabalho_html_ade8b1b3b7e7ac58a9082e8020972f636"><div class="ttname"><a href="struct_trabalho.html#ade8b1b3b7e7ac58a9082e8020972f636">Trabalho::anos</a></div><div class="ttdeci">Ano * anos</div><div class="ttdef"><b>Definition:</b> funcionario.h:98</div></div>
+<div class="ttc" id="adados_8h_html"><div class="ttname"><a href="dados_8h.html">dados.h</a></div></div>
+<div class="ttc" id="adados_8c_html_a1daa4e59a92d3762287a7f31120d0ff6"><div class="ttname"><a href="dados_8c.html#a1daa4e59a92d3762287a7f31120d0ff6">inserirNomeEmpresaFX</a></div><div class="ttdeci">void inserirNomeEmpresaFX(NomesEmpresas *nomesEmpresas, char *ficheiro)</div><div class="ttdef"><b>Definition:</b> dados.c:59</div></div>
+<div class="ttc" id="ainput_8c_html_aa8f067a5ff0a81c9af0f5fd554750960"><div class="ttname"><a href="input_8c.html#aa8f067a5ff0a81c9af0f5fd554750960">obterInteiro</a></div><div class="ttdeci">int obterInteiro(int minValor, int maxValor, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:28</div></div>
+<div class="ttc" id="adados_8c_html_a8a6a3f4df09ae5dbbe5f0a79cf08fa2b"><div class="ttname"><a href="dados_8c.html#a8a6a3f4df09ae5dbbe5f0a79cf08fa2b">adicionarSalarioRelatorioMes</a></div><div class="ttdeci">void adicionarSalarioRelatorioMes(Funcionario *funcionario, int idAno, Mes dados)</div><div class="ttdef"><b>Definition:</b> dados.c:303</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_ad72c7df7b9939510f041e45b69cd972b"><div class="ttname"><a href="struct_i_r_s_dados.html#ad72c7df7b9939510f041e45b69cd972b">IRSDados::tamcontadorCasadoUnicoIRS</a></div><div class="ttdeci">int tamcontadorCasadoUnicoIRS</div><div class="ttdef"><b>Definition:</b> irs.h:24</div></div>
+<div class="ttc" id="airs_8c_html_a2797575bc9a26cf856589bee7483cc5d"><div class="ttname"><a href="irs_8c.html#a2797575bc9a26cf856589bee7483cc5d">carregarDadosFicheiroIRS</a></div><div class="ttdeci">void carregarDadosFicheiroIRS(IRS **irs, int *contador, int *tam, char *nomeFicheiro)</div><div class="ttdef"><b>Definition:</b> irs.c:36</div></div>
+<div class="ttc" id="aseguranca_social_8c_html_a38bd5fed20a514c3af69702857d88c8d"><div class="ttname"><a href="seguranca_social_8c.html#a38bd5fed20a514c3af69702857d88c8d">carregarDadosFicheiroTaxasContributivas</a></div><div class="ttdeci">void carregarDadosFicheiroTaxasContributivas(TaxasContributivas *taxasContributivas, char *nomeFicheiro)</div><div class="ttdef"><b>Definition:</b> segurancaSocial.c:11</div></div>
+<div class="ttc" id="astruct_taxas_contributivas_html_a1182dc0123f9ecfc55bcdd9b296f9c4e"><div class="ttname"><a href="struct_taxas_contributivas.html#a1182dc0123f9ecfc55bcdd9b296f9c4e">TaxasContributivas::maxTaxasContributivas</a></div><div class="ttdeci">int maxTaxasContributivas</div><div class="ttdef"><b>Definition:</b> segurancaSocial.h:27</div></div>
+<div class="ttc" id="astruct_taxas_contributivas_html_a3a1efcbb9eba6f463a5494b993abf4dc"><div class="ttname"><a href="struct_taxas_contributivas.html#a3a1efcbb9eba6f463a5494b993abf4dc">TaxasContributivas::numeroTaxasContributivas</a></div><div class="ttdeci">int numeroTaxasContributivas</div><div class="ttdef"><b>Definition:</b> segurancaSocial.h:28</div></div>
+<div class="ttc" id="airs_8h_html"><div class="ttname"><a href="irs_8h.html">irs.h</a></div></div>
+<div class="ttc" id="astruct_empresa_html_ac5d7878484dde4fb8a4eec65820c3df0"><div class="ttname"><a href="struct_empresa.html#ac5d7878484dde4fb8a4eec65820c3df0">Empresa::idEmpresa</a></div><div class="ttdeci">int idEmpresa</div><div class="ttdef"><b>Definition:</b> funcionario.h:136</div></div>
+<div class="ttc" id="ainput_8c_html_a8deaff72b3466f323d5ffe40426e1ea1"><div class="ttname"><a href="input_8c.html#a8deaff72b3466f323d5ffe40426e1ea1">lerString</a></div><div class="ttdeci">void lerString(char *string, unsigned int tamanho, char *msg)</div><div class="ttdef"><b>Definition:</b> input.c:97</div></div>
+<div class="ttc" id="adados_8h_html_a36fac549c1e13d7a2d666c5fce147800"><div class="ttname"><a href="dados_8h.html#a36fac549c1e13d7a2d666c5fce147800">ficheiroNomeEmpresas</a></div><div class="ttdeci">#define ficheiroNomeEmpresas</div><div class="ttdef"><b>Definition:</b> dados.h:11</div></div>
+<div class="ttc" id="adados_8h_html_a3c510cea9021d31cd8179f94e2fa930c"><div class="ttname"><a href="dados_8h.html#a3c510cea9021d31cd8179f94e2fa930c">SEMDADOGUAR</a></div><div class="ttdeci">#define SEMDADOGUAR</div><div class="ttdef"><b>Definition:</b> dados.h:19</div></div>
+<div class="ttc" id="adados_8h_html_a4599813d42c79a5e6315df596df10c5f"><div class="ttname"><a href="dados_8h.html#a4599813d42c79a5e6315df596df10c5f">guardar</a></div><div class="ttdeci">int guardar(Empresa *empresa, IRSDados *irsdados, NomesEmpresas *nomesEmpresas, TaxasContributivas *taxasContributivas)</div><div class="ttdef"><b>Definition:</b> dados.c:126</div></div>
+<div class="ttc" id="astruct_nomes_empresas_html"><div class="ttname"><a href="struct_nomes_empresas.html">NomesEmpresas</a></div><div class="ttdef"><b>Definition:</b> dados.h:31</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a773554a25b2a68cdebb305ac0d860851"><div class="ttname"><a href="struct_i_r_s_dados.html#a773554a25b2a68cdebb305ac0d860851">IRSDados::contadorSolteiroIRS</a></div><div class="ttdeci">int contadorSolteiroIRS</div><div class="ttdef"><b>Definition:</b> irs.h:31</div></div>
+<div class="ttc" id="adados_8c_html_a997d32e1a256c1920e49a857ba419adb"><div class="ttname"><a href="dados_8c.html#a997d32e1a256c1920e49a857ba419adb">importarRelatorio</a></div><div class="ttdeci">void importarRelatorio(Empresa *empresa, NomesEmpresas *nomesEmpresas)</div><div class="ttdef"><b>Definition:</b> dados.c:421</div></div>
+<div class="ttc" id="astruct_mes_html_a81e4e001c43f96795e54558b97488977"><div class="ttname"><a href="struct_mes.html#a81e4e001c43f96795e54558b97488977">Mes::nDiasFimSemana</a></div><div class="ttdeci">int nDiasFimSemana</div><div class="ttdef"><b>Definition:</b> funcionario.h:78</div></div>
+<div class="ttc" id="aseguranca_social_8h_html"><div class="ttname"><a href="seguranca_social_8h.html">segurancaSocial.h</a></div></div>
+<div class="ttc" id="astruct_nomes_empresas_html_a2b7576b5581d4924a7e875da65f347e3"><div class="ttname"><a href="struct_nomes_empresas.html#a2b7576b5581d4924a7e875da65f347e3">NomesEmpresas::numeroMaxEmpresas</a></div><div class="ttdeci">int numeroMaxEmpresas</div><div class="ttdef"><b>Definition:</b> dados.h:34</div></div>
+<div class="ttc" id="astruct_empresa_html_a68841b463c8930b25e74f556ca380a30"><div class="ttname"><a href="struct_empresa.html#a68841b463c8930b25e74f556ca380a30">Empresa::maxFuncionarios</a></div><div class="ttdeci">int maxFuncionarios</div><div class="ttdef"><b>Definition:</b> funcionario.h:135</div></div>
+<div class="ttc" id="adados_8h_html_aff6ca7c38423e7f213c7bc484d9d9380"><div class="ttname"><a href="dados_8h.html#aff6ca7c38423e7f213c7bc484d9d9380">BASEFicheiroTaxasContributivas</a></div><div class="ttdeci">#define BASEFicheiroTaxasContributivas</div><div class="ttdef"><b>Definition:</b> dados.h:16</div></div>
+<div class="ttc" id="afuncionario_8h_html_a9a11fffeaf2d48d7d4292a0391d86f57"><div class="ttname"><a href="funcionario_8h.html#a9a11fffeaf2d48d7d4292a0391d86f57">ordenarPorMesTrabalho</a></div><div class="ttdeci">void ordenarPorMesTrabalho(Mes *meses, int inicio, int fim)</div><div class="ttdef"><b>Definition:</b> salario.c:56</div></div>
+<div class="ttc" id="airs_8c_html_a7307041024bd9df6acc3e94613550235"><div class="ttname"><a href="irs_8c.html#a7307041024bd9df6acc3e94613550235">atualizarFicheiroIRS</a></div><div class="ttdeci">void atualizarFicheiroIRS(IRS *irs, int contador, char *nomeFicheiro)</div><div class="ttdef"><b>Definition:</b> irs.c:15</div></div>
+<div class="ttc" id="adados_8h_html_afb460bebed4b711f210829cc921c504a"><div class="ttname"><a href="dados_8h.html#afb460bebed4b711f210829cc921c504a">BASEPASTANAME</a></div><div class="ttdeci">#define BASEPASTANAME</div><div class="ttdef"><b>Definition:</b> dados.h:12</div></div>
+<div class="ttc" id="astruct_mes_html_a781d4146bf5297751c0788f7b8b2083a"><div class="ttname"><a href="struct_mes.html#a781d4146bf5297751c0788f7b8b2083a">Mes::nDiasTrabalhados</a></div><div class="ttdeci">int nDiasTrabalhados</div><div class="ttdef"><b>Definition:</b> funcionario.h:79</div></div>
+<div class="ttc" id="adados_8h_html_af735670d9b1cd3dfa2d927db387f7123"><div class="ttname"><a href="dados_8h.html#af735670d9b1cd3dfa2d927db387f7123">INC</a></div><div class="ttdeci">#define INC</div><div class="ttdef"><b>Definition:</b> dados.h:9</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a61ba567cf4a324e41f2da2edd1c3992b"><div class="ttname"><a href="struct_i_r_s_dados.html#a61ba567cf4a324e41f2da2edd1c3992b">IRSDados::tamcontadorCasadoDoisIRS</a></div><div class="ttdeci">int tamcontadorCasadoDoisIRS</div><div class="ttdef"><b>Definition:</b> irs.h:28</div></div>
+<div class="ttc" id="adados_8c_html_acbc487e7056014b9da47b3eefef8d513"><div class="ttname"><a href="dados_8c.html#acbc487e7056014b9da47b3eefef8d513">pesquisaNomeEmpresa</a></div><div class="ttdeci">int pesquisaNomeEmpresa(NomesEmpresas *nomesEmpresas, char *nome)</div><div class="ttdef"><b>Definition:</b> dados.c:111</div></div>
+<div class="ttc" id="astruct_mes_html_a581ef7a0a941b01c4009ac8bd2c1d36f"><div class="ttname"><a href="struct_mes.html#a581ef7a0a941b01c4009ac8bd2c1d36f">Mes::irs</a></div><div class="ttdeci">float irs</div><div class="ttdef"><b>Definition:</b> funcionario.h:85</div></div>
+<div class="ttc" id="astruct_trabalho_html_a01f4542f957f48ddb9c96b1705c1b6df"><div class="ttname"><a href="struct_trabalho.html#a01f4542f957f48ddb9c96b1705c1b6df">Trabalho::numeroAnos</a></div><div class="ttdeci">int numeroAnos</div><div class="ttdef"><b>Definition:</b> funcionario.h:99</div></div>
+<div class="ttc" id="astruct_empresa_html"><div class="ttname"><a href="struct_empresa.html">Empresa</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:133</div></div>
+<div class="ttc" id="astruct_mes_html_ad506f70994c7ccd5f5a3eb308720bdf8"><div class="ttname"><a href="struct_mes.html#ad506f70994c7ccd5f5a3eb308720bdf8">Mes::bonus</a></div><div class="ttdeci">float bonus</div><div class="ttdef"><b>Definition:</b> funcionario.h:84</div></div>
+<div class="ttc" id="adados_8c_html_a9fedb041e4fcfa8404f0ed609ba4816a"><div class="ttname"><a href="dados_8c.html#a9fedb041e4fcfa8404f0ed609ba4816a">importarRelatorioFinal</a></div><div class="ttdeci">void importarRelatorioFinal(Empresa *empresa, NomesEmpresas *nomesEmpresas)</div><div class="ttdef"><b>Definition:</b> dados.c:378</div></div>
+<div class="ttc" id="adados_8c_html_a5dcd42e555de1708bc92bb9ab6890659"><div class="ttname"><a href="dados_8c.html#a5dcd42e555de1708bc92bb9ab6890659">importar</a></div><div class="ttdeci">void importar(Empresa *empresa, IRSDados *irsdados, NomesEmpresas *nomesEmpresas, TaxasContributivas *taxasContributivas)</div><div class="ttdef"><b>Definition:</b> dados.c:230</div></div>
+<div class="ttc" id="afuncionario_8h_html_ae04bbc3c97d0b6d22196d29856ac170b"><div class="ttname"><a href="funcionario_8h.html#ae04bbc3c97d0b6d22196d29856ac170b">procurarAnoTrabalho</a></div><div class="ttdeci">int procurarAnoTrabalho(Funcionario *funcionario, int ano, int inicio, int fim)</div><div class="ttdef"><b>Definition:</b> salario.c:94</div></div>
+<div class="ttc" id="astruct_mes_html_aaaba7665fa72f32d0af2ad2154ac2a1d"><div class="ttname"><a href="struct_mes.html#aaaba7665fa72f32d0af2ad2154ac2a1d">Mes::salarioBase</a></div><div class="ttdeci">float salarioBase</div><div class="ttdef"><b>Definition:</b> funcionario.h:81</div></div>
+<div class="ttc" id="astruct_mes_html_af7437f565409fc60062580489403365b"><div class="ttname"><a href="struct_mes.html#af7437f565409fc60062580489403365b">Mes::segurancaSocial</a></div><div class="ttdeci">float segurancaSocial</div><div class="ttdef"><b>Definition:</b> funcionario.h:86</div></div>
+<div class="ttc" id="afuncionario_8h_html_a5fcc44d326be0ba5c7181b2c89087158"><div class="ttname"><a href="funcionario_8h.html#a5fcc44d326be0ba5c7181b2c89087158">verificaAnoMes</a></div><div class="ttdeci">int verificaAnoMes(Empresa *empresa, int ano, int mes)</div><div class="ttdef"><b>Definition:</b> salario.c:139</div></div>
+<div class="ttc" id="afuncoes_8c_html_a448f090df1c73924116ba869c04e4307"><div class="ttname"><a href="funcoes_8c.html#a448f090df1c73924116ba869c04e4307">verificaString</a></div><div class="ttdeci">int verificaString(char *s1, char *s2)</div><div class="ttdef"><b>Definition:</b> funcoes.c:206</div></div>
+<div class="ttc" id="aseguranca_social_8c_html_af166ae1919dda9883691768c46ef082a"><div class="ttname"><a href="seguranca_social_8c.html#af166ae1919dda9883691768c46ef082a">guardarDadosFicheiroTaxasContributivas</a></div><div class="ttdeci">void guardarDadosFicheiroTaxasContributivas(TaxasContributivas *taxasContributivas, char *nomeFicheiro)</div><div class="ttdef"><b>Definition:</b> segurancaSocial.c:45</div></div>
+<div class="ttc" id="astruct_mes_html_ae39c7c4195877e787b43081a42a44157"><div class="ttname"><a href="struct_mes.html#ae39c7c4195877e787b43081a42a44157">Mes::segurancaSocialPatronal</a></div><div class="ttdeci">float segurancaSocialPatronal</div><div class="ttdef"><b>Definition:</b> funcionario.h:87</div></div>
+<div class="ttc" id="astruct_ano_html"><div class="ttname"><a href="struct_ano.html">Ano</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:90</div></div>
+<div class="ttc" id="adados_8h_html_a1daa4e59a92d3762287a7f31120d0ff6"><div class="ttname"><a href="dados_8h.html#a1daa4e59a92d3762287a7f31120d0ff6">inserirNomeEmpresaFX</a></div><div class="ttdeci">void inserirNomeEmpresaFX(NomesEmpresas *nomesEmpresas, char *ficheiro)</div><div class="ttdef"><b>Definition:</b> dados.c:59</div></div>
+<div class="ttc" id="adados_8c_html_a5f3078dcf3281ccff1ada5ce6a40c070"><div class="ttname"><a href="dados_8c.html#a5f3078dcf3281ccff1ada5ce6a40c070">adiconarNomeEmpresa</a></div><div class="ttdeci">void adiconarNomeEmpresa(NomesEmpresas *nomesEmpresas, char *nome)</div><div class="ttdef"><b>Definition:</b> dados.c:76</div></div>
+<div class="ttc" id="afuncionario_8h_html_a6ce86a1b93484be0fb5147a223a92776"><div class="ttname"><a href="funcionario_8h.html#a6ce86a1b93484be0fb5147a223a92776">procurarMesTrabalho</a></div><div class="ttdeci">int procurarMesTrabalho(Ano *ano, int mes, int inicio, int fim)</div><div class="ttdef"><b>Definition:</b> salario.c:116</div></div>
+<div class="ttc" id="adados_8c_html_ade2502ff810e9171941b6b143e9d35c9"><div class="ttname"><a href="dados_8c.html#ade2502ff810e9171941b6b143e9d35c9">exportarRelatorioFinal</a></div><div class="ttdeci">void exportarRelatorioFinal(Empresa *empresa, NomesEmpresas *nomesEmpresas)</div><div class="ttdef"><b>Definition:</b> dados.c:434</div></div>
+<div class="ttc" id="astruct_mes_html_a69ffec471ed4a01a7e4615cdd30bc226"><div class="ttname"><a href="struct_mes.html#a69ffec471ed4a01a7e4615cdd30bc226">Mes::nDiasCompletos</a></div><div class="ttdeci">int nDiasCompletos</div><div class="ttdef"><b>Definition:</b> funcionario.h:76</div></div>
+<div class="ttc" id="afuncionario_8h_html_ab035ced65eafc9cfc3749f4dbca95a50"><div class="ttname"><a href="funcionario_8h.html#ab035ced65eafc9cfc3749f4dbca95a50">adicionarAno</a></div><div class="ttdeci">void adicionarAno(Funcionario *funcionario, int *idAno, int ano)</div><div class="ttdef"><b>Definition:</b> salario.c:315</div></div>
+<div class="ttc" id="astruct_funcionario_html"><div class="ttname"><a href="struct_funcionario.html">Funcionario</a></div><div class="ttdef"><b>Definition:</b> funcionario.h:115</div></div>
+<div class="ttc" id="astruct_mes_html_a141457ac54b34a64cd94790ec82d03d3"><div class="ttname"><a href="struct_mes.html#a141457ac54b34a64cd94790ec82d03d3">Mes::nMeiosDias</a></div><div class="ttdeci">int nMeiosDias</div><div class="ttdef"><b>Definition:</b> funcionario.h:77</div></div>
+<div class="ttc" id="adados_8h_html_a6307d2dd4a1ef9125ab0d9c00506a114"><div class="ttname"><a href="dados_8h.html#a6307d2dd4a1ef9125ab0d9c00506a114">BASEDADOSNAME</a></div><div class="ttdeci">#define BASEDADOSNAME</div><div class="ttdef"><b>Definition:</b> dados.h:17</div></div>
+<div class="ttc" id="adados_8h_html_ab08916c04afa089e7dc93479bda95ceb"><div class="ttname"><a href="dados_8h.html#ab08916c04afa089e7dc93479bda95ceb">BASEFicheiroNaoCasado</a></div><div class="ttdeci">#define BASEFicheiroNaoCasado</div><div class="ttdef"><b>Definition:</b> dados.h:15</div></div>
+<div class="ttc" id="adados_8c_html_aaea24a0f92619679ff4dac67f8e66e45"><div class="ttname"><a href="dados_8c.html#aaea24a0f92619679ff4dac67f8e66e45">importarNomesEmpresas</a></div><div class="ttdeci">void importarNomesEmpresas(NomesEmpresas *nomesEmpresas, char *ficheiro)</div><div class="ttdef"><b>Definition:</b> dados.c:17</div></div>
+<div class="ttc" id="afuncionario_8c_html_a9d3b73d4bdecaa1652b9071fc5633edf"><div class="ttname"><a href="funcionario_8c.html#a9d3b73d4bdecaa1652b9071fc5633edf">armazenaDados</a></div><div class="ttdeci">void armazenaDados(Empresa *empresa, char *ficheiro)</div><div class="ttdef"><b>Definition:</b> funcionario.c:461</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_a5b8310fa0da692a1ee0527f96dad2d54"><div class="ttname"><a href="struct_i_r_s_dados.html#a5b8310fa0da692a1ee0527f96dad2d54">IRSDados::solteiroIRS</a></div><div class="ttdeci">IRS * solteiroIRS</div><div class="ttdef"><b>Definition:</b> irs.h:30</div></div>
+<div class="ttc" id="astruct_mes_html_af8cecbf9ce858f54e97e0b4ac38897af"><div class="ttname"><a href="struct_mes.html#af8cecbf9ce858f54e97e0b4ac38897af">Mes::almoco</a></div><div class="ttdeci">float almoco</div><div class="ttdef"><b>Definition:</b> funcionario.h:83</div></div>
+<div class="ttc" id="astruct_i_r_s_dados_html_aa3fdf7d6adb31c564fcc4ada2358cd54"><div class="ttname"><a href="struct_i_r_s_dados.html#aa3fdf7d6adb31c564fcc4ada2358cd54">IRSDados::casadoDoisIRS</a></div><div class="ttdeci">IRS * casadoDoisIRS</div><div class="ttdef"><b>Definition:</b> irs.h:26</div></div>
+<div class="ttc" id="adados_8h_html_aaea24a0f92619679ff4dac67f8e66e45"><div class="ttname"><a href="dados_8h.html#aaea24a0f92619679ff4dac67f8e66e45">importarNomesEmpresas</a></div><div class="ttdeci">void importarNomesEmpresas(NomesEmpresas *nomesEmpresas, char *ficheiro)</div><div class="ttdef"><b>Definition:</b> dados.c:17</div></div>
+<div class="ttc" id="adados_8h_html_a87faffe615a3010cd8c979396a7971a7"><div class="ttname"><a href="dados_8h.html#a87faffe615a3010cd8c979396a7971a7">maxPasta</a></div><div class="ttdeci">#define maxPasta</div><div class="ttdef"><b>Definition:</b> dados.h:23</div></div>
+<div class="ttc" id="afuncoes_8c_html_a5d99b14c6c7670ffec4e2fe2dd7aeb7b"><div class="ttname"><a href="funcoes_8c.html#a5d99b14c6c7670ffec4e2fe2dd7aeb7b">juntar4Strings</a></div><div class="ttdeci">void juntar4Strings(char *s1, char *s2, char *s3, char *s4)</div><div class="ttdef"><b>Definition:</b> funcoes.c:306</div></div>
+<div class="ttc" id="adados_8c_html_a1e41189e2b30954508c4f32d6c1ae093"><div class="ttname"><a href="dados_8c.html#a1e41189e2b30954508c4f32d6c1ae093">exportarRelatorio</a></div><div class="ttdeci">void exportarRelatorio(Empresa *empresa, IRSDados *irsdados, NomesEmpresas *nomesEmpresas, TaxasContributivas *taxasContributivas)</div><div class="ttdef"><b>Definition:</b> dados.c:494</div></div>
+<div class="ttc" id="adados_8c_html_a931fb81974224710ef6db350c54572bc"><div class="ttname"><a href="dados_8c.html#a931fb81974224710ef6db350c54572bc">inserirNomeEmpresa</a></div><div class="ttdeci">void inserirNomeEmpresa(NomesEmpresas *nomesEmpresas, char *nome)</div><div class="ttdef"><b>Definition:</b> dados.c:90</div></div>
+<div class="ttc" id="astruct_mes_html_a912b59a8ef01956c01c6487629599464"><div class="ttname"><a href="struct_mes.html#a912b59a8ef01956c01c6487629599464">Mes::nFaltas</a></div><div class="ttdeci">int nFaltas</div><div class="ttdef"><b>Definition:</b> funcionario.h:80</div></div>
+<div class="ttc" id="astruct_nome_empresa_html_a9ccb3b1009c0baf8e49e38488c83732a"><div class="ttname"><a href="struct_nome_empresa.html#a9ccb3b1009c0baf8e49e38488c83732a">NomeEmpresa::nome</a></div><div class="ttdeci">char nome[20]</div><div class="ttdef"><b>Definition:</b> dados.h:28</div></div>
+<div class="ttc" id="adados_8h_html_a1e41189e2b30954508c4f32d6c1ae093"><div class="ttname"><a href="dados_8h.html#a1e41189e2b30954508c4f32d6c1ae093">exportarRelatorio</a></div><div class="ttdeci">void exportarRelatorio(Empresa *empresa, IRSDados *irsdados, NomesEmpresas *nomesEmpresas, TaxasContributivas *taxasContributivas)</div><div class="ttdef"><b>Definition:</b> dados.c:494</div></div>
+<div class="ttc" id="adados_8c_html_a1ce12469c93d539dc596c8d6fa6854ea"><div class="ttname"><a href="dados_8c.html#a1ce12469c93d539dc596c8d6fa6854ea">atualizarContadorNomesEmpresas</a></div><div class="ttdeci">void atualizarContadorNomesEmpresas(int contador, char *ficheiro)</div><div class="ttdef"><b>Definition:</b> dados.c:44</div></div>
+<div class="ttc" id="ainput_8h_html"><div class="ttname"><a href="input_8h.html">input.h</a></div></div>
+<div class="ttc" id="afuncoes_8c_html_a3fdcca4005a91688d1c43b900a342900"><div class="ttname"><a href="funcoes_8c.html#a3fdcca4005a91688d1c43b900a342900">getAnoAtual</a></div><div class="ttdeci">int getAnoAtual()</div><div class="ttdef"><b>Definition:</b> funcoes.c:156</div></div>
+<div class="ttc" id="adados_8c_html_a62ab48e95f56e7828d64aed268e6703b"><div class="ttname"><a href="dados_8c.html#a62ab48e95f56e7828d64aed268e6703b">adicionarSalarioRelatorioFinal</a></div><div class="ttdeci">void adicionarSalarioRelatorioFinal(Mes *mes, Mes dados)</div><div class="ttdef"><b>Definition:</b> dados.c:280</div></div>
+<div class="ttc" id="adados_8h_html_ab0c500c060b26c444b9dc9da0f3f384a"><div class="ttname"><a href="dados_8h.html#ab0c500c060b26c444b9dc9da0f3f384a">maxComando</a></div><div class="ttdeci">#define maxComando</div><div class="ttdef"><b>Definition:</b> dados.h:25</div></div>
+<div class="ttc" id="adados_8h_html_a6d954d658be28127f89770b7058fb52d"><div class="ttname"><a href="dados_8h.html#a6d954d658be28127f89770b7058fb52d">limparDados</a></div><div class="ttdeci">void limparDados(Empresa *empresa, IRSDados *irsdados, NomesEmpresas *nomesEmpresas, TaxasContributivas *taxasContributivas, int limparNomesEmpresas)</div><div class="ttdef"><b>Definition:</b> dados.c:187</div></div>
+<div class="ttc" id="astruct_ano_html_aeb1727a2a31b6f5c420e8f94f1a63dec"><div class="ttname"><a href="struct_ano.html#aeb1727a2a31b6f5c420e8f94f1a63dec">Ano::numeroMeses</a></div><div class="ttdeci">int numeroMeses</div><div class="ttdef"><b>Definition:</b> funcionario.h:93</div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dados_8h.html">dados.h</a></li>
+    <li class="footer">Gerado por <a href="http://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.8.20 </li>
+  </ul>
+</div>
+</body>
+</html>

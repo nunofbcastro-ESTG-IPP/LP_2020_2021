@@ -1,0 +1,27 @@
+var dados_8h =
+[
+    [ "NomeEmpresa", "struct_nome_empresa.html", "struct_nome_empresa" ],
+    [ "NomesEmpresas", "struct_nomes_empresas.html", "struct_nomes_empresas" ],
+    [ "BASEDADOSNAME", "dados_8h.html#a6307d2dd4a1ef9125ab0d9c00506a114", null ],
+    [ "BASEFicheiroCasadoDois", "dados_8h.html#a3522e3072c482eed65bdcbb9b39abc60", null ],
+    [ "BASEFicheiroCasadoUnico", "dados_8h.html#abbed7ac0be5b98c2a1828b5d7b8b64d2", null ],
+    [ "BASEFicheiroNaoCasado", "dados_8h.html#ab08916c04afa089e7dc93479bda95ceb", null ],
+    [ "BASEFicheiroTaxasContributivas", "dados_8h.html#aff6ca7c38423e7f213c7bc484d9d9380", null ],
+    [ "BASEPASTANAME", "dados_8h.html#afb460bebed4b711f210829cc921c504a", null ],
+    [ "ficheiroNomeEmpresas", "dados_8h.html#a36fac549c1e13d7a2d666c5fce147800", null ],
+    [ "GUARDADOS_SUCESSO", "dados_8h.html#ad22cb034b4e391078799966926beb6c0", null ],
+    [ "IMPORTADOS_SUCESSO", "dados_8h.html#ad3573ef516857a26d812b788a801bb2e", null ],
+    [ "INC", "dados_8h.html#af735670d9b1cd3dfa2d927db387f7123", null ],
+    [ "maxComando", "dados_8h.html#ab0c500c060b26c444b9dc9da0f3f384a", null ],
+    [ "maxFILENAME", "dados_8h.html#a2ba2d95736a28ef4f31fa568d374b0ad", null ],
+    [ "maxPasta", "dados_8h.html#a87faffe615a3010cd8c979396a7971a7", null ],
+    [ "SEMDADOGUAR", "dados_8h.html#a3c510cea9021d31cd8179f94e2fa930c", null ],
+    [ "exportarRelatorio", "dados_8h.html#a1e41189e2b30954508c4f32d6c1ae093", null ],
+    [ "guardar", "dados_8h.html#a4599813d42c79a5e6315df596df10c5f", null ],
+    [ "importar", "dados_8h.html#a5dcd42e555de1708bc92bb9ab6890659", null ],
+    [ "importarNomesEmpresas", "dados_8h.html#aaea24a0f92619679ff4dac67f8e66e45", null ],
+    [ "importarRelatorio", "dados_8h.html#a997d32e1a256c1920e49a857ba419adb", null ],
+    [ "inserirNomeEmpresa", "dados_8h.html#a931fb81974224710ef6db350c54572bc", null ],
+    [ "inserirNomeEmpresaFX", "dados_8h.html#a1daa4e59a92d3762287a7f31120d0ff6", null ],
+    [ "limparDados", "dados_8h.html#a6d954d658be28127f89770b7058fb52d", null ]
+];
