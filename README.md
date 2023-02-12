@@ -3,6 +3,7 @@
 <p>
   <img src="http://img.shields.io/static/v1?style=for-the-badge&label=School%20year&message=2020/2021&color=sucess"/>
   <img src="http://img.shields.io/static/v1?style=for-the-badge&label=Discipline&message=LP&color=sucess"/>
+  <img src="http://img.shields.io/static/v1?style=for-the-badge&label=Grade&message=16&color=sucess"/>
   <a href="https://github.com/nunofbcastro-ESTG-IPP/LP/tree/main/Doc/Utterance" target="_blank">
     <img src="https://img.shields.io/badge/-Utterance-grey?style=for-the-badge"/>
   </a>
@@ -31,14 +32,14 @@ To run the project, you need to install [Cygwin](https://www.cygwin.com) and [Co
 <h3>
   Nuno Castro
   <a href="https://github.com/nunofbcastro?tab=followers">
-    <img src="https://img.shields.io/github/followers/nunofbcastro.svg?style=social&label=Follow" />
+    <img src="https://img.shields.io/github/followers/nunofbcastro.svg?style=for-the-badge&label=Follow" height="20"/>
   </a>
 </h3>
 
 <h3>
   Jorge Correia
   <a href="https://github.com/JorgeMFC?tab=followers">
-    <img src="https://img.shields.io/github/followers/JorgeMFC.svg?style=social&label=Follow" />
+    <img src="https://img.shields.io/github/followers/JorgeMFC.svg?style=for-the-badge&label=Follow" height="20"/>
   </a>
 </h3>
 
